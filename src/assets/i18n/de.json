@@ -1,0 +1,24 @@
+{
+  "REGISTRATION": {
+    "TITLE": "Enter participant data",
+    "CODE_LABEL": "Participant code",
+    "GENDER_LABEL": "Participant gender",
+    "MALE": "Male",
+    "FEMALE": "Female",
+    "AGE_LABEL": "age",
+    "GRADE_LABEL": "Participant grade",
+    "SUBMIT": "Begin experiment"
+  },
+  "COVER_STORY": {
+    "TEXT": "Hier sind ein paar Monster vom Planeten Apres.<br>Wir werden Geschichten über sie hören und versuchen, mehr über sie herauszufinden",
+    "NEXT": "Weiter"
+  },
+  "SCENARIO": {
+    "CONFIRM": "Bestätigen",
+    "NEXT": "Weiter"
+  },
+  "END": {
+    "WELL_DONE": "Gut Gemacht!",
+    "PLAY_AGAIN": "Wieder Spielen"
+  }
+}

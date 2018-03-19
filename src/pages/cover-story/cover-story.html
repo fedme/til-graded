@@ -1,0 +1,29 @@
+<ion-content padding>
+  <ion-grid>
+
+    <ion-row id="top">
+      <ion-col></ion-col>
+      <ion-col col-8 text-center>
+        <div class="content-wrapper">
+          <p [innerHTML]="'COVER_STORY.TEXT' | translate"></p>
+        </div>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+    <ion-row id="half">
+      <ion-col text-center>
+        <img src="assets/img/all_monsters.png">
+      </ion-col>
+    </ion-row>
+
+    <ion-row id="bottom">
+      <ion-col></ion-col>
+      <ion-col text-center>
+        <button ion-button large (click)="next()">{{'COVER_STORY.NEXT' | translate}}</button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

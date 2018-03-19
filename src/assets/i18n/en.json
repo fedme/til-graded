@@ -1,0 +1,25 @@
+{
+    "REGISTRATION": {
+      "TITLE": "Enter participant data",
+      "CODE_LABEL": "Participant code",
+      "GENDER_LABEL": "Participant gender",
+      "MALE": "Male",
+      "FEMALE": "Female",
+      "AGE_LABEL": "Participant age",
+      "GRADE_LABEL": "Participant grade",
+      "SUBMIT": "Begin experiment"
+    },
+    "COVER_STORY": {
+      "TEXT": "Cover story english text....<br>.......",
+      "NEXT": "Next"
+    },
+    "SCENARIO": {
+      "CONFIRM": "Confirm",
+      "NEXT": "Next"
+    },
+    "END": {
+      "WELL_DONE": "Well done!",
+      "PLAY_AGAIN": "Play again"
+    }
+  
+}
