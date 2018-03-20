@@ -1,14 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button (click)="next()">{{'END.PLAY_AGAIN' | translate}}</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding>
-    <ion-grid>
-  
-      <ion-row id="top">
-        <ion-col text-center>
-          <h1>{{'END.WELL_DONE' | translate}}</h1>
-          <br>
-          <button ion-button large (click)="next()">{{'END.PLAY_AGAIN' | translate}}</button>
-        </ion-col>
-      </ion-row>
-  
-    </ion-grid>
-  </ion-content>
-  
+  <ion-grid>
+
+    <ion-row id="top">
+      <ion-col text-center>
+        <h1>{{'END.WELL_DONE' | translate}}</h1>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

@@ -1,3 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="next()">{{'SCENARIO.NEXT' | translate}}</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
 <ion-content padding>
   <ion-grid>
 
@@ -15,14 +23,6 @@
       <ion-col text-center>
         <img src="assets/img/all_monsters.png">
       </ion-col>
-    </ion-row>
-
-    <ion-row id="bottom">
-      <ion-col></ion-col>
-      <ion-col text-center>
-        <button ion-button large (click)="next()">{{'COVER_STORY.NEXT' | translate}}</button>
-      </ion-col>
-      <ion-col></ion-col>
     </ion-row>
 
   </ion-grid>

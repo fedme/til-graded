@@ -1,3 +1,11 @@
+<ion-header>
+    <ion-navbar>
+      <ion-buttons end>
+          <button ion-button (click)="next()">{{'SCENARIO.NEXT' | translate}}</button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
 <ion-content padding>
   <ion-grid>
 
@@ -35,14 +43,6 @@
       <ion-col col-2>
         <!--spacer-->
       </ion-col>
-    </ion-row>
-
-    <ion-row id="bottom">
-      <ion-col></ion-col>
-      <ion-col text-center>
-        <button ion-button large (click)="next()">{{'SCENARIO.NEXT' | translate}}</button>
-      </ion-col>
-      <ion-col></ion-col>
     </ion-row>
 
   </ion-grid>
