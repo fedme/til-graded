@@ -52,14 +52,14 @@ export class MyApp {
 
   initTranslate() {
     // Set the default language for translation strings, and the current language.
-    this.translate.setDefaultLang('de');
+    this.translate.setDefaultLang('en');
 
     const runInBrowser = this.platform.is('core') || this.platform.is('mobileweb');
     if (runInBrowser) {
       this.translate.use('en');
     }
     else {
-      this.translate.use('de');
+      this.translate.use('en');
     }
   }
 
