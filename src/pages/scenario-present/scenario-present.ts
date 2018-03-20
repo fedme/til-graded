@@ -10,6 +10,8 @@ import { Stimuli, Utils } from '../../providers/providers';
 })
 export class ScenarioPresentPage {
 
+  nextConfirmed: boolean = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private stimuli: Stimuli, private utils: Utils) {
     //this.stimuli.initialize();
     if (this.stimuli.areThereMoreScenarios()) {
@@ -25,7 +27,12 @@ export class ScenarioPresentPage {
     console.log('ionViewDidLoad ScenarioPresentPage');
   }
 
+  confirmNext() {
+    this.nextConfirmed = true;
+  }
+
   next() {
+    if (!this.nextConfirmed) return;
     this.navCtrl.setRoot("ScenarioQuestionPage");
   }
   

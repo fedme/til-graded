@@ -11,15 +11,18 @@
     },
     "COVER_STORY": {
       "TEXT": "Cover story english text....<br>.......",
-      "NEXT": "Next"
+      "NEXT": "Next",
+      "NEXT_CONFIRM": "Next (press again to confirm)"
     },
     "SCENARIO": {
       "CONFIRM": "Confirm",
-      "NEXT": "Next"
+      "NEXT": "Next",
+      "NEXT_CONFIRM": "Next (press again to confirm)"
     },
     "END": {
       "WELL_DONE": "Well done!",
-      "PLAY_AGAIN": "Play again"
+      "PLAY_AGAIN": "Play again",
+      "PLAY_AGAIN_CONFIRM": "Play again (press again to confirm)"
     }
   
 }

@@ -10,6 +10,8 @@ import { Stimuli } from '../../providers/providers';
 })
 export class ScenarioQuestionPage {
 
+  nextConfirmed: boolean = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private stimuli: Stimuli) {
 
   }
@@ -18,8 +20,15 @@ export class ScenarioQuestionPage {
     console.log('ionViewDidLoad ScenarioQuestionPage');
   }
 
+  confirmNext() {
+    this.nextConfirmed = true;
+  }
+
   next() {
+    if (!this.nextConfirmed) return;
     this.navCtrl.setRoot("ScenarioRatingPage");
   }
+
+  
   
 }

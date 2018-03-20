@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the CoverStoryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -15,6 +9,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CoverStoryPage {
 
+  nextConfirmed: boolean = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -22,7 +18,12 @@ export class CoverStoryPage {
     console.log('ionViewDidLoad CoverStoryPage');
   }
 
+  confirmNext() {
+    this.nextConfirmed = true;
+  }
+
   next() {
+    if (!this.nextConfirmed) return;
     this.navCtrl.setRoot('ScenarioPresentPage');
   }
 

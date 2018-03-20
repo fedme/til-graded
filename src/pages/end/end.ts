@@ -10,6 +10,8 @@ import { Data } from '../../providers/providers';
 })
 export class EndPage {
 
+  nextConfirmed: boolean = false;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private data: Data) {
   }
 
@@ -18,7 +20,12 @@ export class EndPage {
     this.data.save();
   }
 
+  confirmNext() {
+    this.nextConfirmed = true;
+  }
+
   next() {
+    if (!this.nextConfirmed) return;
     this.navCtrl.setRoot("RegistrationPage");
     this.navCtrl.popToRoot();
   }

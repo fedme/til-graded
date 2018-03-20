@@ -11,14 +11,17 @@
   },
   "COVER_STORY": {
     "TEXT": "Hier sind ein paar Monster vom Planeten Apres.<br>Wir werden Geschichten über sie hören und versuchen, mehr über sie herauszufinden",
-    "NEXT": "Weiter"
+    "NEXT": "Weiter",
+    "NEXT_CONFIRM": "Weiter (press again to confirm)"
   },
   "SCENARIO": {
     "CONFIRM": "Bestätigen",
-    "NEXT": "Weiter"
+    "NEXT": "Weiter",
+    "NEXT_CONFIRM": "Weiter (press again to confirm)"
   },
   "END": {
     "WELL_DONE": "Gut Gemacht!",
-    "PLAY_AGAIN": "Wieder Spielen"
+    "PLAY_AGAIN": "Wieder Spielen",
+    "PLAY_AGAIN_CONFIRM": "Wieder Spielen (press again to confirm)"
   }
 }
