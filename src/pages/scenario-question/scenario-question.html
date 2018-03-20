@@ -5,22 +5,24 @@
       <ion-col></ion-col>
       <ion-col col-8 text-center>
         <div class="content-wrapper">
-          <p [innerHTML]="stimuli.scenario.raw.text_2.en"></p>
-          scenario id: {{stimuli.scenario.raw.id}} | question id: {{stimuli.scenario.raw.id}}
+          <p>
+            <span [innerHTML]="stimuli.scenario.raw.text_2.en"></span>
+            &nbsp;<span [innerHTML]="stimuli.scenario.question.text.en"></span>
+          </p>
         </div>
       </ion-col>
       <ion-col></ion-col>
     </ion-row>
 
     <ion-row id="half">
-        <ion-col></ion-col>
-        <ion-col col-4 text-center>
-          <img src="assets/img/{{stimuli.scenario.raw.actor}}.png" alt="">
-        </ion-col>
-        <ion-col col-4 text-center>
-            <img src="assets/img/{{stimuli.scenario.raw.asker}}.png" alt="">
-          </ion-col>
-        <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col col-3 text-center>
+        <img src="assets/img/{{stimuli.scenario.raw.actor}}.png" alt="">
+      </ion-col>
+      <ion-col col-5 text-center>
+        <asker-monster></asker-monster>
+      </ion-col>
+      <ion-col></ion-col>
     </ion-row>
 
     <ion-row id="history">

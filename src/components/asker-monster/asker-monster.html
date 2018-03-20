@@ -1,0 +1,26 @@
+<object>
+    <svg viewBox="0 0 350 200">
+      <svg:image [attr.href]="getAskerSrc()" [attr.xlink:href]="getAskerSrc()" width="180"
+        height="200" x="0" y="0" />
+      <svg:image href="assets/img/speechbubble_right.png" xlink:href="assets/img/speechbubble_right.png" width="190" height="120"
+        x="150" y="35" />
+
+      <!-- 1 object question -->
+      <svg:g *ngIf="stimuli.scenario.question.bubble.length == 1">
+      <svg:image [attr.href]="getBubblePic(0)" [attr.xlink:href]="getBubblePic(0)" width="90" height="90" x="220" y="50" />
+      </g>
+
+      <!-- 2 objects question -->
+      <svg:g *ngIf="stimuli.scenario.question.bubble.length == 2">
+      <svg:image [attr.href]="getBubblePic(0)" [attr.xlink:href]="getBubblePic(0)" width="75" height="75" x="193" y="45" />
+      <svg:image [attr.href]="getBubblePic(1)" [attr.xlink:href]="getBubblePic(1)" width="75" height="75" x="260" y="75" />
+      </g>
+
+      <!-- 3 objects question -->
+      <svg:g *ngIf="stimuli.scenario.question.bubble.length == 3">
+      <svg:image [attr.href]="getBubblePic(0)" [attr.xlink:href]="getBubblePic(0)" width="60" height="60" x="193" y="55" />
+      <svg:image [attr.href]="getBubblePic(1)" [attr.xlink:href]="getBubblePic(1)" width="60" height="60" x="235" y="80" />
+      <svg:image [attr.href]="getBubblePic(2)" [attr.xlink:href]="getBubblePic(2)" width="60" height="60" x="277" y="55" />
+      </g>
+    </svg>
+  </object>

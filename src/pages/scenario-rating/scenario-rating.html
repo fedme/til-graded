@@ -4,23 +4,24 @@
     <ion-row id="top">
       <ion-col></ion-col>
       <ion-col col-8 text-center>
-        <div class="content-wrapper">
-          <p>RATING</p>
-          scenario id: {{stimuli.scenario.raw.id}} | question id: {{stimuli.scenario.raw.id}}
-        </div>
+        <ion-list>
+          <ion-item>
+            <ion-range min="0" max="100" step="2" [(ngModel)]="rating"></ion-range>
+          </ion-item>
+        </ion-list>
       </ion-col>
       <ion-col></ion-col>
     </ion-row>
 
     <ion-row id="half">
-        <ion-col></ion-col>
-        <ion-col col-4 text-center>
-          <img src="assets/img/{{stimuli.scenario.raw.actor}}.png" alt="">
-        </ion-col>
-        <ion-col col-4 text-center>
-            <img src="assets/img/{{stimuli.scenario.raw.asker}}.png" alt="">
-          </ion-col>
-        <ion-col></ion-col>
+      <ion-col col-3>
+          <asker-monster></asker-monster>
+      </ion-col>
+      <ion-col col-1></ion-col>
+      <ion-col col-4>
+        <img src="assets/img/bag.png" [attr.width]="getBagSize()">
+      </ion-col>
+      <ion-col col-4></ion-col>
     </ion-row>
 
     <ion-row id="history">

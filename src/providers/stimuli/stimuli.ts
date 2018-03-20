@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { Utils } from '../utils/utils';
 import { Participant } from '../../models/participant';
-import { Monster } from '../../models/monster';
 import { SCENARIOS } from './scenarios';
 
 @Injectable()
@@ -19,19 +18,7 @@ export class Stimuli {
   // scenarios
   scenarios: any;
   scenarioIndex: number = -1;
-
-  // TODO: delete 
-  famIndex: number = -1;
-  famScenariosIds: string[] = [];
-  famMonsters: Monster[] = [];
-  famObservations: string[][] = [];
-  famAnswers: boolean[] = [];
-  bestMonster: Monster;
-  worstMonster: Monster;
-  testIndex: number = -1;
-  testQuestions: string[] = [];
-  testAnswers: string[] = [];
-  testResponseTimes: number[] = [];
+  ratings: number[] = [];
   
   constructor(private utils: Utils, private platform: Platform) {
     console.log('Hello Stimuli Provider');
@@ -42,24 +29,10 @@ export class Stimuli {
   initialize() {
 
     this.scenarioIndex = -1;
-
-
-    // TODO: delete
-    this.famScenariosIds = [];
-    this.famMonsters = [];
-    this.famObservations = [];
-    this.famAnswers = [];
-    this.bestMonster = null;
-    this.worstMonster = null;
-    this.testIndex = -1;
-    this.testQuestions = [];
-    this.testAnswers = [];
-    this.testResponseTimes = [];
+    this.ratings = [];
 
     this.initialTimestamp = Date.now(); 
     this.participant = new Participant("anonymous-" + this.utils.getCounterValue());
-    this.famIndex = -1;
-    this.testIndex = -1;
   }
 
   initializeConditions() {
@@ -105,11 +78,8 @@ export class Stimuli {
     this.scenarioIndex++;
   }
 
-  // TODO: remove
-  saveFamData() {
-    this.bestMonster = this.famMonsters[0].isBestMonster() ? this.famMonsters[0] : this.famMonsters[1];
-    this.worstMonster = this.famMonsters[0].isBestMonster() ? this.famMonsters[1] : this.famMonsters[0];
-    console.log("famMonster", this.famMonsters);
+  logRating(rating: number) {
+    this.ratings.push(rating);
   }
 
 

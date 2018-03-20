@@ -83,32 +83,7 @@ export class Data {
 
     // save conditions data
     data.set("condition_index", this.stimuli.conditionId);
-
-    // save monsters
-    data.set("best_monster", this.stimuli.bestMonster.id);
-    data.set("worst_monster", this.stimuli.worstMonster.id);
-
-    // save fam rounds
-    for(let i=0; i < this.stimuli.famScenariosIds.length; i++) {
-      data.set("fam_"+i+"_scenario_id", this.stimuli.famScenariosIds[i]);
-      data.set("fam_"+i+"_best_side", this.stimuli.bestMonster.positions[i]);
-      data.set("fam_"+i+"_worst_side", this.stimuli.worstMonster.positions[i]);
-      data.set("fam_"+i+"_choice_correct", this.stimuli.famAnswers[i]);
-    }
-
-    // save test rounds
-    for(let i=0; i < this.stimuli.testQuestions.length; i++) {
-      //data.set("test_"+i+"_question", this.stimuli.testQuestions[i]);
-      let question = this.stimuli.testQuestions[i];
-      if (i == 0 && question == "questionasking") {
-        question = "questionaskingFirst";
-      }
-      const answer = (this.stimuli.bestMonster.id == this.stimuli.testAnswers[i]) ? 1 : 0;
-      data.set("test_" + question + "_answer", answer);
-      data.set("test_" + question +"_response_time", this.stimuli.testResponseTimes[i]);
-    }
-
-    data.set("test_questions_order", this.stimuli.testQuestions.join(" "));
+    data.set("ratings", this.stimuli.ratings);
 
     this.data = data;
 

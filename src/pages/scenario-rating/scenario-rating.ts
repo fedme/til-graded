@@ -10,6 +10,8 @@ import { Stimuli } from '../../providers/providers';
 })
 export class ScenarioRatingPage {
 
+  rating: number = 50;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private stimuli: Stimuli) {
 
   }
@@ -18,7 +20,12 @@ export class ScenarioRatingPage {
     console.log('ionViewDidLoad ScenarioRatingPage');
   }
 
+  getBagSize() {
+    return new String(this.rating + "%");
+  }
+
   next() {
+    this.stimuli.logRating(this.rating);
     this.navCtrl.setRoot("ScenarioPresentPage");
   }
   

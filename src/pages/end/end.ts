@@ -15,7 +15,7 @@ export class EndPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EndPage');
-    //this.data.save();  TODO: Save data!!!!!!!!!!!
+    this.data.save();
   }
 
   next() {
