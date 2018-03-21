@@ -4,12 +4,12 @@ export const SCENARIOS = [
         "asker": "reda",
         "actor": "toma",
         "text_1": {
-            "de": "Toma ist öfters zu spät für die Schule. Die letzten achtmal ist er aufgrund folgender Ursachen zu spät gewesen",
-            "en": "Toma is often late for school.  The last 8 times he was late for the following reasons"
+            "de": "Das ist Toma. <br>Toma ist öfters zu spät für die Schule.<br>Die letzten achtmal ist er aufgrund folgender Ursachen zu spät gewesen",
+            "en": "This is Toma. <br>Toma is often late for school.<br>The last 8 times he was late for the following reasons"
         },
         "text_2": {
-            "de": "Toma war wiedermal zu spät.  Toma’s Freundin Reda will herausfinden warum. Sie fragt Toma: Warst du zu spät in der Schule, weil",
-            "en": "Toma was late again today.  Toma’s friend Reda wants to find out why. She asks Toma: Were you late for school because"
+            "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil",
+            "en": "Toma was late again today.<br>Toma’s friend Reda wants to find out why.<br>She asks Toma: Were you late for school because"
         },
         "questions": [
             {
@@ -201,12 +201,12 @@ export const SCENARIOS = [
         "asker": "kota",
         "actor": "fidi",
         "text_1": {
-            "de": "Fidi nimmt Schwimmunterricht, aber er verpasst diesen oft. Die letzten achtmal hat er den Schwimmunterricht aufgrund folgender Ursachen verpasst",
-            "en": "Fidi goes to swimming classes, but he often misses them.  The last eight times he’s missed his swimming class for the following reasons"
+            "de": "Das ist Fidi. <br>Fidi nimmt Schwimmunterricht, aber er verpasst diesen oft.<br>Die letzten achtmal hat er den Schwimmunterricht aufgrund folgender Ursachen verpasst",
+            "en": "This is Fidi. <br>Fidi goes to swimming classes, but he often misses them.<br>The last eight times he’s missed his swimming class for the following reasons"
         },
         "text_2": {
-            "de": "Fidi hat seinen Schwimmunterricht diese Woche wieder verpasst. Seine Freundin Kota will herausfinden warum. Sie fragt Fidi: Hast du den Schwimmkurs verpasst, weil",
-            "en": "Fidi missed his swimming class again this week.  His friend Kota wants to find out why.  She asks Fidi: Did you miss the swimming class because"
+            "de": "Fidi hat seinen Schwimmunterricht diese Woche wieder verpasst.<br>Seine Freundin Kota will herausfinden warum.<br>Sie fragt Fidi: Hast du den Schwimmkurs verpasst, weil",
+            "en": "Fidi missed his swimming class again this week.<br>His friend Kota wants to find out why.<br>She asks Fidi: Did you miss the swimming class because"
         },
         "questions": [
             {
@@ -398,12 +398,12 @@ export const SCENARIOS = [
         "asker": "miru",
         "actor": "reda",
         "text_1": {
-            "de": "Reda isst ihr Abendessen oft nicht auf. Die letzten achtmal hat sie ihr Abendessen aufgrund folgender Ursachen nicht aufgegessen",
-            "en": "Reda often doesn’t finish her dinner.  The last eight times she didn’t finish her dinner was for the following reasons"
+            "de": "Das ist Reda. <br>Reda isst ihr Abendessen oft nicht auf.<br>Die letzten achtmal hat sie ihr Abendessen aufgrund folgender Ursachen nicht aufgegessen",
+            "en": "This is Reda. <br>Reda often doesn’t finish her dinner.<br>The last eight times she didn’t finish her dinner was for the following reasons"
         },
         "text_2": {
-            "de": "Reda hat ihr Abendessen heute wiedermal nicht afgegessen. Ihr Freund Miru will herausfinden warum. Er fragt Reda:Hast du dein Abendessen nicht beendet, weil",
-            "en": "Reda didn’t finish her dinner again today.  Her friend Miru wants to find out why.  He asks Reda:Did you not finish your dinner because"
+            "de": "Reda hat ihr Abendessen heute wiedermal nicht afgegessen.<br>Ihr Freund Miru will herausfinden warum.<br>Er fragt Reda: Hast du dein Abendessen nicht beendet, weil",
+            "en": "Reda didn’t finish her dinner again today.<br>Her friend Miru wants to find out why.<br>He asks Reda: Did you not finish your dinner because"
         },
         "questions": [
             {
@@ -595,12 +595,12 @@ export const SCENARIOS = [
         "asker": "leli",
         "actor": "domu",
         "text_1": {
-            "de": "Domu hat ein Spielzeugauto, aber dieses funktioniert oft nicht. Die letzten achtmal hat Domus Spielzeugauto aufgrund der folgenden Ursachen nicht funktioniert",
-            "en": "Domu has a toy car but his toy car is often not working. In the last eight times, Domu’s car was not working for the following reasons"
+            "de": "Das ist Domu. <br>Domu hat ein Spielzeugauto, aber dieses funktioniert oft nicht.<br>Die letzten achtmal hat Domus Spielzeugauto aufgrund der folgenden Ursachen nicht funktioniert",
+            "en": "This is Domu. <br>Domu has a toy car but his toy car is often not working.<br>In the last eight times, Domu’s car was not working for the following reasons"
         },
         "text_2": {
-            "de": "Domus Auto funktioniert wiedermal nicht. Seine Freundin Leli will heruasfinden warum. Sie fragt Domu:Funktioniert dein Auto nicht, weil",
-            "en": "Domu’s car is not working again. His friend Leli wants to find out why. She asks Domu:Is your car not working because"
+            "de": "Domus Auto funktioniert wiedermal nicht.<br>Seine Freundin Leli will heruasfinden warum.<br>Sie fragt Domu: Funktioniert dein Auto nicht, weil",
+            "en": "Domu’s car is not working again.<br>His friend Leli wants to find out why.<br>She asks Domu: Is your car not working because"
         },
         "questions": [
             {
@@ -792,12 +792,12 @@ export const SCENARIOS = [
         "asker": "toma",
         "actor": "mimi",
         "text_1": {
-            "de": "Mimi hat glänzende, weiße Schuhe. Die letzten achtmal waren sie schmutzig aufgrund folgender Ursachen",
-            "en": "Mimi has shiny white shoes but they are often dirty. The last eight times, they were dirty for the following reasons"
+            "de": "Das ist Mimi. <br>Mimi hat glänzende, weiße Schuhe.<br>Die letzten achtmal waren sie schmutzig aufgrund folgender Ursachen",
+            "en": "This is Mimi. <br>Mimi has shiny white shoes but they are often dirty.<br>The last eight times, they were dirty for the following reasons"
         },
         "text_2": {
-            "de": "Mimis Schuhe sind wiedermal schmutzig. Sein Freund Toma will herausfinden warum. Er fragt Mimi:Sind deine  Schuhe schmutzig, weil",
-            "en": "Mimi’s shoes are dirty again.  His friend Toma wants to find out why.  He asks Mimi:Are your shoes are dirty because"
+            "de": "Mimis Schuhe sind wiedermal schmutzig.<br>Sein Freund Toma will herausfinden warum.<br>Er fragt Mimi: Sind deine Schuhe schmutzig, weil",
+            "en": "Mimi’s shoes are dirty again.<br>His friend Toma wants to find out why.<br>He asks Mimi: Are your shoes are dirty because"
         },
         "questions": [
             {
@@ -989,12 +989,12 @@ export const SCENARIOS = [
         "asker": "fidi",
         "actor": "leli",
         "text_1": {
-            "de": "Leli ist ein glückliches Mädchen aber sie weint oft. Die letzten achtmal hat Leli geweint aufgrund folgender Ursachen",
-            "en": "Leli is a happy girl but she cries often.  The last 8 times Leli cried for the following reasons"
+            "de": "Das ist Leli. <br>Leli ist ein glückliches Mädchen aber sie weint oft.<br>Die letzten achtmal hat Leli geweint aufgrund folgender Ursachen",
+            "en": "This is Leli. <br>Leli is a happy girl but she cries often.<br>The last 8 times Leli cried for the following reasons"
         },
         "text_2": {
-            "de": "Leli weint heute wieder. Sein Freund Fidi will herausfrinden warum. Er fragt Leli:Weinst du, weil",
-            "en": "Leli is crying again today.  His friend Fidi wants to find out why. He asks Leli:Are you crying because"
+            "de": "Leli weint heute wieder.<br>Sein Freund Fidi will herausfrinden warum.<br>Er fragt Leli: Weinst du, weil",
+            "en": "Leli is crying again today.<br>His friend Fidi wants to find out why.<br>He asks Leli: Are you crying because"
         },
         "questions": [
             {
@@ -1184,12 +1184,12 @@ export const SCENARIOS = [
         "asker": "domu",
         "actor": "kota",
         "text_1": {
-            "de": "Kota liebt es draußen zu spielen. Aber manchmal mag sie draußen spielen nicht. Die letzten achtmal hat sie draußen nicht gespielt aufgrund folgender Ursachen",
-            "en": "Kota loves playing outside.  But sometimes she doesn’t play outside. The last eight times she didn’t play outside for the following reasons"
+            "de": "Das ist Kota. <br>Kota liebt es draußen zu spielen.<br>Aber manchmal mag sie draußen spielen nicht.<br>Die letzten achtmal hat sie draußen nicht gespielt aufgrund folgender Ursachen",
+            "en": "This is Kota. <br>Kota loves playing outside.<br>But sometimes she doesn’t play outside.<br>The last eight times she didn’t play outside for the following reasons"
         },
         "text_2": {
-            "de": "Kota hat heute wieder nicht draußen gespielt. Ihr Freund Domu will herausfinden warum. Er fragt Kota:Wolltest Du  nicht draußen spielen, weil",
-            "en": "Kota didn’t play outside again today. Her friend Domu wants to find out why.  He asks Kota:Did you not play outside because "
+            "de": "Kota hat heute wieder nicht draußen gespielt.<br>Ihr Freund Domu will herausfinden warum.<br>Er fragt Kota: Wolltest Du  nicht draußen spielen, weil",
+            "en": "Kota didn’t play outside again today.<br>Her friend Domu wants to find out why.<br>He asks Kota: Did you not play outside because "
         },
         "questions": [
             {
@@ -1381,12 +1381,12 @@ export const SCENARIOS = [
         "asker": "mimi",
         "actor": "tuba",
         "text_1": {
-            "de": "Tuba sieht sich gern Trickfilme an. Aber manchmal sieht er sich keine an. Die letzten achtmal hat er sich keine Trickfilme angesehen aufgrund folgender Ursachen",
-            "en": "Tuba likes to watch cartoons but sometimes he doesn’t watch them. The last 8 times Luca did not watch cartoons because of the following reasons"
+            "de": "Das ist Tuba. <br>Tuba sieht sich gern Trickfilme an.<br>Aber manchmal sieht er sich keine an.<br>Die letzten achtmal hat er sich keine Trickfilme angesehen aufgrund folgender Ursachen",
+            "en": "This is Tuba. <br>Tuba likes to watch cartoons but sometimes he doesn’t watch them.<br>The last 8 times Tuba did not watch cartoons because of the following reasons"
         },
         "text_2": {
-            "de": "Heute hat Tuba keine Trickfilme geschaut. Sein Freundin Gilia will herausfinden warum. Sie fragt Tuba:Hast du heute keine Trickfilme geschaut, weil",
-            "en": "Today Tuba was not watching cartoons. His friend Gilu wants to find out why.  She ask Tuba:Did you not watch cartoons\ntoday because"
+            "de": "Heute hat Tuba keine Trickfilme geschaut.<br>Sein Freundin Gilia will herausfinden warum.<br>Sie fragt Tuba: Hast du heute keine Trickfilme geschaut, weil",
+            "en": "Today Tuba was not watching cartoons.<br>His friend Gilu wants to find out why.<br>She ask Tuba: Did you not watch cartoons today because"
         },
         "questions": [
             {
@@ -1395,7 +1395,11 @@ export const SCENARIOS = [
                     "de": "jemand anderes etwas anschaute?",
                     "en": "someone else watched something else?"
                 },
-                "bubble": ["film", "football", "tennis"],
+                "bubble": [
+                    "film",
+                    "football",
+                    "tennis"
+                ],
                 "type": "CS4",
                 "ig": 1,
                 "hints": [
@@ -1415,7 +1419,9 @@ export const SCENARIOS = [
                     "de": "du stattdessen draußen gespielt hast?",
                     "en": "you played outside instead?"
                 },
-                "bubble": ["outside"],
+                "bubble": [
+                    "outside"
+                ],
                 "type": "HS4",
                 "ig": 1,
                 "hints": [
@@ -1435,7 +1441,9 @@ export const SCENARIOS = [
                     "de": "deine Mutter einen Film anschaute?",
                     "en": "your mother watched a film?"
                 },
-                "bubble": ["film"],
+                "bubble": [
+                    "film"
+                ],
                 "type": "HS2",
                 "ig": 0.81,
                 "hints": [
@@ -1455,7 +1463,9 @@ export const SCENARIOS = [
                     "de": "dein Vater Tennis anschaute?",
                     "en": "your father watched tennis?"
                 },
-                "bubble": ["tennis"],
+                "bubble": [
+                    "tennis"
+                ],
                 "type": "HS1",
                 "ig": 0.54,
                 "hints": [
@@ -1475,7 +1485,10 @@ export const SCENARIOS = [
                     "de": "dein Vater etwas anderes anschaute?",
                     "en": "your father watched something else?"
                 },
-                "bubble": ["football", "tennis"],
+                "bubble": [
+                    "football",
+                    "tennis"
+                ],
                 "type": "CS2",
                 "ig": 0.81,
                 "hints": [
@@ -1495,7 +1508,11 @@ export const SCENARIOS = [
                     "de": "jemand anderes etwas anschaute?",
                     "en": "someone else watched something else?"
                 },
-                "bubble": ["film", "football", "tennis"],
+                "bubble": [
+                    "film",
+                    "football",
+                    "tennis"
+                ],
                 "type": "CS7",
                 "ig": 0.54,
                 "hints": [
@@ -1515,7 +1532,10 @@ export const SCENARIOS = [
                     "de": "dein Vater etwas anderes anschaute?",
                     "en": "your father watched something else?"
                 },
-                "bubble": ["football", "tennis"],
+                "bubble": [
+                    "football",
+                    "tennis"
+                ],
                 "type": "CS3",
                 "ig": 0.95,
                 "hints": [
@@ -1535,7 +1555,9 @@ export const SCENARIOS = [
                     "de": "du stattdessen draußen gespielt hast?",
                     "en": "you played outside instead?"
                 },
-                "bubble": ["outside"],
+                "bubble": [
+                    "outside"
+                ],
                 "type": "HS3",
                 "ig": 0.95,
                 "hints": [

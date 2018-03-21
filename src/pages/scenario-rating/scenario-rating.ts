@@ -27,6 +27,7 @@ export class ScenarioRatingPage {
   }
 
   getBagSize() {
+    if (this.rating < 5) return "5%";
     return new String(this.rating + "%");
   }
 
