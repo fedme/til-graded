@@ -5,7 +5,7 @@ export const SCENARIOS = [
         "actor": "toma",
         "text_1": {
             "de": "Das ist Toma. <br>Toma ist öfters zu spät für die Schule.<br>Die letzten achtmal ist er aufgrund folgender Ursachen zu spät gewesen",
-            "en": "This is Toma. <br>Toma is often late for school.<br>The last 8 times he was late for the following reasons"
+            "en": "This is Toma. <br>Toma is often late for school.<br>The last eight times he was late for the following reasons"
         },
         "text_2": {
             "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil",
@@ -796,8 +796,8 @@ export const SCENARIOS = [
             "en": "This is Mimi. <br>Mimi has shiny white shoes but they are often dirty.<br>The last eight times, they were dirty for the following reasons"
         },
         "text_2": {
-            "de": "Mimis Schuhe sind wiedermal schmutzig.<br>Sein Freund Toma will herausfinden warum.<br>Er fragt Mimi: Sind deine Schuhe schmutzig, weil",
-            "en": "Mimi’s shoes are dirty again.<br>His friend Toma wants to find out why.<br>He asks Mimi: Are your shoes are dirty because"
+            "de": "Mimis Schuhe sind wiedermal schmutzig.<br>Ihr Freund Toma will herausfinden warum.<br>Er fragt Mimi: Sind deine Schuhe schmutzig, weil",
+            "en": "Mimi’s shoes are dirty again.<br>Her friend Toma wants to find out why.<br>He asks Mimi: Are your shoes are dirty because"
         },
         "questions": [
             {
@@ -990,11 +990,11 @@ export const SCENARIOS = [
         "actor": "leli",
         "text_1": {
             "de": "Das ist Leli. <br>Leli ist ein glückliches Mädchen aber sie weint oft.<br>Die letzten achtmal hat Leli geweint aufgrund folgender Ursachen",
-            "en": "This is Leli. <br>Leli is a happy girl but she cries often.<br>The last 8 times Leli cried for the following reasons"
+            "en": "This is Leli. <br>Leli is a happy girl but she cries often.<br>The last eight times Leli cried for the following reasons"
         },
         "text_2": {
-            "de": "Leli weint heute wieder.<br>Sein Freund Fidi will herausfrinden warum.<br>Er fragt Leli: Weinst du, weil",
-            "en": "Leli is crying again today.<br>His friend Fidi wants to find out why.<br>He asks Leli: Are you crying because"
+            "de": "Leli weint heute wieder.<br>Ihr Freund Fidi will herausfrinden warum.<br>Er fragt Leli: Weinst du, weil",
+            "en": "Leli is crying again today.<br>Her friend Fidi wants to find out why.<br>He asks Leli: Are you crying because"
         },
         "questions": [
             {
@@ -1382,11 +1382,11 @@ export const SCENARIOS = [
         "actor": "tuba",
         "text_1": {
             "de": "Das ist Tuba. <br>Tuba sieht sich gern Trickfilme an.<br>Aber manchmal sieht er sich keine an.<br>Die letzten achtmal hat er sich keine Trickfilme angesehen aufgrund folgender Ursachen",
-            "en": "This is Tuba. <br>Tuba likes to watch cartoons but sometimes he doesn’t watch them.<br>The last 8 times Tuba did not watch cartoons because of the following reasons"
+            "en": "This is Tuba. <br>Tuba likes to watch cartoons but sometimes he doesn’t watch them.<br>The last eight times Tuba did not watch cartoons because of the following reasons"
         },
         "text_2": {
-            "de": "Heute hat Tuba keine Trickfilme geschaut.<br>Sein Freundin Gilia will herausfinden warum.<br>Sie fragt Tuba: Hast du heute keine Trickfilme geschaut, weil",
-            "en": "Today Tuba was not watching cartoons.<br>His friend Gilu wants to find out why.<br>She ask Tuba: Did you not watch cartoons today because"
+            "de": "Heute hat Tuba keine Trickfilme geschaut.<br>Sein Freundin Mimi will herausfinden warum.<br>Sie fragt Tuba: Hast du heute keine Trickfilme geschaut, weil",
+            "en": "Today Tuba was not watching cartoons.<br>His friend Mimi wants to find out why.<br>She ask Tuba: Did you not watch cartoons today because"
         },
         "questions": [
             {

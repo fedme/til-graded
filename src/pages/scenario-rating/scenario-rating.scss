@@ -2,20 +2,25 @@ page-scenario-rating {
   ion-grid {
     //margin-top: 30px;
   }
-  ion-row#top {
-    //padding-top: 10px;
+
+  .row{
+    align-items: center;
   }
+
   ion-row#half {
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  ion-row#top {
     text-align: center;
-    min-height: 450px;
+    min-height: 300px;
   }
   ion-row#history {
     //margin-top: 10px;
     text-align: center;
   }
   ion-row#bottom {
-    margin-top: 15px;
+    margin-top: 0px;
     text-align: center;
   }
   ion-col.bordered {
@@ -32,9 +37,11 @@ page-scenario-rating {
       margin-bottom: 30px;
     }
   }
-  img.check {
-    display: block;
-    max-width: 70px;
-    margin: auto;
+
+  p.name {
+    text-transform: capitalize;
+    margin-top: -5px;
+    font-size: large;
+    padding-left: 30px;
   }
 }

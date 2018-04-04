@@ -27,8 +27,8 @@ export class ScenarioRatingPage {
   }
 
   getBagSize() {
-    if (this.rating < 5) return "5%";
-    return new String(this.rating + "%");
+    const perc = 40 + (this.rating * 60/100)
+    return new String(perc + "%");
   }
 
   confirmNext() {

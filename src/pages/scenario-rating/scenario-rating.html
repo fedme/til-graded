@@ -11,8 +11,21 @@
   <ion-grid>
 
     <ion-row id="top">
-      <ion-col></ion-col>
+      <ion-col col-2></ion-col>
       <ion-col col-8 text-center>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col><img src="assets/img/bag.png" [attr.width]="getBagSize()" class="rating-bag"></ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+
+
+    <ion-row id="half">
+      <ion-col></ion-col>
+      <ion-col col-10 text-center>
         <ion-list>
           <ion-item>
             <ion-range min="0" max="100" step="2" [(ngModel)]="rating" (ionChange)="sliderChanged()"></ion-range>
@@ -22,26 +35,19 @@
       <ion-col></ion-col>
     </ion-row>
 
-    <ion-row id="half">
-      <ion-col col-3>
+    <ion-row id="bottom">
+      <ion-col col-5></ion-col>
+      <ion-col col-2 text-left>
         <asker-monster></asker-monster>
+        <p class="name">{{stimuli.scenario.raw.asker}}</p>
       </ion-col>
-      <ion-col col-1></ion-col>
-      <ion-col col-4>
-        <img src="assets/img/bag.png" [attr.width]="getBagSize()">
-      </ion-col>
-      <ion-col col-4></ion-col>
+      <ion-col col-5></ion-col>
     </ion-row>
 
+
     <ion-row id="history">
-      <ion-col col-2>
-        <!--spacer-->
-      </ion-col>
       <ion-col class="bordered" *ngFor="let hint of stimuli.scenario.question.hints">
         <img src="assets/img/{{hint}}.png">
-      </ion-col>
-      <ion-col col-2>
-        <!--spacer-->
       </ion-col>
     </ion-row>
 
