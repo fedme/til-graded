@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Stimuli } from '../../providers/providers';
 
@@ -14,6 +14,8 @@ export class ScenarioRatingPage {
   changed: boolean = false;
   nextConfirmed: boolean = false;
 
+  @ViewChild('sweetsBag') sweetsBag: ElementRef;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private stimuli: Stimuli, private toastCtrl: ToastController) {
     this.changed = false;
   }
@@ -22,14 +24,13 @@ export class ScenarioRatingPage {
     console.log('ionViewDidLoad ScenarioRatingPage');
   }
 
-  sliderChanged() {
+  sliderChanged(evt) {
     this.changed = true;
+    const width = (40 + (evt.value * 60/100)) + "%"
+    //console.log(width)
+    this.sweetsBag.nativeElement.style.width = width
   }
 
-  getBagSize() {
-    const perc = 40 + (this.rating * 60/100)
-    return new String(perc + "%");
-  }
 
   confirmNext() {
     if (!this.changed) {

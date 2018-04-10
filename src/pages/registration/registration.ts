@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController, ModalController } from 'ionic-angular';
 import { Stimuli, Data } from '../../providers/providers';
 
 @IonicPage({
@@ -12,7 +12,8 @@ import { Stimuli, Data } from '../../providers/providers';
 export class RegistrationPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private stimuli: Stimuli, private data: Data, private toastCtrl: ToastController) {
+    private stimuli: Stimuli, private data: Data, private toastCtrl: ToastController,
+    private modalCtrl: ModalController) {
       
       // Initialize providers
       this.stimuli.initialize();
@@ -47,6 +48,11 @@ export class RegistrationPage {
       return false;
     }
     return true;
+  }
+
+  showRecords() {
+    let recordsModal = this.modalCtrl.create("ViewRecordsPage");
+    recordsModal.present();
   }
 
   parseUrlParams() {

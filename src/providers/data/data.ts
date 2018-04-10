@@ -9,6 +9,7 @@ export class Data {
 
   recordsNumber: number;
   data: Map<string, any>;
+  allRecords;
 
   constructor(private storage: Storage, private filesystem: File, private api: Api,
     private stimuli: Stimuli) {
@@ -17,6 +18,7 @@ export class Data {
 
   initialize() {
     this.data = null;
+    this.allRecords = null;
     this.updateRecordsNumber();
   }
 
@@ -99,6 +101,15 @@ export class Data {
     }
     out = out + "</table>";
     return out;
+  }
+
+  loadAllRecords() {
+    this.storageGetAll()
+      .then(records => {
+        console.log("[debug] storage.loadAllRecords()");
+        this.allRecords = records;
+        console.log(this.allRecords);
+      });
   }
 
   exportRecordsAsJSON() {

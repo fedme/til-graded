@@ -10,6 +10,6 @@ import { RegistrationPage } from './registration';
   imports: [
     IonicPageModule.forChild(RegistrationPage),
     TranslateModule.forChild()
-  ],
+  ]
 })
 export class RegistrationPageModule {}

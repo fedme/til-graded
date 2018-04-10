@@ -15,7 +15,9 @@
       <ion-col col-8 text-center>
         <ion-row>
           <ion-col></ion-col>
-          <ion-col><img src="assets/img/bag.png" [attr.width]="getBagSize()" class="rating-bag"></ion-col>
+          <ion-col>
+            <img #sweetsBag src="assets/img/bag.png" class="rating-bag">
+          </ion-col>
           <ion-col></ion-col>
         </ion-row>
       </ion-col>
@@ -28,7 +30,7 @@
       <ion-col col-10 text-center>
         <ion-list>
           <ion-item>
-            <ion-range min="0" max="100" step="2" [(ngModel)]="rating" (ionChange)="sliderChanged()"></ion-range>
+            <ion-range min="0" max="100" step="2" [(ngModel)]="rating" (ionChange)="sliderChanged($event)"></ion-range>
           </ion-item>
         </ion-list>
       </ion-col>

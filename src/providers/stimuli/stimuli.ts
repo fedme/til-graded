@@ -23,7 +23,9 @@ export class Stimuli {
   constructor(private utils: Utils, private platform: Platform) {
     console.log('Hello Stimuli Provider');
     this.participant = new Participant("anonymous-" + this.utils.getCounterValue());
-    this.runInBrowser = this.platform.is('core') || this.platform.is('mobileweb');
+    //this.runInBrowser = this.platform.is('core') || this.platform.is('mobileweb');
+    this.runInBrowser = false
+    console.log("You are running", this.platform)
   }
 
   initialize() {
