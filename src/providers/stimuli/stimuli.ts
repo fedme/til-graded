@@ -3,11 +3,13 @@ import { Platform } from 'ionic-angular';
 import { Utils } from '../utils/utils';
 import { Participant } from '../../models/participant';
 import { SCENARIOS } from './scenarios';
+import { SCENARIOS_SHORT } from './scenarios-short';
 
 @Injectable()
 export class Stimuli {
 
   // general exp
+  shortVersion: boolean;
   condition: any;
   conditionId: number;
   initialTimestamp: number;
@@ -23,21 +25,23 @@ export class Stimuli {
   constructor(private utils: Utils, private platform: Platform) {
     console.log('Hello Stimuli Provider');
     this.participant = new Participant("anonymous-" + this.utils.getCounterValue());
-    //this.runInBrowser = this.platform.is('core') || this.platform.is('mobileweb');
+    //this.runInBrowser = this.platform.is('core') || this.platform.is('mobileweb'); TODO: not detecting windows UWA
     this.runInBrowser = false
     console.log("You are running", this.platform)
   }
 
   initialize() {
-
+    this.shortVersion = false; // TODO
     this.scenarioIndex = -1;
     this.ratings = [];
-
     this.initialTimestamp = Date.now(); 
     this.participant = new Participant("anonymous-" + this.utils.getCounterValue());
   }
 
-  initializeConditions() {
+  initializeConditions(isShortVersion: boolean = false) {
+    if (isShortVersion) {
+      this.shortVersion = true;
+    }
     this.initialTimestamp = Date.now(); 
     this.pickCondition();
     this.setupScenarios();
@@ -45,7 +49,12 @@ export class Stimuli {
 
   pickCondition() {
     // Pick a condition
-    this.condition = this.utils.pickFirstCondition(); // no random order
+    if (this.shortVersion) {
+      this.condition = this.utils.pickOneConditionShort();
+    }
+    else {
+      this.condition = this.utils.pickFirstCondition();
+    }
     this.conditionId = this.condition['id'];
     console.log('Picked condition', this.condition);
   }
@@ -54,12 +63,19 @@ export class Stimuli {
 
     // scenarios present fixed order 2 4 1 6 7 8 5 3
     this.scenarios = [];
-    const scenariosIds = [2, 4, 1, 6, 7, 8, 5, 3];
+    let scenariosIds = [2, 4, 1, 6, 7, 8, 5, 3];
+    let allScenarios = SCENARIOS;
+
+    if (this.shortVersion) {
+      scenariosIds = [1, 2];
+      allScenarios = SCENARIOS_SHORT;
+    }
+
     for (let id of scenariosIds) {
       this.scenarios.push({
-        "raw": SCENARIOS[id-1],
+        "raw": allScenarios[id-1],
         "question_id": this.condition['s_' + id],
-        "question": SCENARIOS[id-1]['questions'][this.condition['s_' + id] - 1]
+        "question": allScenarios[id-1]['questions'][this.condition['s_' + id] - 1]
       });
     }
 

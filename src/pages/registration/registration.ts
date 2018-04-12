@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController, ModalController } from 'ionic-angular';
+import { Component} from '@angular/core';
+import { IonicPage, NavController, NavParams, ToastController, ModalController, Platform } from 'ionic-angular';
 import { Stimuli, Data } from '../../providers/providers';
 
 @IonicPage({
@@ -11,10 +11,19 @@ import { Stimuli, Data } from '../../providers/providers';
 })
 export class RegistrationPage {
 
+  isShortVersion: boolean;
+
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private stimuli: Stimuli, private data: Data, private toastCtrl: ToastController,
-    private modalCtrl: ModalController) {
+    private modalCtrl: ModalController, private platform: Platform) {
       
+      if (this.platform.is('android') || this.platform.is('ios')) {
+        this.isShortVersion = false;
+      }
+      else {
+        this.isShortVersion = true;
+      }
+
       // Initialize providers
       this.stimuli.initialize();
       this.data.initialize();
@@ -31,7 +40,7 @@ export class RegistrationPage {
 
   handleRegistration() {
     if (this.validateRegistration()) {
-      this.stimuli.initializeConditions();
+      this.stimuli.initializeConditions(this.isShortVersion);
       this.navCtrl.setRoot('CoverStoryPage');
     }
   }

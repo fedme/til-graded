@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import { CONDITIONS } from '../stimuli/conditions';
+import { CONDITIONS_SHORT } from '../stimuli/conditions-short';
 
 @Injectable()
 export class Utils {
@@ -113,6 +114,37 @@ export class Utils {
     const condition = allConditions[0];
     allConditions.splice(0, 1);
     localStorage.setItem("isrc-all-conditions", JSON.stringify(allConditions));
+    return condition;
+  }
+
+  getAllConditionsShort() {
+    // Parse all conditions form local storage
+    let allConditions = null;
+    if (localStorage.getItem("isrc-all-conditions-short") != null) {
+      allConditions = JSON.parse(localStorage.getItem("isrc-all-conditions-short"));
+    }
+
+    if (allConditions != null && allConditions.constructor === Array && allConditions.length > 0) {
+      return allConditions;
+    }
+    else {
+      localStorage.setItem("isrc-all-conditions-short", JSON.stringify(CONDITIONS_SHORT));
+      return CONDITIONS_SHORT;
+    }
+  }
+
+  pickOneConditionShort(random: boolean = true) {
+    let allConditions = this.getAllConditionsShort();
+    const condition = this.pickRandFromArrayNoRep(allConditions);
+    localStorage.setItem("isrc-all-conditions-short", JSON.stringify(allConditions));
+    return condition;
+  }
+
+  pickFirstConditionShort() {
+    let allConditions = this.getAllConditionsShort();
+    const condition = allConditions[0];
+    allConditions.splice(0, 1);
+    localStorage.setItem("isrc-all-conditions-short", JSON.stringify(allConditions));
     return condition;
   }
 
