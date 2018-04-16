@@ -51,6 +51,14 @@
                 <ion-label>Play short version</ion-label>
                 <ion-checkbox [(ngModel)]="isShortVersion" name="isShortVersion"></ion-checkbox>
               </ion-item>
+              <ion-item>
+                <ion-label>Language</ion-label>
+                <ion-select [(ngModel)]="lang" name="lang">
+                  <ion-option value="en">English</ion-option>
+                  <ion-option value="de">Deutsch</ion-option>
+                  <ion-option value="es">Español</ion-option>
+                </ion-select>
+              </ion-item>
             </ion-list>
           </form>
         </div>

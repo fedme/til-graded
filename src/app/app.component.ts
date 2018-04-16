@@ -3,11 +3,11 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-
 import { TranslateService } from '@ngx-translate/core';
 import { AndroidFullScreen } from '@ionic-native/android-full-screen';
 
 import { RegistrationPage } from '../pages/registration/registration';
+import { Stimuli} from '../providers/providers';
 
 declare var cordova: any;
 
@@ -18,7 +18,8 @@ export class MyApp {
   rootPage: any = 'RegistrationPage';
 
   constructor(private translate: TranslateService, private platform: Platform, private statusBar: StatusBar,
-    private splashScreen: SplashScreen, private androidFullScreen: AndroidFullScreen) {
+    private splashScreen: SplashScreen, private androidFullScreen: AndroidFullScreen,
+    private stimuli: Stimuli) {
     platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
@@ -51,16 +52,20 @@ export class MyApp {
 	}
 
   initTranslate() {
-    // Set the default language for translation strings, and the current language.
+    // Set the default language
     this.translate.setDefaultLang('en');
 
-    const runInBrowser = this.platform.is('core') || this.platform.is('mobileweb');
-    if (runInBrowser) {
-      this.translate.use('en');
+    // Get language from local storage
+    if (localStorage.getItem('lang') != null && localStorage.getItem('lang') != '') {
+      this.translate.use(localStorage.getItem('lang'));
     }
-    else {
-      this.translate.use('en');
-    }
+
+    // Update language when changed by an app component
+    this.stimuli.langChangedEvent.subscribe(lang => {
+      console.log('language change evend emitted: ', lang);
+      this.translate.use(lang);
+    });
+
   }
 
 }

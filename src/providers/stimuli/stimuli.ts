@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { Utils } from '../utils/utils';
 import { Participant } from '../../models/participant';
@@ -7,6 +7,9 @@ import { SCENARIOS_SHORT } from './scenarios-short';
 
 @Injectable()
 export class Stimuli {
+
+  public langChangedEvent: EventEmitter<string> = new EventEmitter();
+  lang: string = "en";
 
   // general exp
   shortVersion: boolean;
@@ -28,6 +31,10 @@ export class Stimuli {
     //this.runInBrowser = this.platform.is('core') || this.platform.is('mobileweb'); TODO: not detecting windows UWA
     this.runInBrowser = false
     console.log("You are running", this.platform)
+
+    if (localStorage.getItem('lang') != null && localStorage.getItem('lang') != "") {
+      this.lang = localStorage.getItem('lang')
+    }
   }
 
   initialize() {
@@ -105,6 +112,10 @@ export class Stimuli {
   getParticipantAgeGroup() {
     if (this.participant.age >= 18) return 18;
     return this.participant.age;
+  }
+
+  setLang(langCode: string) {
+    this.langChangedEvent.emit(langCode);
   }
 
 }

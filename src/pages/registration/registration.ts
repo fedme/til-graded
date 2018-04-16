@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController, ModalController, Platform } from 'ionic-angular';
 import { Stimuli, Data } from '../../providers/providers';
+import { TranslateService } from '@ngx-translate/core';
 
 @IonicPage({
   priority: 'high'
@@ -12,21 +13,26 @@ import { Stimuli, Data } from '../../providers/providers';
 export class RegistrationPage {
 
   isShortVersion: boolean;
+  lang: string = "en";
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private stimuli: Stimuli, private data: Data, private toastCtrl: ToastController,
     private modalCtrl: ModalController, private platform: Platform) {
       
-      if (this.platform.is('android') || this.platform.is('ios')) {
-        this.isShortVersion = false;
-      }
-      else {
-        this.isShortVersion = true;
+
+      // Get if short-version from localStorage
+      if (localStorage.getItem('short-version') != null && localStorage.getItem('short-version') != '') {
+        this.isShortVersion = localStorage.getItem('short-version') == 'true';
       }
 
       // Initialize providers
       this.stimuli.initialize();
       this.data.initialize();
+
+      // Get language from localStorage
+      if (localStorage.getItem('lang') != null && localStorage.getItem('lang') != '') {
+        this.lang = localStorage.getItem('lang');
+      }
 
   }
 
@@ -40,6 +46,15 @@ export class RegistrationPage {
 
   handleRegistration() {
     if (this.validateRegistration()) {
+
+      // Remember if short version
+      localStorage.setItem('short-version', this.isShortVersion ? 'true' : 'false');
+
+      // set Language
+      this.stimuli.setLang(this.lang);
+      localStorage.setItem('lang', this.lang);
+   
+      // initialize stimuli
       this.stimuli.initializeConditions(this.isShortVersion);
       this.navCtrl.setRoot('CoverStoryPage');
     }
