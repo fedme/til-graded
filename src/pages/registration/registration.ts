@@ -14,11 +14,14 @@ export class RegistrationPage {
 
   isShortVersion: boolean;
   lang: string = "en";
+  availableLangs: string[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private stimuli: Stimuli, private data: Data, private toastCtrl: ToastController,
-    private modalCtrl: ModalController, private platform: Platform) {
+    private modalCtrl: ModalController, private platform: Platform, private translate: TranslateService) {
       
+      this.availableLangs = this.translate.langs;
+      console.log('available langs: ', this.availableLangs);
 
       // Get if short-version from localStorage
       if (localStorage.getItem('short-version') != null && localStorage.getItem('short-version') != '') {
