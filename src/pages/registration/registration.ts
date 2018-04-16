@@ -20,6 +20,7 @@ export class RegistrationPage {
     private stimuli: Stimuli, private data: Data, private toastCtrl: ToastController,
     private modalCtrl: ModalController, private platform: Platform, private translate: TranslateService) {
       
+      // Parse available langs
       this.availableLangs = this.translate.langs;
       console.log('available langs: ', this.availableLangs);
 
