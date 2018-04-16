@@ -12,7 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class RegistrationPage {
 
-  isShortVersion: boolean;
+  isShortVersion: boolean = false;
   lang: string = "en";
   availableLangs: string[];
 
