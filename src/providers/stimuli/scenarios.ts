@@ -8,7 +8,8 @@ export const SCENARIOS = [
             "en": "This is Toma. <br>Toma is often late for school.<br>The last eight times he was late for the following reasons"
         },
         "text_2": {
-            "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil"
+            "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil",
+            "en": "Toma was late again today.<br>Toma's friend Reda already knows why Toma was late the last eight times, and wants to find out which of these has made Toma late again today.<br>She asks Toma: Were you late for school because"
         },
         "questions": [
             {
