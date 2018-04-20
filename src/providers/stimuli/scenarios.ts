@@ -8,8 +8,7 @@ export const SCENARIOS = [
             "en": "This is Toma. <br>Toma is often late for school.<br>The last eight times he was late for the following reasons"
         },
         "text_2": {
-            "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil",
-            "en": "Toma was late again today.<br>Toma’s friend Reda wants to find out why.<br>She asks Toma: Were you late for school because"
+            "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil"
         },
         "questions": [
             {
@@ -194,7 +193,8 @@ export const SCENARIOS = [
                     "socks"
                 ]
             }
-        ]
+        ],
+        "en": "Toma was late again today.<br>Toma’s friend Reda already knows why Toma was late the last eight times,and wants to find out which of these has made Toma late again today.<br>She asks Toma: Were you late for school because"
     },
     {
         "id": 2,
@@ -202,11 +202,11 @@ export const SCENARIOS = [
         "actor": "fidi",
         "text_1": {
             "de": "Das ist Fidi. <br>Fidi nimmt Schwimmunterricht, aber er verpasst diesen oft.<br>Die letzten achtmal hat er den Schwimmunterricht aufgrund folgender Ursachen verpasst",
-            "en": "This is Fidi. <br>Fidi goes to swimming classes, but he often misses them.<br>The last eight times he’s missed his swimming class for the following reasons"
+            "en": "This is Fidi. <br>Fidi goes to swimming class, but he often miss them.<br>The last eight times he missed his swimming class for the following reasons"
         },
         "text_2": {
             "de": "Fidi hat seinen Schwimmunterricht diese Woche wieder verpasst.<br>Seine Freundin Kota will herausfinden warum.<br>Sie fragt Fidi: Hast du den Schwimmkurs verpasst, weil",
-            "en": "Fidi missed his swimming class again this week.<br>His friend Kota wants to find out why.<br>She asks Fidi: Did you miss the swimming class because"
+            "en": "Fidi missed his swimming class again today.<br>His friend Kota already knows why Fidi missed his swimming class the last eight times, and wants to find out which of these has made Fidi missed his swimming class again today.<br>She asks Fidi: Did you miss the swimming class because"
         },
         "questions": [
             {
@@ -303,7 +303,7 @@ export const SCENARIOS = [
                 "id": 5,
                 "text": {
                     "de": "du beim Tierarzt warst?",
-                    "en": "You went to the vet?"
+                    "en": "you went to the vet?"
                 },
                 "bubble": [
                     "dog",
@@ -399,18 +399,18 @@ export const SCENARIOS = [
         "actor": "reda",
         "text_1": {
             "de": "Das ist Reda. <br>Reda isst ihr Abendessen oft nicht auf.<br>Die letzten achtmal hat sie ihr Abendessen aufgrund folgender Ursachen nicht aufgegessen",
-            "en": "This is Reda. <br>Reda often doesn’t finish her dinner.<br>The last eight times she didn’t finish her dinner was for the following reasons"
+            "en": "This is Reda. <br>Reda often doesn’t finish her dinner.<br>The last eight times she didn’t finish her dinner for the following reasons"
         },
         "text_2": {
             "de": "Reda hat ihr Abendessen heute wiedermal nicht afgegessen.<br>Ihr Freund Miru will herausfinden warum.<br>Er fragt Reda: Hast du dein Abendessen nicht beendet, weil",
-            "en": "Reda didn’t finish her dinner again today.<br>Her friend Miru wants to find out why.<br>He asks Reda: Did you not finish your dinner because"
+            "en": "Reda didn’t finish her dinner again today.<br>Her friend Miru already knows why Reda didn't finish her dinner the last eight times, and wants to find out which of these has made Reda not finish her dinner again today.<br>He asks Reda: Did you not finish your dinner because"
         },
         "questions": [
             {
                 "id": 1,
                 "text": {
                     "de": "du etwas darin nicht magst?",
-                    "en": "you don’t like something in it?"
+                    "en": "you didn't like something in it?"
                 },
                 "bubble": [
                     "tomato",
@@ -456,7 +456,7 @@ export const SCENARIOS = [
                 "id": 3,
                 "text": {
                     "de": "du keine Tomaten magst?",
-                    "en": "you don’t like the tomatoes?"
+                    "en": "you didn't like the tomatoes?"
                 },
                 "bubble": [
                     "tomato"
@@ -478,7 +478,7 @@ export const SCENARIOS = [
                 "id": 4,
                 "text": {
                     "de": "du keine Erbsen magst?",
-                    "en": "you don’t like the peas?"
+                    "en": "you didn't like the peas?"
                 },
                 "bubble": [
                     "peas"
@@ -500,7 +500,7 @@ export const SCENARIOS = [
                 "id": 5,
                 "text": {
                     "de": "du kein grünes Gemüse magst?",
-                    "en": "you don’t like green vegetables?"
+                    "en": "you didn't like green vegetables?"
                 },
                 "bubble": [
                     "broccoli",
@@ -523,7 +523,7 @@ export const SCENARIOS = [
                 "id": 6,
                 "text": {
                     "de": "du etwas darin nicht magst?",
-                    "en": "you don’t like something in it?"
+                    "en": "you didn't like something in it?"
                 },
                 "bubble": [
                     "tomato",
@@ -547,7 +547,7 @@ export const SCENARIOS = [
                 "id": 7,
                 "text": {
                     "de": "du kein grünes Gemüse magst?",
-                    "en": "you don’t like green vegetables?"
+                    "en": "you didn't like green vegetables?"
                 },
                 "bubble": [
                     "broccoli",
@@ -600,7 +600,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Domus Auto funktioniert wiedermal nicht.<br>Seine Freundin Leli will heruasfinden warum.<br>Sie fragt Domu: Funktioniert dein Auto nicht, weil",
-            "en": "Domu’s car is not working again.<br>His friend Leli wants to find out why.<br>She asks Domu: Is your car not working because"
+            "en": "Domu’s toy car is not working again today.<br>His friend Leli already knows why Domu's toy car was not working the last eight times, and wants to find out which of these has made Domu's toy car not work again today.<br>She asks Domu: Is your toy car not working because"
         },
         "questions": [
             {
@@ -797,7 +797,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Mimis Schuhe sind wiedermal schmutzig.<br>Ihr Freund Toma will herausfinden warum.<br>Er fragt Mimi: Sind deine Schuhe schmutzig, weil",
-            "en": "Mimi’s shoes are dirty again.<br>Her friend Toma wants to find out why.<br>He asks Mimi: Are your shoes are dirty because"
+            "en": "Mimi’s shoes are dirty again today.<br>Her friend Toma already knows why Mimi's shoes were dirty the last eight times, and wants to find out which of these has made Mimi's shoes dirty again today.<br>He asks Mimi: Are your shoes dirty because"
         },
         "questions": [
             {
@@ -994,7 +994,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Leli weint heute wieder.<br>Ihr Freund Fidi will herausfrinden warum.<br>Er fragt Leli: Weinst du, weil",
-            "en": "Leli is crying again today.<br>Her friend Fidi wants to find out why.<br>He asks Leli: Are you crying because"
+            "en": "Leli is crying again today.<br>Her friend Fidi already knows why Leli was crying the last eight times, and wants to find out which of these has made Leli cry again today.<br>He asks Leli: Are you crying because"
         },
         "questions": [
             {
@@ -1189,7 +1189,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Kota hat heute wieder nicht draußen gespielt.<br>Ihr Freund Domu will herausfinden warum.<br>Er fragt Kota: Wolltest Du  nicht draußen spielen, weil",
-            "en": "Kota didn’t play outside again today.<br>Her friend Domu wants to find out why.<br>He asks Kota: Did you not play outside because "
+            "en": "Kota didn’t play outside again today.<br>Her friend Domu already knows why Kota didn't play outside the last eight times, and wants to find out which of these has made Kota not play outside again today.<br>He asks Kota: Did you not play outside because "
         },
         "questions": [
             {
@@ -1382,11 +1382,11 @@ export const SCENARIOS = [
         "actor": "tuba",
         "text_1": {
             "de": "Das ist Tuba. <br>Tuba sieht sich gern Trickfilme an.<br>Aber manchmal sieht er sich keine an.<br>Die letzten achtmal hat er sich keine Trickfilme angesehen aufgrund folgender Ursachen",
-            "en": "This is Tuba. <br>Tuba likes to watch cartoons but sometimes he doesn’t watch them.<br>The last eight times Tuba did not watch cartoons because of the following reasons"
+            "en": "This is Tuba. <br>Tuba likes to watch cartoons but sometimes he doesn’t watch them.<br>The last eight times Tuba didn't watch cartoons because of the following reasons"
         },
         "text_2": {
             "de": "Heute hat Tuba keine Trickfilme geschaut.<br>Sein Freundin Mimi will herausfinden warum.<br>Sie fragt Tuba: Hast du heute keine Trickfilme geschaut, weil",
-            "en": "Today Tuba was not watching cartoons.<br>His friend Mimi wants to find out why.<br>She ask Tuba: Did you not watch cartoons today because"
+            "en": "Tuba didn't watch cartoons again today.<br>His friend Mimi already knows why Tuba didn't watch cartoons the last eight times, and wants to find out which of these has made Tuba not watch cartoons today.<br>She asks Tuba: Did you not watch cartoons today because"
         },
         "questions": [
             {

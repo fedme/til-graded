@@ -30,10 +30,10 @@ export class ScenarioQuestionPage {
   }
 
   getQuestionText() {
-    if (this.stimuli.scenario && this.stimuli.scenario.question[this.translate.currentLang] != null) {
-      return this.stimuli.scenario.question[this.translate.currentLang];
+    if (this.stimuli.scenario && this.stimuli.scenario.question.text[this.translate.currentLang] != null) {
+      return this.stimuli.scenario.question.text[this.translate.currentLang];
     }
-    else return this.stimuli.scenario.question.en;
+    else return this.stimuli.scenario.question.text.en;
   }
 
   ionViewDidLoad() {
