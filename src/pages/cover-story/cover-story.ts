@@ -24,7 +24,7 @@ export class CoverStoryPage {
 
   next() {
     if (!this.nextConfirmed) return;
-    this.navCtrl.setRoot('ScenarioPresentPage');
+    this.navCtrl.setRoot('SliderFamPage');
   }
 
 }

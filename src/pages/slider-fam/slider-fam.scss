@@ -1,0 +1,51 @@
+slider-fam {
+  ion-grid {
+    //margin-top: 30px;
+  }
+
+  .row{
+    align-items: center;
+  }
+
+  ion-row#half {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  ion-row#top {
+    text-align: center;
+    min-height: 300px;
+  }
+  ion-row#history {
+    //margin-top: 10px;
+    text-align: center;
+  }
+  ion-row#bottom {
+    margin-top: 0px;
+    text-align: center;
+  }
+  ion-col.bordered {
+    border: 2px solid black;
+    border-radius: 10%;
+    margin: 3px;
+  }
+  .content-wrapper {
+    padding: 10px;
+    background: beige;
+    border-radius: 10px;
+    font-size: large;
+    h1 {
+      margin-bottom: 30px;
+    }
+  }
+
+  p.name {
+    text-transform: capitalize;
+    margin-top: -5px;
+    font-size: large;
+    padding-left: 30px;
+  }
+
+  img.rating-bag {
+    width: 70%;
+  }
+}

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button *ngIf="!nextConfirmed" ion-button (click)="confirmNext()">{{'SCENARIO.NEXT' | translate}}</button>
+      <button *ngIf="nextConfirmed" ion-button (click)="next()" color="secondary">{{'SCENARIO.NEXT_CONFIRM' | translate}}</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+
+    <ion-row id="top">
+      <ion-col col-2></ion-col>
+      <ion-col col-8 text-center>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col>
+            <img #sweetsBag src="assets/img/bag.png" class="rating-bag">
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>    
+
+    <ion-row id="half">
+      <ion-col></ion-col>
+      <ion-col col-10 text-center>
+        <ion-list>
+          <ion-item>
+            <ion-range min="0" max="100" step="2" [(ngModel)]="rating" (ionChange)="sliderChanged($event)"></ion-range>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

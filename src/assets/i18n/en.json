@@ -10,7 +10,7 @@
       "SUBMIT": "Begin experiment"
     },
     "COVER_STORY": {
-      "TEXT": "Here are some monsters from the Planet Apres. <br>We will hear stories about them and will try and find out more information about them.",
+      "TEXT": "Here are some monsters from the planet Apres. <br>We're going to hear some stories about them. <br>In the stories, these monsters are going to ask questions, you will have to tell me how good you think these questions are and we’re going to give these monsters sweets for their questions. <br>If they’re good questions we’re going to give them lots of sweets, if they’re bad, we’re going to give them only a few sweets.",
       "NEXT": "Next",
       "NEXT_CONFIRM": "Next (press again to confirm)"
     },
