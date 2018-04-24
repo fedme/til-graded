@@ -206,7 +206,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Fidi hat seinen Schwimmunterricht diese Woche wieder verpasst.<br>Seine Freundin Kota will herausfinden warum.<br>Sie fragt Fidi: Hast du den Schwimmkurs verpasst, weil",
-            "en": "Today, Fidi missed his swimming class again.<br>His friend Kota already knows these are the reasons why Fede missed his swimming class the last eight times.<br>Do you remember? <br> Now, Kota wants to find out for which of these reasons Fede missed his swimming class again.<br>She asks Fidi: Did you miss you swimming class because"
+            "en": "Today, Fidi missed his swimming class again.<br>His friend Kota already knows these are the reasons why Fidi missed his swimming class the last eight times.<br>Do you remember? <br> Now, Kota wants to find out for which of these reasons Fidi missed his swimming class again.<br>She asks Fidi: Did you miss you swimming class because"
         },
         "questions": [
             {
@@ -281,7 +281,7 @@ export const SCENARIOS = [
                 "id": 4,
                 "text": {
                     "de": "du deine Katze zum Tierarzt gebracht hast?",
-                    "en": "you took your cat to the vet?"
+                    "en": "you took your cat to the animal doctor?"
                 },
                 "bubble": [
                     "cat"
@@ -303,7 +303,7 @@ export const SCENARIOS = [
                 "id": 5,
                 "text": {
                     "de": "du beim Tierarzt warst?",
-                    "en": "you went to the vet?"
+                    "en": "you took your pet to the animal doctor?"
                 },
                 "bubble": [
                     "dog",
@@ -350,7 +350,7 @@ export const SCENARIOS = [
                 "id": 7,
                 "text": {
                     "de": "du beim Tierarzt warst?",
-                    "en": "you went to the vet?"
+                    "en": "you took your pet to the animal doctor?"
                 },
                 "bubble": [
                     "dog",
@@ -403,7 +403,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Reda hat ihr Abendessen heute wiedermal nicht afgegessen.<br>Ihr Freund Miru will herausfinden warum.<br>Er fragt Reda: Hast du dein Abendessen nicht beendet, weil",
-            "en": "Today, Reda didn’t finish her dinner again.<br>Her friend Miru already knows why Reda didn't finish her dinner the last eight times.<br>Do you remember?<br>Now, Reda wants to find out for which of these reasons Reda not finish her dinner again.<br>He asks Reda: Did you not finish your dinner because"
+            "en": "Today, Reda didn’t finish her dinner again.<br>Her friend Miru already knows why Reda didn't finish her dinner the last eight times.<br>Do you remember?<br>Now, Miru wants to find out for which of these reasons Reda didn't finish her dinner again.<br>He asks Reda: Did you not finish your dinner because"
         },
         "questions": [
             {
@@ -990,11 +990,11 @@ export const SCENARIOS = [
         "actor": "leli",
         "text_1": {
             "de": "Das ist Leli. <br>Leli ist ein glückliches Mädchen aber sie weint oft.<br>Die letzten achtmal hat Leli geweint aufgrund folgender Ursachen",
-            "en": "This is Leli. <br>Leli is a happy girl but she cries often.<br>The last eight times Leli cried for the following reasons"
+            "en": "This is Leli. <br>Leli is a happy girl but she cries often.<br>The last eight times Leli was crying for the following reasons"
         },
         "text_2": {
             "de": "Leli weint heute wieder.<br>Ihr Freund Fidi will herausfrinden warum.<br>Er fragt Leli: Weinst du, weil",
-            "en": "Today,Leli is crying again.<br>Her friend Fidi already knows why Leli was crying the last eight times.<br> Now, Fidi wants to find out for which of these reasons Leli was crying again today.<br>He asks Leli: Are you crying because"
+            "en": "Today, Leli is crying again.<br>Her friend Fidi already knows why Leli was crying the last eight times.<br>Do you remember?<br> Now, Fidi wants to find out for which of these reasons Leli is crying again today.<br>He asks Leli: Are you crying because"
         },
         "questions": [
             {
@@ -1004,7 +1004,9 @@ export const SCENARIOS = [
                     "en": "of something your brother did?"
                 },
                 "bubble": [
-                    "shout"
+                    "shout",
+                    "elephant",
+                    "horse"
                 ],
                 "type": "CS4",
                 "ig": 1,

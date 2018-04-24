@@ -9,7 +9,7 @@ export const SCENARIOS_SHORT = [
         },
         "text_2": {
             "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil",
-            "en": "Toma was late again today.<br>Toma’s friend Reda wants to find out why.<br>She asks Toma: Were you late for school because"
+            "en": "Today, Toma was late again.<br> His friend Reda already knows why Toma was late the last eight times.<br>Do you remember?<br>Now, Reda wants to find out for which of these reasons Toma was late for school again.<br>She asks Toma: Were you late for school because"
         },
         "questions": [
             {
@@ -112,11 +112,11 @@ export const SCENARIOS_SHORT = [
         "actor": "fidi",
         "text_1": {
             "de": "Das ist Fidi. <br>Fidi nimmt Schwimmunterricht, aber er verpasst diesen oft.<br>Die letzten achtmal hat er den Schwimmunterricht aufgrund folgender Ursachen verpasst",
-            "en": "This is Fidi. <br>Fidi goes to swimming classes, but he often misses them.<br>The last eight times he’s missed his swimming class for the following reasons"
+            "en": "This is Fidi. <br>Fidi goes to swimming classes, but he often misses them.<br>The last eight times he missed his swimming class for the following reasons"
         },
         "text_2": {
             "de": "Fidi hat seinen Schwimmunterricht diese Woche wieder verpasst.<br>Seine Freundin Kota will herausfinden warum.<br>Sie fragt Fidi: Hast du den Schwimmkurs verpasst, weil",
-            "en": "Fidi missed his swimming class again this week.<br>His friend Kota wants to find out why.<br>She asks Fidi: Did you miss the swimming class because"
+            "en": "Today, Fidi missed his swimming class again.<br>His friend Kota already knows these are the reasons why Fidi missed his swimming class the last eight times.<br>Do you remember? <br> Now, Kota wants to find out for which of these reasons Fidi missed his swimming class again.<br>She asks Fidi: Did you miss you swimming class because"
         },
         "questions": [
             {
@@ -169,7 +169,7 @@ export const SCENARIOS_SHORT = [
                 "id": 4,
                 "text": {
                     "de": "du deine Katze zum Tierarzt gebracht hast?",
-                    "en": "you took your cat to the vet?"
+                    "en": "you took your cat to the animal doctor?"
                 },
                 "bubble": [
                     "cat"
@@ -212,5 +212,5 @@ export const SCENARIOS_SHORT = [
                 ]
             }
         ]
-    } 
+    }
 ]
