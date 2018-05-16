@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -15,36 +13,51 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+
 // Large screens fix
 @media (min-width: 1250px) {
+
+  ion-grid {
+    width: 1000px !important;
+    margin: auto !important;
+    position: relative;
+  }
+  .scroll-content {
+    overflow-y: auto;
+  }
+
+  .platform-ios,
+  .platform-android {
     ion-grid {
-      width: 1250px !important;
+      width: 1200px !important;
       margin: auto !important;
       position: relative;
     }
-  
     .scroll-content {
-      overflow-y:auto;
+      overflow-y: auto;
     }
   }
 
-// web and ios SVG responsive fix
-.platform-core, .platform-mobilebrowser, .platform-ios {
-    object {
-        width: 100%;
-        display: block;
-        height: auto;
-        position: relative;
-        padding-top: 100%;
-        margin-bottom: -15%;
-        margin-top: -15%;
-    } 
+}
 
-    svg {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+// web and ios SVG responsive fix
+.platform-core,
+.platform-mobilebrowser,
+.platform-ios {
+  object {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+    padding-top: 100%;
+    margin-bottom: -15%;
+    margin-top: -15%;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
