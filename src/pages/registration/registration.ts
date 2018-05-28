@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController, ModalController, Platform } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, AlertController } from 'ionic-angular';
 import { Stimuli, Data } from '../../providers/providers';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -16,9 +16,15 @@ export class RegistrationPage {
   lang: string = "en";
   availableLangs: string[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-    private stimuli: Stimuli, private data: Data, private toastCtrl: ToastController,
-    private modalCtrl: ModalController, private platform: Platform, private translate: TranslateService) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    private stimuli: Stimuli, 
+    private data: Data, 
+    private modalCtrl: ModalController,
+    private translate: TranslateService,
+    private alertCtrl: AlertController,
+  ) {
       
       // Parse available langs
       this.availableLangs = this.translate.langs;
@@ -49,33 +55,49 @@ export class RegistrationPage {
   }
 
   handleRegistration() {
-    if (this.validateRegistration()) {
+    // Remember if short version
+    localStorage.setItem('short-version', this.isShortVersion ? 'true' : 'false');
 
-      // Remember if short version
-      localStorage.setItem('short-version', this.isShortVersion ? 'true' : 'false');
-
-      // set Language
-      this.stimuli.setLang(this.lang);
-      localStorage.setItem('lang', this.lang);
-   
-      // initialize stimuli
-      this.stimuli.initializeConditions(this.isShortVersion);
-      this.navCtrl.setRoot('CoverStoryPage');
-    }
+    // set Language
+    this.stimuli.setLang(this.lang);
+    localStorage.setItem('lang', this.lang);
+  
+    // initialize stimuli
+    this.stimuli.initializeConditions(this.isShortVersion);
+    this.navCtrl.setRoot('CoverStoryPage');
   }
 
   validateRegistration() {
     const ageNull = this.stimuli.participant.age == null;
     const genderNull = this.stimuli.participant.gender == null;
     if (ageNull || genderNull) {
-      let toast = this.toastCtrl.create({
-        message: 'Please fill all the required fields',
-        duration: 3000
+
+      if (ageNull) {
+        this.stimuli.participant.age = 0;
+      }
+
+      let alert = this.alertCtrl.create({
+        title: 'Proceed without age/gender?',
+        message: 'Are you sure you want to proceed without entering age/gender?',
+        buttons: [
+          {
+            text: 'Yes',
+            handler: () => {
+              this.handleRegistration();
+            }
+          },
+          {
+            text: 'No',
+            role: 'cancel',
+            handler: () => {}
+          }
+        ]
       });
-      toast.present();
-      return false;
+      alert.present();
     }
-    return true;
+    else {
+      this.handleRegistration();
+    }
   }
 
   showRecords() {

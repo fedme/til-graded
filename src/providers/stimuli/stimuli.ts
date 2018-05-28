@@ -4,12 +4,14 @@ import { Utils } from '../utils/utils';
 import { Participant } from '../../models/participant';
 import { SCENARIOS } from './scenarios';
 import { SCENARIOS_SHORT } from './scenarios-short';
+import { AppInfo } from './app-info';
 
 @Injectable()
 export class Stimuli {
 
+  appInfo: AppInfo = AppInfo;
+
   public langChangedEvent: EventEmitter<string> = new EventEmitter();
-  lang: string = "en";
 
   // general exp
   shortVersion: boolean;
@@ -25,16 +27,15 @@ export class Stimuli {
   scenarioIndex: number = -1;
   ratings: number[] = [];
   
-  constructor(private utils: Utils, private platform: Platform) {
+  constructor(
+    private utils: Utils, 
+    private platform: Platform
+  ) {
     console.log('Hello Stimuli Provider');
     this.participant = new Participant("anonymous-" + this.utils.getCounterValue());
     //this.runInBrowser = this.platform.is('core') || this.platform.is('mobileweb'); TODO: not detecting windows UWA
     this.runInBrowser = false
     console.log("You are running", this.platform)
-
-    if (localStorage.getItem('lang') != null && localStorage.getItem('lang') != "") {
-      this.lang = localStorage.getItem('lang')
-    }
   }
 
   initialize() {
