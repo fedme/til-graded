@@ -13,8 +13,13 @@ export class ScenarioPresentPage {
 
   nextConfirmed: boolean = false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private stimuli: Stimuli, 
-    private utils: Utils, private translate: TranslateService) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams, 
+    private stimuli: Stimuli, 
+    private utils: Utils, 
+    private translate: TranslateService
+  ) {
 
     if (this.stimuli.areThereMoreScenarios()) {
       this.stimuli.goToNextScenario();

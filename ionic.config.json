@@ -1,6 +1,6 @@
 {
   "name": "halo",
-  "app_id": "",
+  "app_id": "98d554bd",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
