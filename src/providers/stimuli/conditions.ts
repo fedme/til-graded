@@ -1,1578 +1,4347 @@
 export const CONDITIONS = [
     {
         "id": 1,
-        "asker": "reda",
-        "actor": "toma",
-        "text_1": {
-            "de": "Das ist Toma. <br>Toma ist öfters zu spät in der Schule.<br>Die letzten achtmal ist er wegen folgender Gründe zu spät gewesen",
-            "en": "This is Toma. <br>Toma is often late for school.<br>The last eight times he was late for the following reasons"
-        },
-        "text_2": {
-            "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil",
-            "en": "Today, Toma was late again.<br> His friend Reda already knows why Toma was late the last eight times.<br>Do you remember?<br>Now, Reda wants to find out for which of these reasons Toma was late for school again.<br>She asks Toma: Were you late for school because"
-        },
-        "questions": [
-            {
-                "id": 1,
-                "text": {
-                    "de": "du etwas nicht finden konntest?",
-                    "en": "you couldn’t find something?"
-                },
-                "bubble": [
-                    "bycicle",
-                    "hat",
-                    "socks"
-                ],
-                "type": "CS4",
-                "ig": 1,
-                "hints": [
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "bycicle",
-                    "bycicle",
-                    "hat",
-                    "socks"
-                ]
-            },
-            {
-                "id": 2,
-                "text": {
-                    "de": "du verschlafen hast?",
-                    "en": "you slept late?"
-                },
-                "bubble": [
-                    "overslept"
-                ],
-                "type": "HS4",
-                "ig": 1,
-                "hints": [
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "bycicle",
-                    "bycicle",
-                    "hat",
-                    "socks"
-                ]
-            },
-            {
-                "id": 3,
-                "text": {
-                    "de": "du dein Fahrrad nicht finden konntes?",
-                    "en": "you couldn’t find your bike?"
-                },
-                "bubble": [
-                    "bycicle"
-                ],
-                "type": "HS2",
-                "ig": 0.81,
-                "hints": [
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "bycicle",
-                    "bycicle",
-                    "hat",
-                    "socks"
-                ]
-            },
-            {
-                "id": 4,
-                "text": {
-                    "de": "du deine Socken nicht finden konntes?",
-                    "en": "you couldn’t find your socks?"
-                },
-                "bubble": [
-                    "socks"
-                ],
-                "type": "HS1",
-                "ig": 0.54,
-                "hints": [
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "bycicle",
-                    "bycicle",
-                    "hat",
-                    "socks"
-                ]
-            },
-            {
-                "id": 5,
-                "text": {
-                    "de": "du ein Kleidungsstück nicht finden konntest?",
-                    "en": "you couldn’t find a piece of clothing?"
-                },
-                "bubble": [
-                    "hat",
-                    "socks"
-                ],
-                "type": "CS2",
-                "ig": 0.81,
-                "hints": [
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "bycicle",
-                    "bycicle",
-                    "hat",
-                    "socks"
-                ]
-            },
-            {
-                "id": 6,
-                "text": {
-                    "de": "du etwas nicht finden konntest?",
-                    "en": "you couldn’t find something?"
-                },
-                "bubble": [
-                    "bycicle",
-                    "hat",
-                    "socks"
-                ],
-                "type": "CS7",
-                "ig": 0.54,
-                "hints": [
-                    "overslept",
-                    "bycicle",
-                    "bycicle",
-                    "hat",
-                    "hat",
-                    "hat",
-                    "hat",
-                    "socks"
-                ]
-            },
-            {
-                "id": 7,
-                "text": {
-                    "de": "du ein Kleidungsstück nicht finden konntest?",
-                    "en": "you couldn’t find a piece of clothing?"
-                },
-                "bubble": [
-                    "hat",
-                    "socks"
-                ],
-                "type": "CS3",
-                "ig": 0.95,
-                "hints": [
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "bycicle",
-                    "bycicle",
-                    "hat",
-                    "hat",
-                    "socks"
-                ]
-            },
-            {
-                "id": 8,
-                "text": {
-                    "de": "du verschlafen hast?",
-                    "en": "you slept late?"
-                },
-                "bubble": [
-                    "overslept"
-                ],
-                "type": "HS3",
-                "ig": 0.95,
-                "hints": [
-                    "overslept",
-                    "overslept",
-                    "overslept",
-                    "bycicle",
-                    "bycicle",
-                    "hat",
-                    "hat",
-                    "socks"
-                ]
-            }
-        ]
+        "s_1": 7,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 3,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 6,
+        "s_8": 1
     },
     {
         "id": 2,
-        "asker": "kota",
-        "actor": "fidi",
-        "text_1": {
-            "de": "Das ist Fidi. <br>Fidi nimmt Schwimmunterricht, aber er kommt öfters nicht.<br>Die letzten achtmal hat er den Schwimmunterricht wegen folgender Gründe ausfallen lassen",
-            "en": "This is Fidi. <br>Fidi goes to swimming class, but he often misses them.<br>The last eight times he missed his swimming class for the following reasons"
-        },
-        "text_2": {
-            "de": "Fidi kam diese Woche wieder nicht zum Schwimmunterricht.<br>Seine Freundin Kota will herausfinden warum.<br>Sie fragt Fidi: Bist du nicht zum Schwimmkurs gekommen, weil",
-            "en": "Today, Fidi missed his swimming class again.<br>His friend Kota already knows these are the reasons why Fidi missed his swimming class the last eight times.<br>Do you remember? <br> Now, Kota wants to find out for which of these reasons Fidi missed his swimming class again.<br>She asks Fidi: Did you miss you swimming class because"
-        },
-        "questions": [
-            {
-                "id": 1,
-                "text": {
-                    "de": "du woanders hin gegangen bist?",
-                    "en": "you went somewhere else?"
-                },
-                "bubble": [
-                    "cake",
-                    "dog",
-                    "cat"
-                ],
-                "type": "CS4",
-                "ig": 1,
-                "hints": [
-                    "bus",
-                    "bus",
-                    "bus",
-                    "bus",
-                    "cake",
-                    "cake",
-                    "dog",
-                    "cat"
-                ]
-            },
-            {
-                "id": 2,
-                "text": {
-                    "de": "du den Bus verpasst hast?",
-                    "en": "you missed the bus?"
-                },
-                "bubble": [
-                    "bus"
-                ],
-                "type": "HS4",
-                "ig": 1,
-                "hints": [
-                    "bus",
-                    "bus",
-                    "bus",
-                    "bus",
-                    "cake",
-                    "cake",
-                    "dog",
-                    "cat"
-                ]
-            },
-            {
-                "id": 3,
-                "text": {
-                    "de": "du bei einer Geburtstagsfeier warst?",
-                    "en": "you went to a birthday party?"
-                },
-                "bubble": [
-                    "cake"
-                ],
-                "type": "HS2",
-                "ig": 0.81,
-                "hints": [
-                    "bus",
-                    "bus",
-                    "bus",
-                    "bus",
-                    "cake",
-                    "cake",
-                    "dog",
-                    "cat"
-                ]
-            },
-            {
-                "id": 4,
-                "text": {
-                    "de": "du deine Katze zum Tierarzt gebracht hast?",
-                    "en": "you took your cat to the animal doctor?"
-                },
-                "bubble": [
-                    "cat"
-                ],
-                "type": "HS1",
-                "ig": 0.54,
-                "hints": [
-                    "bus",
-                    "bus",
-                    "bus",
-                    "bus",
-                    "cake",
-                    "cake",
-                    "dog",
-                    "cat"
-                ]
-            },
-            {
-                "id": 5,
-                "text": {
-                    "de": "du dein Haustier zum Tierarzt gebracht hast?",
-                    "en": "you took your pet to the animal doctor?"
-                },
-                "bubble": [
-                    "dog",
-                    "cat"
-                ],
-                "type": "CS2",
-                "ig": 0.81,
-                "hints": [
-                    "bus",
-                    "bus",
-                    "bus",
-                    "bus",
-                    "cake",
-                    "cake",
-                    "dog",
-                    "cat"
-                ]
-            },
-            {
-                "id": 6,
-                "text": {
-                    "de": "du woanders hin gegangen bist?",
-                    "en": "you went somewhere else?"
-                },
-                "bubble": [
-                    "cake",
-                    "dog",
-                    "cat"
-                ],
-                "type": "CS7",
-                "ig": 0.54,
-                "hints": [
-                    "bus",
-                    "cake",
-                    "cake",
-                    "dog",
-                    "dog",
-                    "dog",
-                    "dog",
-                    "cat"
-                ]
-            },
-            {
-                "id": 7,
-                "text": {
-                    "de": "du dein Haustier zum Tierarzt gebracht hast?",
-                    "en": "you took your pet to the animal doctor?"
-                },
-                "bubble": [
-                    "dog",
-                    "cat"
-                ],
-                "type": "CS3",
-                "ig": 0.95,
-                "hints": [
-                    "bus",
-                    "bus",
-                    "bus",
-                    "cake",
-                    "cake",
-                    "dog",
-                    "dog",
-                    "cat"
-                ]
-            },
-            {
-                "id": 8,
-                "text": {
-                    "de": "du den Bus verpasst hast?",
-                    "en": "you missed the bus?"
-                },
-                "bubble": [
-                    "bus"
-                ],
-                "type": "HS3",
-                "ig": 0.95,
-                "hints": [
-                    "bus",
-                    "bus",
-                    "bus",
-                    "cake",
-                    "cake",
-                    "dog",
-                    "dog",
-                    "cat"
-                ]
-            }
-        ]
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 3,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 7,
+        "s_8": 2
     },
     {
         "id": 3,
-        "asker": "miru",
-        "actor": "reda",
-        "text_1": {
-            "de": "Das ist Reda. <br>Reda isst ihr Abendessen oft nicht auf.<br>Die letzten achtmal hat sie ihr Abendessen wegen folgender Gründe nicht aufgegessen",
-            "en": "This is Reda. <br>Reda often doesn’t finish her dinner.<br>The last eight times she didn’t finish her dinner for the following reasons"
-        },
-        "text_2": {
-            "de": "Reda hat ihr Abendessen heute wiedermal nicht aufgegessen.<br>Ihr Freund Miru will herausfinden warum.<br>Er fragt Reda: Hast du dein Abendessen nicht aufgegessen, weil",
-            "en": "Today, Reda didn’t finish her dinner again.<br>Her friend Miru already knows why Reda didn't finish her dinner the last eight times.<br>Do you remember?<br>Now, Miru wants to find out for which of these reasons Reda didn't finish her dinner again.<br>He asks Reda: Did you not finish your dinner because"
-        },
-        "questions": [
-            {
-                "id": 1,
-                "text": {
-                    "de": "du etwas darin nicht magst?",
-                    "en": "you didn't like something in your dinner plate?"
-                },
-                "bubble": [
-                    "tomato",
-                    "broccoli",
-                    "peas"
-                ],
-                "type": "CS4",
-                "ig": 1,
-                "hints": [
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "tomato",
-                    "tomato",
-                    "broccoli",
-                    "peas"
-                ]
-            },
-            {
-                "id": 2,
-                "text": {
-                    "de": "du einen Keks gegessen hast und  nicht mehr hungrig warst?",
-                    "en": "you ate a biscuit and weren't hungry?"
-                },
-                "bubble": [
-                    "biscuit"
-                ],
-                "type": "HS4",
-                "ig": 1,
-                "hints": [
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "tomato",
-                    "tomato",
-                    "broccoli",
-                    "peas"
-                ]
-            },
-            {
-                "id": 3,
-                "text": {
-                    "de": "du keine Tomaten magst?",
-                    "en": "you didn't like the tomatoes?"
-                },
-                "bubble": [
-                    "tomato"
-                ],
-                "type": "HS2",
-                "ig": 0.81,
-                "hints": [
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "tomato",
-                    "tomato",
-                    "broccoli",
-                    "peas"
-                ]
-            },
-            {
-                "id": 4,
-                "text": {
-                    "de": "du keine Erbsen magst?",
-                    "en": "you didn't like the peas?"
-                },
-                "bubble": [
-                    "peas"
-                ],
-                "type": "HS1",
-                "ig": 0.54,
-                "hints": [
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "tomato",
-                    "tomato",
-                    "broccoli",
-                    "peas"
-                ]
-            },
-            {
-                "id": 5,
-                "text": {
-                    "de": "du kein grünes Gemüse magst?",
-                    "en": "you didn't like green vegetables?"
-                },
-                "bubble": [
-                    "broccoli",
-                    "peas"
-                ],
-                "type": "CS2",
-                "ig": 0.81,
-                "hints": [
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "tomato",
-                    "tomato",
-                    "broccoli",
-                    "peas"
-                ]
-            },
-            {
-                "id": 6,
-                "text": {
-                    "de": "du etwas darin nicht magst?",
-                    "en": "you didn't like something in your dinner plate?"
-                },
-                "bubble": [
-                    "tomato",
-                    "broccoli",
-                    "peas"
-                ],
-                "type": "CS7",
-                "ig": 0.54,
-                "hints": [
-                    "biscuit",
-                    "tomato",
-                    "tomato",
-                    "broccoli",
-                    "broccoli",
-                    "broccoli",
-                    "broccoli",
-                    "peas"
-                ]
-            },
-            {
-                "id": 7,
-                "text": {
-                    "de": "du kein grünes Gemüse magst?",
-                    "en": "you didn't like green vegetables?"
-                },
-                "bubble": [
-                    "broccoli",
-                    "peas"
-                ],
-                "type": "CS3",
-                "ig": 0.95,
-                "hints": [
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "tomato",
-                    "tomato",
-                    "broccoli",
-                    "broccoli",
-                    "peas"
-                ]
-            },
-            {
-                "id": 8,
-                "text": {
-                    "de": "du einen Keks gegessen hast und nicht mehr hungrig warst?",
-                    "en": "you ate a biscuit and weren't hungry?"
-                },
-                "bubble": [
-                    "biscuit"
-                ],
-                "type": "HS3",
-                "ig": 0.95,
-                "hints": [
-                    "biscuit",
-                    "biscuit",
-                    "biscuit",
-                    "tomato",
-                    "tomato",
-                    "broccoli",
-                    "broccoli",
-                    "peas"
-                ]
-            }
-        ]
+        "s_1": 8,
+        "s_2": 3,
+        "s_3": 7,
+        "s_4": 1,
+        "s_5": 6,
+        "s_6": 5,
+        "s_7": 4,
+        "s_8": 2
     },
     {
         "id": 4,
-        "asker": "leli",
-        "actor": "domu",
-        "text_1": {
-            "de": "Das ist Domu. <br>Domu hat ein Spielzeugauto, aber dieses funktioniert oft nicht.<br>Die letzten achtmal hat Domus Spielzeugauto wegen der folgenden Gründe nicht funktioniert",
-            "en": "This is Domu. <br>Domu has a toy car but his toy car is often not working.<br>In the last eight times, Domu’s car was not working for the following reasons"
-        },
-        "text_2": {
-            "de": "Domus Auto funktioniert wiedermal nicht.<br>Seine Freundin Leli will herausfinden warum.<br>Sie fragt Domu: Funktioniert dein Auto nicht, weil",
-            "en": "Today, Domu’s toy car is not working again.<br>His friend Leli knows these are the reasons why Domu's toy car was not working the last eight times.<br>Do you remember?<br>Now Leli wants to find out for which of these reasons his toy car isn’t working again.<br>She asks Domu: Is your toy car not working because"
-        },
-        "questions": [
-            {
-                "id": 1,
-                "text": {
-                    "de": "jemand in deiner Familie es kaputt gemacht hat?",
-                    "en": "someone in your family broke it?"
-                },
-                "bubble": [
-                    "foot",
-                    "wheel",
-                    "water"
-                ],
-                "type": "CS4",
-                "ig": 1,
-                "hints": [
-                    "battery",
-                    "battery",
-                    "battery",
-                    "battery",
-                    "foot",
-                    "foot",
-                    "wheel",
-                    "water"
-                ]
-            },
-            {
-                "id": 2,
-                "text": {
-                    "de": "die Batterie leer ist?",
-                    "en": "the batteries ran out?"
-                },
-                "bubble": [
-                    "battery"
-                ],
-                "type": "HS4",
-                "ig": 1,
-                "hints": [
-                    "battery",
-                    "battery",
-                    "battery",
-                    "battery",
-                    "foot",
-                    "foot",
-                    "wheel",
-                    "water"
-                ]
-            },
-            {
-                "id": 3,
-                "text": {
-                    "de": "deine Mutter darauf getreten ist?",
-                    "en": "your mother stepped on it?"
-                },
-                "bubble": [
-                    "foot"
-                ],
-                "type": "HS2",
-                "ig": 0.81,
-                "hints": [
-                    "battery",
-                    "battery",
-                    "battery",
-                    "battery",
-                    "foot",
-                    "foot",
-                    "wheel",
-                    "water"
-                ]
-            },
-            {
-                "id": 4,
-                "text": {
-                    "de": "dein Bruder es ins Wasser fallen liess?",
-                    "en": "your brother dropped it into water?"
-                },
-                "bubble": [
-                    "water"
-                ],
-                "type": "HS1",
-                "ig": 0.54,
-                "hints": [
-                    "battery",
-                    "battery",
-                    "battery",
-                    "battery",
-                    "foot",
-                    "foot",
-                    "wheel",
-                    "water"
-                ]
-            },
-            {
-                "id": 5,
-                "text": {
-                    "de": "eines deiner Geschwister es kaputt gemacht hat?",
-                    "en": "your sibling broke it?"
-                },
-                "bubble": [
-                    "wheel",
-                    "water"
-                ],
-                "type": "CS2",
-                "ig": 0.81,
-                "hints": [
-                    "battery",
-                    "battery",
-                    "battery",
-                    "battery",
-                    "foot",
-                    "foot",
-                    "wheel",
-                    "water"
-                ]
-            },
-            {
-                "id": 6,
-                "text": {
-                    "de": "jemand in deiner Familie es kaputt gemacht hat?",
-                    "en": "someone in your family broke it?"
-                },
-                "bubble": [
-                    "foot",
-                    "wheel",
-                    "water"
-                ],
-                "type": "CS7",
-                "ig": 0.54,
-                "hints": [
-                    "battery",
-                    "foot",
-                    "foot",
-                    "wheel",
-                    "wheel",
-                    "wheel",
-                    "wheel",
-                    "water"
-                ]
-            },
-            {
-                "id": 7,
-                "text": {
-                    "de": "eines deiner Geschwister es kaputt gemacht hat?",
-                    "en": "your sibling broke it?"
-                },
-                "bubble": [
-                    "wheel",
-                    "water"
-                ],
-                "type": "CS3",
-                "ig": 0.95,
-                "hints": [
-                    "battery",
-                    "battery",
-                    "battery",
-                    "foot",
-                    "foot",
-                    "wheel",
-                    "wheel",
-                    "water"
-                ]
-            },
-            {
-                "id": 8,
-                "text": {
-                    "de": "die Batterie leer ist?",
-                    "en": "the batteries ran out?"
-                },
-                "bubble": [
-                    "battery"
-                ],
-                "type": "HS3",
-                "ig": 0.95,
-                "hints": [
-                    "battery",
-                    "battery",
-                    "battery",
-                    "foot",
-                    "foot",
-                    "wheel",
-                    "wheel",
-                    "water"
-                ]
-            }
-        ]
+        "s_1": 7,
+        "s_2": 3,
+        "s_3": 1,
+        "s_4": 6,
+        "s_5": 8,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 2
     },
     {
         "id": 5,
-        "asker": "toma",
-        "actor": "mimi",
-        "text_1": {
-            "de": "Das ist Mimi. <br>Mimi hat glänzende, weiße Schuhe.<br>Die letzten achtmal waren sie wegen folgender Gründe schmutzig",
-            "en": "This is Mimi. <br>Mimi has shiny white shoes but they are often dirty.<br>The last eight times, they were dirty for the following reasons"
-        },
-        "text_2": {
-            "de": "Mimis Schuhe sind wiedermal schmutzig.<br>Ihr Freund Toma will herausfinden warum.<br>Er fragt Mimi: Sind deine Schuhe schmutzig, weil",
-            "en": "Today, Mimi’s shoes are dirty again.<br>Her friend Toma already knows why Mimi's shoes were dirty the last eight times.<br>Do you remember?<br>Now, Toma wants to find out for which of these reasons Mimi's shoes are dirty again.<br>He asks Mimi: Are your shoes dirty because"
-        },
-        "questions": [
-            {
-                "id": 1,
-                "text": {
-                    "de": "du etwas darauf verschüttet hast?",
-                    "en": "you spilled something on them?"
-                },
-                "bubble": [
-                    "paint",
-                    "chocolate",
-                    "juice"
-                ],
-                "type": "CS4",
-                "ig": 1,
-                "hints": [
-                    "mud",
-                    "mud",
-                    "mud",
-                    "mud",
-                    "paint",
-                    "paint",
-                    "chocolate",
-                    "juice"
-                ]
-            },
-            {
-                "id": 2,
-                "text": {
-                    "de": "du durch den Schlamm gelaufen bist?",
-                    "en": "you stepped into the mud?"
-                },
-                "bubble": [
-                    "mud"
-                ],
-                "type": "HS4",
-                "ig": 1,
-                "hints": [
-                    "mud",
-                    "mud",
-                    "mud",
-                    "mud",
-                    "paint",
-                    "paint",
-                    "chocolate",
-                    "juice"
-                ]
-            },
-            {
-                "id": 3,
-                "text": {
-                    "de": "du Farbe darauf verschüttet hast?",
-                    "en": "you spilled paint on them?"
-                },
-                "bubble": [
-                    "paint"
-                ],
-                "type": "HS2",
-                "ig": 0.81,
-                "hints": [
-                    "mud",
-                    "mud",
-                    "mud",
-                    "mud",
-                    "paint",
-                    "paint",
-                    "chocolate",
-                    "juice"
-                ]
-            },
-            {
-                "id": 4,
-                "text": {
-                    "de": "du Tomatensaft darauf verschüttet hast?",
-                    "en": "you spilled tomato juice on them?"
-                },
-                "bubble": [
-                    "juice"
-                ],
-                "type": "HS1",
-                "ig": 0.54,
-                "hints": [
-                    "mud",
-                    "mud",
-                    "mud",
-                    "mud",
-                    "paint",
-                    "paint",
-                    "chocolate",
-                    "juice"
-                ]
-            },
-            {
-                "id": 5,
-                "text": {
-                    "de": "du ein Getränk darauf verschüttet hast?",
-                    "en": "you spilled a drink on them?"
-                },
-                "bubble": [
-                    "chocolate",
-                    "juice"
-                ],
-                "type": "CS2",
-                "ig": 0.81,
-                "hints": [
-                    "mud",
-                    "mud",
-                    "mud",
-                    "mud",
-                    "paint",
-                    "paint",
-                    "chocolate",
-                    "juice"
-                ]
-            },
-            {
-                "id": 6,
-                "text": {
-                    "de": "du etwas darauf verschüttet hast?",
-                    "en": "you spilled something on them?"
-                },
-                "bubble": [
-                    "paint",
-                    "chocolate",
-                    "juice"
-                ],
-                "type": "CS7",
-                "ig": 0.54,
-                "hints": [
-                    "mud",
-                    "paint",
-                    "paint",
-                    "chocolate",
-                    "chocolate",
-                    "chocolate",
-                    "chocolate",
-                    "juice"
-                ]
-            },
-            {
-                "id": 7,
-                "text": {
-                    "de": "du ein Getränk darauf verschüttet hast?",
-                    "en": "you spilled a drink on them?"
-                },
-                "bubble": [
-                    "chocolate",
-                    "juice"
-                ],
-                "type": "CS3",
-                "ig": 0.95,
-                "hints": [
-                    "mud",
-                    "mud",
-                    "mud",
-                    "paint",
-                    "paint",
-                    "chocolate",
-                    "chocolate",
-                    "juice"
-                ]
-            },
-            {
-                "id": 8,
-                "text": {
-                    "de": "du durch den Schlamm gelaufen bist?",
-                    "en": "you stepped into the mud?"
-                },
-                "bubble": [
-                    "mud"
-                ],
-                "type": "HS3",
-                "ig": 0.95,
-                "hints": [
-                    "mud",
-                    "mud",
-                    "mud",
-                    "paint",
-                    "paint",
-                    "chocolate",
-                    "chocolate",
-                    "juice"
-                ]
-            }
-        ]
+        "s_1": 1,
+        "s_2": 6,
+        "s_3": 3,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 8,
+        "s_7": 4,
+        "s_8": 5
     },
     {
         "id": 6,
-        "asker": "fidi",
-        "actor": "leli",
-        "text_1": {
-            "de": "Das ist Leli. <br>Leli ist ein glückliches Mädchen aber sie weint oft.<br>Die letzten achtmal hat Leli wegen folgender Gründe geweint.",
-            "en": "This is Leli. <br>Leli is a happy girl but she cries often.<br>The last eight times Leli was crying for the following reasons"
-        },
-        "text_2": {
-            "de": "Leli weint heute wieder.<br>Ihr Freund Fidi will herausfrinden warum.<br>Er fragt Leli: Weinst du, weil",
-            "en": "Today, Leli is crying again.<br>Her friend Fidi already knows why Leli was crying the last eight times.<br>Do you remember?<br> Now, Fidi wants to find out for which of these reasons Leli is crying again today.<br>He asks Leli: Are you crying because"
-        },
-        "questions": [
-            {
-                "id": 1,
-                "text": {
-                    "de": "dein Bruder etwas  getan hat?",
-                    "en": "of something your brother did?"
-                },
-                "bubble": [
-                    "shout",
-                    "elephant",
-                    "horse"
-                ],
-                "type": "CS4",
-                "ig": 1,
-                "hints": [
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "shout",
-                    "shout",
-                    "elephant",
-                    "horse"
-                ]
-            },
-            {
-                "id": 2,
-                "text": {
-                    "de": "du hingefallen bist und dich verletzt hast?",
-                    "en": "you fell down and hurt yourself?"
-                },
-                "bubble": [
-                    "plaster"
-                ],
-                "type": "HS4",
-                "ig": 1,
-                "hints": [
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "shout",
-                    "shout",
-                    "elephant",
-                    "horse"
-                ]
-            },
-            {
-                "id": 3,
-                "text": {
-                    "de": "dein Bruder dich angeschrien hat?",
-                    "en": "your brother shouted at you?"
-                },
-                "bubble": [
-                    "shout"
-                ],
-                "type": "HS2",
-                "ig": 0.81,
-                "hints": [
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "shout",
-                    "shout",
-                    "elephant",
-                    "horse"
-                ]
-            },
-            {
-                "id": 4,
-                "text": {
-                    "de": "dein Bruder dein Spielzeugpferd kaputt gemacht hat?",
-                    "en": "your brother broke your toy horse?"
-                },
-                "bubble": [
-                    "horse"
-                ],
-                "type": "HS1",
-                "ig": 0.54,
-                "hints": [
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "shout",
-                    "shout",
-                    "elephant",
-                    "horse"
-                ]
-            },
-            {
-                "id": 5,
-                "text": {
-                    "de": "dein Bruder eines deiner Spielzeuge kaputt gemacht hat?",
-                    "en": "your brother broke one of your toys?"
-                },
-                "bubble": [
-                    "elephant",
-                    "horse"
-                ],
-                "type": "CS2",
-                "ig": 0.81,
-                "hints": [
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "shout",
-                    "shout",
-                    "elephant",
-                    "horse"
-                ]
-            },
-            {
-                "id": 6,
-                "text": {
-                    "de": "dein Bruder etwas getan hat?",
-                    "en": "of something your brother did?"
-                },
-                "bubble": [
-                    "shout",
-                    "elephant",
-                    "horse"
-                ],
-                "type": "CS7",
-                "ig": 0.54,
-                "hints": [
-                    "plaster",
-                    "shout",
-                    "shout",
-                    "elephant",
-                    "elephant",
-                    "elephant",
-                    "elephant",
-                    "horse"
-                ]
-            },
-            {
-                "id": 7,
-                "text": {
-                    "de": "dein Bruder eines deiner Spielzeuge kaputt gemacht hat?",
-                    "en": "your brother broke one of your toys?"
-                },
-                "bubble": [
-                    "elephant",
-                    "horse"
-                ],
-                "type": "CS3",
-                "ig": 0.95,
-                "hints": [
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "shout",
-                    "shout",
-                    "elephant",
-                    "elephant",
-                    "horse"
-                ]
-            },
-            {
-                "id": 8,
-                "text": {
-                    "de": "du hingefallen bist und dich verletzt hast?",
-                    "en": "you fell down and hurt yourself?"
-                },
-                "bubble": [
-                    "plaster"
-                ],
-                "type": "HS3",
-                "ig": 0.95,
-                "hints": [
-                    "plaster",
-                    "plaster",
-                    "plaster",
-                    "shout",
-                    "shout",
-                    "elephant",
-                    "elephant",
-                    "horse"
-                ]
-            }
-        ]
+        "s_1": 5,
+        "s_2": 2,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 3
     },
     {
         "id": 7,
-        "asker": "domu",
-        "actor": "kota",
-        "text_1": {
-            "de": "Das ist Kota. <br>Kota liebt es draußen zu spielen.<br>Aber manchmal spielt sie nicht draußen.<br>Die letzten achtmal hat sie wegen folgender Gründe nicht draußen gespielt",
-            "en": "This is Kota. <br>Kota loves playing outside.<br>But sometimes she doesn’t play outside.<br>The last eight times she didn’t play outside for the following reasons"
-        },
-        "text_2": {
-            "de": "Kota hat heute wieder nicht draußen gespielt.<br>Ihr Freund Domu will herausfinden warum.<br>Er fragt Kota: Wolltest Du  nicht draußen spielen, weil",
-            "en": "Today, Kota didn’t play outside again.<br>Her friend Domu already knows why Kota didn't play outside the last eight times.<br> Do you remember?<br> Now, Domu wants to find out for which of these reasons Kota didn't play outside again.<br>He asks Kota: Did you not play outside because "
-        },
-        "questions": [
-            {
-                "id": 1,
-                "text": {
-                    "de": "das Wetter nicht gut war?",
-                    "en": "the weather was not right?"
-                },
-                "bubble": [
-                    "hot",
-                    "snow",
-                    "wind"
-                ],
-                "type": "CS4",
-                "ig": 1,
-                "hints": [
-                    "playground",
-                    "playground",
-                    "playground",
-                    "playground",
-                    "hot",
-                    "hot",
-                    "snow",
-                    "wind"
-                ]
-            },
-            {
-                "id": 2,
-                "text": {
-                    "de": "der Spielplatz gesperrt war?",
-                    "en": "the playground was closed?"
-                },
-                "bubble": [
-                    "playground"
-                ],
-                "type": "HS4",
-                "ig": 1,
-                "hints": [
-                    "playground",
-                    "playground",
-                    "playground",
-                    "playground",
-                    "hot",
-                    "hot",
-                    "snow",
-                    "wind"
-                ]
-            },
-            {
-                "id": 3,
-                "text": {
-                    "de": "es zu warm war?",
-                    "en": "it was too hot?"
-                },
-                "bubble": [
-                    "hot"
-                ],
-                "type": "HS2",
-                "ig": 0.81,
-                "hints": [
-                    "playground",
-                    "playground",
-                    "playground",
-                    "playground",
-                    "hot",
-                    "hot",
-                    "snow",
-                    "wind"
-                ]
-            },
-            {
-                "id": 4,
-                "text": {
-                    "de": "es zu windig war?",
-                    "en": "it was too windy?"
-                },
-                "bubble": [
-                    "wind"
-                ],
-                "type": "HS1",
-                "ig": 0.54,
-                "hints": [
-                    "playground",
-                    "playground",
-                    "playground",
-                    "playground",
-                    "hot",
-                    "hot",
-                    "snow",
-                    "wind"
-                ]
-            },
-            {
-                "id": 5,
-                "text": {
-                    "de": "es zu kalt war?",
-                    "en": "it was too cold?"
-                },
-                "bubble": [
-                    "snow",
-                    "wind"
-                ],
-                "type": "CS2",
-                "ig": 0.81,
-                "hints": [
-                    "playground",
-                    "playground",
-                    "playground",
-                    "playground",
-                    "hot",
-                    "hot",
-                    "snow",
-                    "wind"
-                ]
-            },
-            {
-                "id": 6,
-                "text": {
-                    "de": "das Wetter nicht gut war?",
-                    "en": "the weather was not right?"
-                },
-                "bubble": [
-                    "hot",
-                    "snow",
-                    "wind"
-                ],
-                "type": "CS7",
-                "ig": 0.54,
-                "hints": [
-                    "playground",
-                    "hot",
-                    "hot",
-                    "snow",
-                    "snow",
-                    "snow",
-                    "snow",
-                    "wind"
-                ]
-            },
-            {
-                "id": 7,
-                "text": {
-                    "de": "es zu kalt war?",
-                    "en": "it was too cold?"
-                },
-                "bubble": [
-                    "snow",
-                    "wind"
-                ],
-                "type": "CS3",
-                "ig": 0.95,
-                "hints": [
-                    "playground",
-                    "playground",
-                    "playground",
-                    "hot",
-                    "hot",
-                    "snow",
-                    "snow",
-                    "wind"
-                ]
-            },
-            {
-                "id": 8,
-                "text": {
-                    "de": "der Spielplatz gesperrt war?",
-                    "en": "the playground was closed?"
-                },
-                "bubble": [
-                    "playground"
-                ],
-                "type": "HS3",
-                "ig": 0.95,
-                "hints": [
-                    "playground",
-                    "playground",
-                    "playground",
-                    "hot",
-                    "hot",
-                    "snow",
-                    "snow",
-                    "wind"
-                ]
-            }
-        ]
+        "s_1": 8,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 5,
+        "s_7": 7,
+        "s_8": 6
     },
     {
         "id": 8,
-        "asker": "mimi",
-        "actor": "tuba",
-        "text_1": {
-            "de": "Das ist Tuba. <br>Tuba sieht sich gern Trickfilme an.<br>Aber manchmal sieht er sich keine an.<br>Die letzten achtmal hat er sich wegen folgender Gründe keine Trickfilme angesehen",
-            "en": "This is Tuba. <br>Tuba likes to watch cartoons but sometimes he doesn’t watch them.<br>The last eight times Tuba didn't watch cartoons because of the following reasons"
-        },
-        "text_2": {
-            "de": "Heute hat Tuba keine Trickfilme geschaut.<br>Seine Freundin Mimi will herausfinden warum.<br>Sie fragt Tuba: Hast du heute keine Trickfilme geschaut, weil",
-            "en": "Today, Tuba didn't watch cartoons again.<br>His friend Mimi already knows why Tuba didn't watch cartoons the last eight times.<br>Do you remember?<br>Now, Mimi wants to find out for which of these reasons Tuba didn't watch cartoons today.<br>She asks Tuba: Did you not watch cartoons today because"
-        },
-        "questions": [
-            {
-                "id": 1,
-                "text": {
-                    "de": "jemand anderes etwas anschaute?",
-                    "en": "you watched something else?"
-                },
-                "bubble": [
-                    "film",
-                    "football",
-                    "tennis"
-                ],
-                "type": "CS4",
-                "ig": 1,
-                "hints": [
-                    "outside",
-                    "outside",
-                    "outside",
-                    "outside",
-                    "film",
-                    "film",
-                    "football",
-                    "tennis"
-                ]
-            },
-            {
-                "id": 2,
-                "text": {
-                    "de": "du stattdessen draußen gespielt hast?",
-                    "en": "you played outside instead?"
-                },
-                "bubble": [
-                    "outside"
-                ],
-                "type": "HS4",
-                "ig": 1,
-                "hints": [
-                    "outside",
-                    "outside",
-                    "outside",
-                    "outside",
-                    "film",
-                    "film",
-                    "football",
-                    "tennis"
-                ]
-            },
-            {
-                "id": 3,
-                "text": {
-                    "de": "deine Mutter einen Film anschaute?",
-                    "en": "you watched a film?"
-                },
-                "bubble": [
-                    "film"
-                ],
-                "type": "HS2",
-                "ig": 0.81,
-                "hints": [
-                    "outside",
-                    "outside",
-                    "outside",
-                    "outside",
-                    "film",
-                    "film",
-                    "football",
-                    "tennis"
-                ]
-            },
-            {
-                "id": 4,
-                "text": {
-                    "de": "dein Vater Tennis angeschaut hat?",
-                    "en": "you watched tennis on TV?"
-                },
-                "bubble": [
-                    "tennis"
-                ],
-                "type": "HS1",
-                "ig": 0.54,
-                "hints": [
-                    "outside",
-                    "outside",
-                    "outside",
-                    "outside",
-                    "film",
-                    "film",
-                    "football",
-                    "tennis"
-                ]
-            },
-            {
-                "id": 5,
-                "text": {
-                    "de": "dein Vater etwas anderes angeschaut hat?",
-                    "en": "you watched sports on TV?"
-                },
-                "bubble": [
-                    "football",
-                    "tennis"
-                ],
-                "type": "CS2",
-                "ig": 0.81,
-                "hints": [
-                    "outside",
-                    "outside",
-                    "outside",
-                    "outside",
-                    "film",
-                    "film",
-                    "football",
-                    "tennis"
-                ]
-            },
-            {
-                "id": 6,
-                "text": {
-                    "de": "jemand anderes etwas angeschaut hat?",
-                    "en": "you watched something else?"
-                },
-                "bubble": [
-                    "film",
-                    "football",
-                    "tennis"
-                ],
-                "type": "CS7",
-                "ig": 0.54,
-                "hints": [
-                    "outside",
-                    "film",
-                    "film",
-                    "football",
-                    "football",
-                    "football",
-                    "football",
-                    "tennis"
-                ]
-            },
-            {
-                "id": 7,
-                "text": {
-                    "de": "dein Vater etwas anderes angeschaut hat?",
-                    "en": "you watched sports on TV?"
-                },
-                "bubble": [
-                    "football",
-                    "tennis"
-                ],
-                "type": "CS3",
-                "ig": 0.95,
-                "hints": [
-                    "outside",
-                    "outside",
-                    "outside",
-                    "film",
-                    "film",
-                    "football",
-                    "football",
-                    "tennis"
-                ]
-            },
-            {
-                "id": 8,
-                "text": {
-                    "de": "du stattdessen draußen gespielt hast?",
-                    "en": "you played outside instead?"
-                },
-                "bubble": [
-                    "outside"
-                ],
-                "type": "HS3",
-                "ig": 0.95,
-                "hints": [
-                    "outside",
-                    "outside",
-                    "outside",
-                    "film",
-                    "film",
-                    "football",
-                    "football",
-                    "tennis"
-                ]
-            }
-        ]
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 7,
+        "s_5": 2,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 9,
+        "s_1": 8,
+        "s_2": 6,
+        "s_3": 7,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 4,
+        "s_7": 3,
+        "s_8": 1
+    },
+    {
+        "id": 10,
+        "s_1": 5,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 6,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 4
+    },
+    {
+        "id": 11,
+        "s_1": 7,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 6,
+        "s_6": 8,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 12,
+        "s_1": 2,
+        "s_2": 8,
+        "s_3": 3,
+        "s_4": 7,
+        "s_5": 5,
+        "s_6": 6,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 13,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 8,
+        "s_4": 1,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 14,
+        "s_1": 7,
+        "s_2": 8,
+        "s_3": 2,
+        "s_4": 6,
+        "s_5": 3,
+        "s_6": 1,
+        "s_7": 5,
+        "s_8": 4
+    },
+    {
+        "id": 15,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 1,
+        "s_5": 6,
+        "s_6": 5,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 16,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 17,
+        "s_1": 5,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 1,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 18,
+        "s_1": 6,
+        "s_2": 2,
+        "s_3": 3,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 7,
+        "s_7": 8,
+        "s_8": 5
+    },
+    {
+        "id": 19,
+        "s_1": 1,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 4
+    },
+    {
+        "id": 20,
+        "s_1": 8,
+        "s_2": 6,
+        "s_3": 5,
+        "s_4": 7,
+        "s_5": 1,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 21,
+        "s_1": 3,
+        "s_2": 6,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 8,
+        "s_6": 1,
+        "s_7": 7,
+        "s_8": 2
+    },
+    {
+        "id": 22,
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 6,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 7,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 23,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 4,
+        "s_6": 3,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 24,
+        "s_1": 2,
+        "s_2": 8,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 6
+    },
+    {
+        "id": 25,
+        "s_1": 6,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 26,
+        "s_1": 1,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 3,
+        "s_6": 7,
+        "s_7": 8,
+        "s_8": 6
+    },
+    {
+        "id": 27,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 3,
+        "s_4": 6,
+        "s_5": 4,
+        "s_6": 7,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 28,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 7,
+        "s_8": 6
+    },
+    {
+        "id": 29,
+        "s_1": 1,
+        "s_2": 2,
+        "s_3": 4,
+        "s_4": 6,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 3,
+        "s_8": 7
+    },
+    {
+        "id": 30,
+        "s_1": 5,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 3,
+        "s_6": 8,
+        "s_7": 4,
+        "s_8": 7
+    },
+    {
+        "id": 31,
+        "s_1": 5,
+        "s_2": 1,
+        "s_3": 7,
+        "s_4": 8,
+        "s_5": 6,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 2
+    },
+    {
+        "id": 32,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 3,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 6
+    },
+    {
+        "id": 33,
+        "s_1": 6,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 7,
+        "s_7": 3,
+        "s_8": 1
+    },
+    {
+        "id": 34,
+        "s_1": 6,
+        "s_2": 3,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 8,
+        "s_6": 7,
+        "s_7": 5,
+        "s_8": 4
+    },
+    {
+        "id": 35,
+        "s_1": 5,
+        "s_2": 2,
+        "s_3": 3,
+        "s_4": 8,
+        "s_5": 7,
+        "s_6": 1,
+        "s_7": 4,
+        "s_8": 6
+    },
+    {
+        "id": 36,
+        "s_1": 5,
+        "s_2": 8,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 4,
+        "s_8": 6
+    },
+    {
+        "id": 37,
+        "s_1": 7,
+        "s_2": 1,
+        "s_3": 5,
+        "s_4": 6,
+        "s_5": 2,
+        "s_6": 8,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 38,
+        "s_1": 7,
+        "s_2": 5,
+        "s_3": 6,
+        "s_4": 8,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 39,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 7,
+        "s_4": 3,
+        "s_5": 4,
+        "s_6": 6,
+        "s_7": 2,
+        "s_8": 5
+    },
+    {
+        "id": 40,
+        "s_1": 1,
+        "s_2": 7,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 2,
+        "s_6": 6,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 41,
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 6,
+        "s_6": 1,
+        "s_7": 7,
+        "s_8": 5
+    },
+    {
+        "id": 42,
+        "s_1": 1,
+        "s_2": 6,
+        "s_3": 3,
+        "s_4": 8,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 43,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 2,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 44,
+        "s_1": 2,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 1,
+        "s_7": 8,
+        "s_8": 4
+    },
+    {
+        "id": 45,
+        "s_1": 6,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 1,
+        "s_7": 8,
+        "s_8": 4
+    },
+    {
+        "id": 46,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 7,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 1,
+        "s_7": 6,
+        "s_8": 2
+    },
+    {
+        "id": 47,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 3,
+        "s_7": 1,
+        "s_8": 8
+    },
+    {
+        "id": 48,
+        "s_1": 1,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 5,
+        "s_8": 7
+    },
+    {
+        "id": 49,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 6,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 8,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 50,
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 2,
+        "s_7": 6,
+        "s_8": 8
+    },
+    {
+        "id": 51,
+        "s_1": 1,
+        "s_2": 7,
+        "s_3": 2,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 8
+    },
+    {
+        "id": 52,
+        "s_1": 6,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 7,
+        "s_5": 3,
+        "s_6": 1,
+        "s_7": 8,
+        "s_8": 2
+    },
+    {
+        "id": 53,
+        "s_1": 2,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 8,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 54,
+        "s_1": 8,
+        "s_2": 2,
+        "s_3": 1,
+        "s_4": 4,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 3,
+        "s_8": 5
+    },
+    {
+        "id": 55,
+        "s_1": 6,
+        "s_2": 4,
+        "s_3": 7,
+        "s_4": 1,
+        "s_5": 5,
+        "s_6": 3,
+        "s_7": 8,
+        "s_8": 2
+    },
+    {
+        "id": 56,
+        "s_1": 7,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 6,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 3,
+        "s_8": 2
+    },
+    {
+        "id": 57,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 3
+    },
+    {
+        "id": 58,
+        "s_1": 5,
+        "s_2": 7,
+        "s_3": 8,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 4,
+        "s_8": 6
+    },
+    {
+        "id": 59,
+        "s_1": 1,
+        "s_2": 4,
+        "s_3": 3,
+        "s_4": 8,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 5,
+        "s_8": 2
+    },
+    {
+        "id": 60,
+        "s_1": 8,
+        "s_2": 6,
+        "s_3": 7,
+        "s_4": 1,
+        "s_5": 2,
+        "s_6": 5,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 61,
+        "s_1": 8,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 7,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 62,
+        "s_1": 2,
+        "s_2": 6,
+        "s_3": 3,
+        "s_4": 8,
+        "s_5": 5,
+        "s_6": 1,
+        "s_7": 4,
+        "s_8": 7
+    },
+    {
+        "id": 63,
+        "s_1": 4,
+        "s_2": 2,
+        "s_3": 3,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 5,
+        "s_8": 8
+    },
+    {
+        "id": 64,
+        "s_1": 2,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 6,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 5,
+        "s_8": 4
+    },
+    {
+        "id": 65,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 2,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 8,
+        "s_8": 5
+    },
+    {
+        "id": 66,
+        "s_1": 7,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 2,
+        "s_6": 8,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 67,
+        "s_1": 4,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 8,
+        "s_5": 7,
+        "s_6": 1,
+        "s_7": 2,
+        "s_8": 6
+    },
+    {
+        "id": 68,
+        "s_1": 6,
+        "s_2": 3,
+        "s_3": 2,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 8,
+        "s_7": 4,
+        "s_8": 7
+    },
+    {
+        "id": 69,
+        "s_1": 2,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 7,
+        "s_7": 3,
+        "s_8": 5
+    },
+    {
+        "id": 70,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 1,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 71,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 2
+    },
+    {
+        "id": 72,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 2,
+        "s_5": 3,
+        "s_6": 8,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 73,
+        "s_1": 2,
+        "s_2": 7,
+        "s_3": 5,
+        "s_4": 3,
+        "s_5": 8,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 74,
+        "s_1": 2,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 8,
+        "s_5": 6,
+        "s_6": 3,
+        "s_7": 7,
+        "s_8": 5
+    },
+    {
+        "id": 75,
+        "s_1": 2,
+        "s_2": 4,
+        "s_3": 6,
+        "s_4": 3,
+        "s_5": 5,
+        "s_6": 7,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 76,
+        "s_1": 1,
+        "s_2": 2,
+        "s_3": 3,
+        "s_4": 6,
+        "s_5": 7,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 8
+    },
+    {
+        "id": 77,
+        "s_1": 5,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 6,
+        "s_5": 8,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 78,
+        "s_1": 2,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 4,
+        "s_8": 8
+    },
+    {
+        "id": 79,
+        "s_1": 1,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 80,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 3,
+        "s_4": 8,
+        "s_5": 2,
+        "s_6": 5,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 81,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 1,
+        "s_4": 4,
+        "s_5": 7,
+        "s_6": 3,
+        "s_7": 8,
+        "s_8": 6
+    },
+    {
+        "id": 82,
+        "s_1": 6,
+        "s_2": 1,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 8,
+        "s_8": 3
+    },
+    {
+        "id": 83,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 6,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 3,
+        "s_7": 1,
+        "s_8": 7
+    },
+    {
+        "id": 84,
+        "s_1": 6,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 3,
+        "s_5": 4,
+        "s_6": 1,
+        "s_7": 7,
+        "s_8": 2
+    },
+    {
+        "id": 85,
+        "s_1": 4,
+        "s_2": 7,
+        "s_3": 6,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 1,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 86,
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 6,
+        "s_4": 1,
+        "s_5": 5,
+        "s_6": 7,
+        "s_7": 8,
+        "s_8": 2
+    },
+    {
+        "id": 87,
+        "s_1": 5,
+        "s_2": 1,
+        "s_3": 7,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 88,
+        "s_1": 2,
+        "s_2": 4,
+        "s_3": 6,
+        "s_4": 1,
+        "s_5": 5,
+        "s_6": 3,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 89,
+        "s_1": 2,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 3,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 90,
+        "s_1": 6,
+        "s_2": 2,
+        "s_3": 3,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 8,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 91,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 6,
+        "s_4": 1,
+        "s_5": 2,
+        "s_6": 5,
+        "s_7": 4,
+        "s_8": 3
+    },
+    {
+        "id": 92,
+        "s_1": 2,
+        "s_2": 1,
+        "s_3": 3,
+        "s_4": 4,
+        "s_5": 7,
+        "s_6": 8,
+        "s_7": 6,
+        "s_8": 5
+    },
+    {
+        "id": 93,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 2,
+        "s_4": 6,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 7,
+        "s_8": 5
+    },
+    {
+        "id": 94,
+        "s_1": 4,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 1,
+        "s_5": 2,
+        "s_6": 8,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 95,
+        "s_1": 1,
+        "s_2": 6,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 3,
+        "s_6": 8,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 96,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 7
+    },
+    {
+        "id": 97,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 1,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 98,
+        "s_1": 1,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 8,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 99,
+        "s_1": 1,
+        "s_2": 7,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 6
+    },
+    {
+        "id": 100,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 4,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 6,
+        "s_8": 1
+    },
+    {
+        "id": 101,
+        "s_1": 4,
+        "s_2": 5,
+        "s_3": 3,
+        "s_4": 8,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 2,
+        "s_8": 1
+    },
+    {
+        "id": 102,
+        "s_1": 1,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 2,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 103,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 3,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 4
+    },
+    {
+        "id": 104,
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 1
+    },
+    {
+        "id": 105,
+        "s_1": 4,
+        "s_2": 2,
+        "s_3": 7,
+        "s_4": 3,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 5
+    },
+    {
+        "id": 106,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 107,
+        "s_1": 2,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 8,
+        "s_7": 3,
+        "s_8": 5
+    },
+    {
+        "id": 108,
+        "s_1": 2,
+        "s_2": 4,
+        "s_3": 6,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 8,
+        "s_8": 3
+    },
+    {
+        "id": 109,
+        "s_1": 4,
+        "s_2": 8,
+        "s_3": 3,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 1,
+        "s_8": 2
+    },
+    {
+        "id": 110,
+        "s_1": 3,
+        "s_2": 5,
+        "s_3": 6,
+        "s_4": 8,
+        "s_5": 4,
+        "s_6": 7,
+        "s_7": 1,
+        "s_8": 2
+    },
+    {
+        "id": 111,
+        "s_1": 7,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 2,
+        "s_8": 5
+    },
+    {
+        "id": 112,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 6,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 7,
+        "s_8": 2
+    },
+    {
+        "id": 113,
+        "s_1": 2,
+        "s_2": 3,
+        "s_3": 1,
+        "s_4": 4,
+        "s_5": 8,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 5
+    },
+    {
+        "id": 114,
+        "s_1": 7,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 3,
+        "s_8": 2
+    },
+    {
+        "id": 115,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 2,
+        "s_4": 6,
+        "s_5": 8,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 116,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 8,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 117,
+        "s_1": 5,
+        "s_2": 1,
+        "s_3": 3,
+        "s_4": 6,
+        "s_5": 2,
+        "s_6": 8,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 118,
+        "s_1": 6,
+        "s_2": 3,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 1,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 119,
+        "s_1": 8,
+        "s_2": 4,
+        "s_3": 7,
+        "s_4": 3,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 6,
+        "s_8": 5
+    },
+    {
+        "id": 120,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 6,
+        "s_6": 1,
+        "s_7": 4,
+        "s_8": 3
+    },
+    {
+        "id": 121,
+        "s_1": 2,
+        "s_2": 3,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 5,
+        "s_6": 4,
+        "s_7": 7,
+        "s_8": 1
+    },
+    {
+        "id": 122,
+        "s_1": 2,
+        "s_2": 8,
+        "s_3": 3,
+        "s_4": 7,
+        "s_5": 6,
+        "s_6": 5,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 123,
+        "s_1": 2,
+        "s_2": 1,
+        "s_3": 8,
+        "s_4": 7,
+        "s_5": 5,
+        "s_6": 3,
+        "s_7": 6,
+        "s_8": 4
+    },
+    {
+        "id": 124,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 125,
+        "s_1": 4,
+        "s_2": 8,
+        "s_3": 2,
+        "s_4": 3,
+        "s_5": 5,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 1
+    },
+    {
+        "id": 126,
+        "s_1": 7,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 4,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 6,
+        "s_8": 1
+    },
+    {
+        "id": 127,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 4,
+        "s_4": 3,
+        "s_5": 2,
+        "s_6": 5,
+        "s_7": 7,
+        "s_8": 6
+    },
+    {
+        "id": 128,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 8,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 5
+    },
+    {
+        "id": 129,
+        "s_1": 6,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 1,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 3
+    },
+    {
+        "id": 130,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 8,
+        "s_5": 1,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 131,
+        "s_1": 2,
+        "s_2": 6,
+        "s_3": 3,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 1,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 132,
+        "s_1": 1,
+        "s_2": 3,
+        "s_3": 7,
+        "s_4": 6,
+        "s_5": 8,
+        "s_6": 5,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 133,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 134,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 135,
+        "s_1": 7,
+        "s_2": 5,
+        "s_3": 6,
+        "s_4": 4,
+        "s_5": 2,
+        "s_6": 1,
+        "s_7": 8,
+        "s_8": 3
+    },
+    {
+        "id": 136,
+        "s_1": 7,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 2,
+        "s_6": 1,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 137,
+        "s_1": 4,
+        "s_2": 8,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 3,
+        "s_8": 6
+    },
+    {
+        "id": 138,
+        "s_1": 6,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 7,
+        "s_8": 5
+    },
+    {
+        "id": 139,
+        "s_1": 1,
+        "s_2": 7,
+        "s_3": 5,
+        "s_4": 8,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 140,
+        "s_1": 8,
+        "s_2": 3,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 1
+    },
+    {
+        "id": 141,
+        "s_1": 7,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 142,
+        "s_1": 4,
+        "s_2": 1,
+        "s_3": 3,
+        "s_4": 8,
+        "s_5": 7,
+        "s_6": 2,
+        "s_7": 6,
+        "s_8": 5
+    },
+    {
+        "id": 143,
+        "s_1": 3,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 5,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 144,
+        "s_1": 2,
+        "s_2": 1,
+        "s_3": 6,
+        "s_4": 7,
+        "s_5": 5,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 8
+    },
+    {
+        "id": 145,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 2,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 3
+    },
+    {
+        "id": 146,
+        "s_1": 7,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 3,
+        "s_5": 8,
+        "s_6": 6,
+        "s_7": 1,
+        "s_8": 5
+    },
+    {
+        "id": 147,
+        "s_1": 2,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 148,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 6,
+        "s_4": 8,
+        "s_5": 2,
+        "s_6": 1,
+        "s_7": 3,
+        "s_8": 7
+    },
+    {
+        "id": 149,
+        "s_1": 1,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 4,
+        "s_8": 8
+    },
+    {
+        "id": 150,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 6,
+        "s_6": 2,
+        "s_7": 3,
+        "s_8": 1
+    },
+    {
+        "id": 151,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 3,
+        "s_5": 8,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 5
+    },
+    {
+        "id": 152,
+        "s_1": 7,
+        "s_2": 2,
+        "s_3": 6,
+        "s_4": 5,
+        "s_5": 4,
+        "s_6": 3,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 153,
+        "s_1": 7,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 154,
+        "s_1": 8,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 6,
+        "s_5": 2,
+        "s_6": 1,
+        "s_7": 7,
+        "s_8": 3
+    },
+    {
+        "id": 155,
+        "s_1": 4,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 2,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 156,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 2,
+        "s_6": 1,
+        "s_7": 3,
+        "s_8": 7
+    },
+    {
+        "id": 157,
+        "s_1": 4,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 8,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 1,
+        "s_8": 2
+    },
+    {
+        "id": 158,
+        "s_1": 2,
+        "s_2": 7,
+        "s_3": 1,
+        "s_4": 3,
+        "s_5": 5,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 4
+    },
+    {
+        "id": 159,
+        "s_1": 2,
+        "s_2": 1,
+        "s_3": 6,
+        "s_4": 5,
+        "s_5": 4,
+        "s_6": 3,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 160,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 8,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 6,
+        "s_8": 4
+    },
+    {
+        "id": 161,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 3,
+        "s_7": 1,
+        "s_8": 8
+    },
+    {
+        "id": 162,
+        "s_1": 1,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 3
+    },
+    {
+        "id": 163,
+        "s_1": 6,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 8,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 164,
+        "s_1": 3,
+        "s_2": 5,
+        "s_3": 6,
+        "s_4": 8,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 7
+    },
+    {
+        "id": 165,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 6,
+        "s_4": 7,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 166,
+        "s_1": 8,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 7,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 1,
+        "s_8": 2
+    },
+    {
+        "id": 167,
+        "s_1": 2,
+        "s_2": 7,
+        "s_3": 6,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 5,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 168,
+        "s_1": 6,
+        "s_2": 7,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 4,
+        "s_7": 8,
+        "s_8": 3
+    },
+    {
+        "id": 169,
+        "s_1": 6,
+        "s_2": 1,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 3,
+        "s_6": 8,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 170,
+        "s_1": 3,
+        "s_2": 1,
+        "s_3": 6,
+        "s_4": 5,
+        "s_5": 8,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 2
+    },
+    {
+        "id": 171,
+        "s_1": 8,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 3,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 6
+    },
+    {
+        "id": 172,
+        "s_1": 1,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 2,
+        "s_5": 6,
+        "s_6": 3,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 173,
+        "s_1": 3,
+        "s_2": 8,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 6
+    },
+    {
+        "id": 174,
+        "s_1": 5,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 6,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 175,
+        "s_1": 7,
+        "s_2": 3,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 6,
+        "s_8": 1
+    },
+    {
+        "id": 176,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 177,
+        "s_1": 5,
+        "s_2": 8,
+        "s_3": 3,
+        "s_4": 7,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 178,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 6,
+        "s_5": 7,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 8
+    },
+    {
+        "id": 179,
+        "s_1": 5,
+        "s_2": 1,
+        "s_3": 7,
+        "s_4": 8,
+        "s_5": 6,
+        "s_6": 2,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 180,
+        "s_1": 3,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 2,
+        "s_6": 8,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 181,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 5,
+        "s_6": 7,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 182,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 183,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 2,
+        "s_6": 1,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 184,
+        "s_1": 3,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 8,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 6,
+        "s_8": 1
+    },
+    {
+        "id": 185,
+        "s_1": 3,
+        "s_2": 1,
+        "s_3": 2,
+        "s_4": 6,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 4,
+        "s_8": 8
+    },
+    {
+        "id": 186,
+        "s_1": 4,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 3,
+        "s_5": 6,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 5
+    },
+    {
+        "id": 187,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 6,
+        "s_7": 1,
+        "s_8": 5
+    },
+    {
+        "id": 188,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 6,
+        "s_6": 5,
+        "s_7": 8,
+        "s_8": 4
+    },
+    {
+        "id": 189,
+        "s_1": 7,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 3,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 190,
+        "s_1": 6,
+        "s_2": 1,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 7
+    },
+    {
+        "id": 191,
+        "s_1": 1,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 192,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 193,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 7,
+        "s_4": 6,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 194,
+        "s_1": 3,
+        "s_2": 8,
+        "s_3": 1,
+        "s_4": 6,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 195,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 6,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 8
+    },
+    {
+        "id": 196,
+        "s_1": 8,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 7,
+        "s_5": 6,
+        "s_6": 2,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 197,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 1,
+        "s_4": 6,
+        "s_5": 3,
+        "s_6": 5,
+        "s_7": 4,
+        "s_8": 2
+    },
+    {
+        "id": 198,
+        "s_1": 7,
+        "s_2": 3,
+        "s_3": 6,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 8,
+        "s_7": 1,
+        "s_8": 5
+    },
+    {
+        "id": 199,
+        "s_1": 7,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 6,
+        "s_5": 1,
+        "s_6": 8,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 200,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 3,
+        "s_5": 4,
+        "s_6": 5,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 201,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 4,
+        "s_6": 6,
+        "s_7": 3,
+        "s_8": 2
+    },
+    {
+        "id": 202,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 203,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 4,
+        "s_7": 3,
+        "s_8": 6
+    },
+    {
+        "id": 204,
+        "s_1": 5,
+        "s_2": 6,
+        "s_3": 3,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 7
+    },
+    {
+        "id": 205,
+        "s_1": 2,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 1,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 5,
+        "s_8": 8
+    },
+    {
+        "id": 206,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 3,
+        "s_4": 1,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 8,
+        "s_8": 7
+    },
+    {
+        "id": 207,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 3,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 6,
+        "s_8": 5
+    },
+    {
+        "id": 208,
+        "s_1": 8,
+        "s_2": 2,
+        "s_3": 7,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 6,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 209,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 2,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 210,
+        "s_1": 6,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 1,
+        "s_5": 4,
+        "s_6": 3,
+        "s_7": 2,
+        "s_8": 7
+    },
+    {
+        "id": 211,
+        "s_1": 1,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 8,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 212,
+        "s_1": 5,
+        "s_2": 1,
+        "s_3": 3,
+        "s_4": 4,
+        "s_5": 8,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 6
+    },
+    {
+        "id": 213,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 7,
+        "s_5": 3,
+        "s_6": 1,
+        "s_7": 4,
+        "s_8": 6
+    },
+    {
+        "id": 214,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 8,
+        "s_5": 6,
+        "s_6": 5,
+        "s_7": 2,
+        "s_8": 1
+    },
+    {
+        "id": 215,
+        "s_1": 3,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 2,
+        "s_5": 1,
+        "s_6": 8,
+        "s_7": 6,
+        "s_8": 4
+    },
+    {
+        "id": 216,
+        "s_1": 7,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 6,
+        "s_6": 8,
+        "s_7": 5,
+        "s_8": 3
+    },
+    {
+        "id": 217,
+        "s_1": 6,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 8,
+        "s_5": 1,
+        "s_6": 5,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 218,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 219,
+        "s_1": 7,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 2,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 220,
+        "s_1": 3,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 7,
+        "s_7": 1,
+        "s_8": 5
+    },
+    {
+        "id": 221,
+        "s_1": 7,
+        "s_2": 4,
+        "s_3": 3,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 222,
+        "s_1": 7,
+        "s_2": 1,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 5,
+        "s_6": 4,
+        "s_7": 3,
+        "s_8": 2
+    },
+    {
+        "id": 223,
+        "s_1": 7,
+        "s_2": 3,
+        "s_3": 6,
+        "s_4": 4,
+        "s_5": 2,
+        "s_6": 8,
+        "s_7": 1,
+        "s_8": 5
+    },
+    {
+        "id": 224,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 8,
+        "s_6": 4,
+        "s_7": 6,
+        "s_8": 2
+    },
+    {
+        "id": 225,
+        "s_1": 5,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 6
+    },
+    {
+        "id": 226,
+        "s_1": 1,
+        "s_2": 7,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 6,
+        "s_8": 8
+    },
+    {
+        "id": 227,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 5,
+        "s_4": 6,
+        "s_5": 7,
+        "s_6": 4,
+        "s_7": 3,
+        "s_8": 2
+    },
+    {
+        "id": 228,
+        "s_1": 4,
+        "s_2": 2,
+        "s_3": 7,
+        "s_4": 6,
+        "s_5": 1,
+        "s_6": 8,
+        "s_7": 5,
+        "s_8": 3
+    },
+    {
+        "id": 229,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 3,
+        "s_4": 6,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 5
+    },
+    {
+        "id": 230,
+        "s_1": 1,
+        "s_2": 3,
+        "s_3": 2,
+        "s_4": 4,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 5
+    },
+    {
+        "id": 231,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 6,
+        "s_5": 8,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 232,
+        "s_1": 6,
+        "s_2": 2,
+        "s_3": 4,
+        "s_4": 3,
+        "s_5": 1,
+        "s_6": 5,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 233,
+        "s_1": 4,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 234,
+        "s_1": 1,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 235,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 236,
+        "s_1": 7,
+        "s_2": 1,
+        "s_3": 8,
+        "s_4": 4,
+        "s_5": 6,
+        "s_6": 3,
+        "s_7": 5,
+        "s_8": 2
+    },
+    {
+        "id": 237,
+        "s_1": 3,
+        "s_2": 6,
+        "s_3": 7,
+        "s_4": 1,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 5,
+        "s_8": 8
+    },
+    {
+        "id": 238,
+        "s_1": 3,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 6,
+        "s_5": 7,
+        "s_6": 8,
+        "s_7": 2,
+        "s_8": 1
+    },
+    {
+        "id": 239,
+        "s_1": 1,
+        "s_2": 7,
+        "s_3": 2,
+        "s_4": 3,
+        "s_5": 6,
+        "s_6": 5,
+        "s_7": 4,
+        "s_8": 8
+    },
+    {
+        "id": 240,
+        "s_1": 1,
+        "s_2": 7,
+        "s_3": 2,
+        "s_4": 4,
+        "s_5": 6,
+        "s_6": 3,
+        "s_7": 8,
+        "s_8": 5
+    },
+    {
+        "id": 241,
+        "s_1": 3,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 2,
+        "s_5": 1,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 242,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 3,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 243,
+        "s_1": 3,
+        "s_2": 1,
+        "s_3": 5,
+        "s_4": 6,
+        "s_5": 2,
+        "s_6": 8,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 244,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 6,
+        "s_7": 4,
+        "s_8": 2
+    },
+    {
+        "id": 245,
+        "s_1": 8,
+        "s_2": 2,
+        "s_3": 7,
+        "s_4": 6,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 1
+    },
+    {
+        "id": 246,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 1,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 247,
+        "s_1": 6,
+        "s_2": 2,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 248,
+        "s_1": 1,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 3,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 249,
+        "s_1": 5,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 7,
+        "s_5": 4,
+        "s_6": 1,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 250,
+        "s_1": 6,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 3,
+        "s_7": 1,
+        "s_8": 8
+    },
+    {
+        "id": 251,
+        "s_1": 5,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 6
+    },
+    {
+        "id": 252,
+        "s_1": 3,
+        "s_2": 1,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 253,
+        "s_1": 1,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 2,
+        "s_6": 3,
+        "s_7": 5,
+        "s_8": 8
+    },
+    {
+        "id": 254,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 7,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 3,
+        "s_7": 1,
+        "s_8": 8
+    },
+    {
+        "id": 255,
+        "s_1": 2,
+        "s_2": 7,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 3,
+        "s_6": 1,
+        "s_7": 6,
+        "s_8": 8
+    },
+    {
+        "id": 256,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 257,
+        "s_1": 8,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 3,
+        "s_8": 6
+    },
+    {
+        "id": 258,
+        "s_1": 8,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 259,
+        "s_1": 8,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 3,
+        "s_5": 1,
+        "s_6": 5,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 260,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 6,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 2
+    },
+    {
+        "id": 261,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 3,
+        "s_5": 7,
+        "s_6": 1,
+        "s_7": 5,
+        "s_8": 2
+    },
+    {
+        "id": 262,
+        "s_1": 1,
+        "s_2": 2,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 3
+    },
+    {
+        "id": 263,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 2,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 1,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 264,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 1,
+        "s_4": 4,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 7
+    },
+    {
+        "id": 265,
+        "s_1": 4,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 266,
+        "s_1": 7,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 2,
+        "s_5": 6,
+        "s_6": 1,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 267,
+        "s_1": 3,
+        "s_2": 8,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 268,
+        "s_1": 7,
+        "s_2": 3,
+        "s_3": 6,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 269,
+        "s_1": 5,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 4,
+        "s_5": 7,
+        "s_6": 1,
+        "s_7": 3,
+        "s_8": 2
+    },
+    {
+        "id": 270,
+        "s_1": 2,
+        "s_2": 8,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 4
+    },
+    {
+        "id": 271,
+        "s_1": 4,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 2
+    },
+    {
+        "id": 272,
+        "s_1": 2,
+        "s_2": 8,
+        "s_3": 3,
+        "s_4": 7,
+        "s_5": 1,
+        "s_6": 4,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 273,
+        "s_1": 8,
+        "s_2": 2,
+        "s_3": 1,
+        "s_4": 4,
+        "s_5": 6,
+        "s_6": 5,
+        "s_7": 7,
+        "s_8": 3
+    },
+    {
+        "id": 274,
+        "s_1": 8,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 1,
+        "s_5": 2,
+        "s_6": 4,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 275,
+        "s_1": 1,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 3,
+        "s_5": 8,
+        "s_6": 6,
+        "s_7": 2,
+        "s_8": 7
+    },
+    {
+        "id": 276,
+        "s_1": 6,
+        "s_2": 8,
+        "s_3": 3,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 5
+    },
+    {
+        "id": 277,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 8,
+        "s_4": 4,
+        "s_5": 2,
+        "s_6": 5,
+        "s_7": 6,
+        "s_8": 1
+    },
+    {
+        "id": 278,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 2,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 4,
+        "s_8": 3
+    },
+    {
+        "id": 279,
+        "s_1": 6,
+        "s_2": 1,
+        "s_3": 7,
+        "s_4": 5,
+        "s_5": 8,
+        "s_6": 2,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 280,
+        "s_1": 5,
+        "s_2": 6,
+        "s_3": 3,
+        "s_4": 2,
+        "s_5": 8,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 281,
+        "s_1": 7,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 3,
+        "s_5": 6,
+        "s_6": 1,
+        "s_7": 8,
+        "s_8": 4
+    },
+    {
+        "id": 282,
+        "s_1": 2,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 1,
+        "s_6": 5,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 283,
+        "s_1": 5,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 7,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 284,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 7,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 2,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 285,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 5,
+        "s_4": 8,
+        "s_5": 4,
+        "s_6": 6,
+        "s_7": 1,
+        "s_8": 2
+    },
+    {
+        "id": 286,
+        "s_1": 7,
+        "s_2": 2,
+        "s_3": 8,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 5,
+        "s_8": 3
+    },
+    {
+        "id": 287,
+        "s_1": 6,
+        "s_2": 3,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 2,
+        "s_6": 5,
+        "s_7": 8,
+        "s_8": 4
+    },
+    {
+        "id": 288,
+        "s_1": 3,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 8,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 289,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 3,
+        "s_6": 1,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 290,
+        "s_1": 8,
+        "s_2": 2,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 4,
+        "s_8": 3
+    },
+    {
+        "id": 291,
+        "s_1": 6,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 8,
+        "s_6": 1,
+        "s_7": 7,
+        "s_8": 3
+    },
+    {
+        "id": 292,
+        "s_1": 6,
+        "s_2": 1,
+        "s_3": 3,
+        "s_4": 2,
+        "s_5": 8,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 293,
+        "s_1": 6,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 8,
+        "s_5": 1,
+        "s_6": 5,
+        "s_7": 7,
+        "s_8": 3
+    },
+    {
+        "id": 294,
+        "s_1": 1,
+        "s_2": 3,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 6
+    },
+    {
+        "id": 295,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 1,
+        "s_5": 8,
+        "s_6": 4,
+        "s_7": 3,
+        "s_8": 6
+    },
+    {
+        "id": 296,
+        "s_1": 2,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 3,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 5
+    },
+    {
+        "id": 297,
+        "s_1": 5,
+        "s_2": 2,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 4,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 298,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 3,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 299,
+        "s_1": 1,
+        "s_2": 3,
+        "s_3": 2,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 7,
+        "s_8": 6
+    },
+    {
+        "id": 300,
+        "s_1": 5,
+        "s_2": 8,
+        "s_3": 3,
+        "s_4": 6,
+        "s_5": 7,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 2
+    },
+    {
+        "id": 301,
+        "s_1": 2,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 8,
+        "s_7": 6,
+        "s_8": 5
+    },
+    {
+        "id": 302,
+        "s_1": 1,
+        "s_2": 3,
+        "s_3": 2,
+        "s_4": 8,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 7,
+        "s_8": 5
+    },
+    {
+        "id": 303,
+        "s_1": 7,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 1,
+        "s_6": 4,
+        "s_7": 8,
+        "s_8": 6
+    },
+    {
+        "id": 304,
+        "s_1": 7,
+        "s_2": 8,
+        "s_3": 2,
+        "s_4": 4,
+        "s_5": 6,
+        "s_6": 1,
+        "s_7": 5,
+        "s_8": 3
+    },
+    {
+        "id": 305,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 6,
+        "s_8": 3
+    },
+    {
+        "id": 306,
+        "s_1": 6,
+        "s_2": 2,
+        "s_3": 4,
+        "s_4": 8,
+        "s_5": 1,
+        "s_6": 5,
+        "s_7": 7,
+        "s_8": 3
+    },
+    {
+        "id": 307,
+        "s_1": 8,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 7,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 2
+    },
+    {
+        "id": 308,
+        "s_1": 5,
+        "s_2": 7,
+        "s_3": 2,
+        "s_4": 3,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 309,
+        "s_1": 6,
+        "s_2": 1,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 3
+    },
+    {
+        "id": 310,
+        "s_1": 4,
+        "s_2": 3,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 2,
+        "s_8": 6
+    },
+    {
+        "id": 311,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 7,
+        "s_7": 3,
+        "s_8": 6
+    },
+    {
+        "id": 312,
+        "s_1": 4,
+        "s_2": 8,
+        "s_3": 2,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 7,
+        "s_7": 3,
+        "s_8": 6
+    },
+    {
+        "id": 313,
+        "s_1": 7,
+        "s_2": 8,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 3,
+        "s_8": 6
+    },
+    {
+        "id": 314,
+        "s_1": 4,
+        "s_2": 1,
+        "s_3": 5,
+        "s_4": 6,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 7
+    },
+    {
+        "id": 315,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 1,
+        "s_4": 6,
+        "s_5": 8,
+        "s_6": 5,
+        "s_7": 4,
+        "s_8": 7
+    },
+    {
+        "id": 316,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 1,
+        "s_4": 4,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 317,
+        "s_1": 4,
+        "s_2": 3,
+        "s_3": 1,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 318,
+        "s_1": 8,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 2,
+        "s_6": 5,
+        "s_7": 6,
+        "s_8": 1
+    },
+    {
+        "id": 319,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 6,
+        "s_5": 3,
+        "s_6": 1,
+        "s_7": 7,
+        "s_8": 2
+    },
+    {
+        "id": 320,
+        "s_1": 2,
+        "s_2": 3,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 321,
+        "s_1": 6,
+        "s_2": 1,
+        "s_3": 8,
+        "s_4": 3,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 4,
+        "s_8": 7
+    },
+    {
+        "id": 322,
+        "s_1": 8,
+        "s_2": 2,
+        "s_3": 6,
+        "s_4": 3,
+        "s_5": 5,
+        "s_6": 7,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 323,
+        "s_1": 8,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 324,
+        "s_1": 8,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 6
+    },
+    {
+        "id": 325,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 326,
+        "s_1": 5,
+        "s_2": 1,
+        "s_3": 2,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 327,
+        "s_1": 1,
+        "s_2": 5,
+        "s_3": 6,
+        "s_4": 3,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 8
+    },
+    {
+        "id": 328,
+        "s_1": 2,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 3,
+        "s_5": 7,
+        "s_6": 8,
+        "s_7": 4,
+        "s_8": 5
+    },
+    {
+        "id": 329,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 8,
+        "s_6": 5,
+        "s_7": 6,
+        "s_8": 4
+    },
+    {
+        "id": 330,
+        "s_1": 8,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 3,
+        "s_5": 2,
+        "s_6": 6,
+        "s_7": 5,
+        "s_8": 1
+    },
+    {
+        "id": 331,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 8,
+        "s_5": 5,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 332,
+        "s_1": 2,
+        "s_2": 1,
+        "s_3": 6,
+        "s_4": 8,
+        "s_5": 5,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 7
+    },
+    {
+        "id": 333,
+        "s_1": 2,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 1,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 334,
+        "s_1": 1,
+        "s_2": 6,
+        "s_3": 4,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 7,
+        "s_7": 5,
+        "s_8": 2
+    },
+    {
+        "id": 335,
+        "s_1": 2,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 3,
+        "s_5": 1,
+        "s_6": 4,
+        "s_7": 7,
+        "s_8": 6
+    },
+    {
+        "id": 336,
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 5,
+        "s_8": 8
+    },
+    {
+        "id": 337,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 6,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 2,
+        "s_8": 1
+    },
+    {
+        "id": 338,
+        "s_1": 3,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 1,
+        "s_8": 4
+    },
+    {
+        "id": 339,
+        "s_1": 6,
+        "s_2": 3,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 340,
+        "s_1": 6,
+        "s_2": 4,
+        "s_3": 7,
+        "s_4": 3,
+        "s_5": 5,
+        "s_6": 1,
+        "s_7": 2,
+        "s_8": 8
+    },
+    {
+        "id": 341,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 7,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 3
+    },
+    {
+        "id": 342,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 2
+    },
+    {
+        "id": 343,
+        "s_1": 1,
+        "s_2": 5,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 3,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 4
+    },
+    {
+        "id": 344,
+        "s_1": 6,
+        "s_2": 7,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 8,
+        "s_7": 3,
+        "s_8": 5
+    },
+    {
+        "id": 345,
+        "s_1": 5,
+        "s_2": 2,
+        "s_3": 7,
+        "s_4": 3,
+        "s_5": 8,
+        "s_6": 6,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 346,
+        "s_1": 8,
+        "s_2": 1,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 4,
+        "s_6": 3,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 347,
+        "s_1": 6,
+        "s_2": 5,
+        "s_3": 7,
+        "s_4": 8,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 348,
+        "s_1": 7,
+        "s_2": 5,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 349,
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 7,
+        "s_5": 2,
+        "s_6": 5,
+        "s_7": 8,
+        "s_8": 6
+    },
+    {
+        "id": 350,
+        "s_1": 2,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 8,
+        "s_5": 5,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 3
+    },
+    {
+        "id": 351,
+        "s_1": 6,
+        "s_2": 7,
+        "s_3": 2,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 3,
+        "s_8": 1
+    },
+    {
+        "id": 352,
+        "s_1": 5,
+        "s_2": 1,
+        "s_3": 2,
+        "s_4": 8,
+        "s_5": 4,
+        "s_6": 6,
+        "s_7": 3,
+        "s_8": 7
+    },
+    {
+        "id": 353,
+        "s_1": 4,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 7,
+        "s_5": 5,
+        "s_6": 1,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 354,
+        "s_1": 6,
+        "s_2": 8,
+        "s_3": 2,
+        "s_4": 4,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 1,
+        "s_8": 3
+    },
+    {
+        "id": 355,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 6,
+        "s_4": 8,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 4,
+        "s_8": 1
+    },
+    {
+        "id": 356,
+        "s_1": 7,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 8,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 2,
+        "s_8": 6
+    },
+    {
+        "id": 357,
+        "s_1": 8,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 2,
+        "s_6": 7,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 358,
+        "s_1": 1,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 2,
+        "s_5": 6,
+        "s_6": 7,
+        "s_7": 8,
+        "s_8": 5
+    },
+    {
+        "id": 359,
+        "s_1": 8,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 3,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 360,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 7,
+        "s_4": 4,
+        "s_5": 8,
+        "s_6": 6,
+        "s_7": 1,
+        "s_8": 2
+    },
+    {
+        "id": 361,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 5,
+        "s_8": 4
+    },
+    {
+        "id": 362,
+        "s_1": 7,
+        "s_2": 1,
+        "s_3": 3,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 4,
+        "s_7": 8,
+        "s_8": 6
+    },
+    {
+        "id": 363,
+        "s_1": 7,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 3,
+        "s_8": 4
+    },
+    {
+        "id": 364,
+        "s_1": 3,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 7,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 365,
+        "s_1": 2,
+        "s_2": 3,
+        "s_3": 4,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 8,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 366,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 8,
+        "s_5": 5,
+        "s_6": 4,
+        "s_7": 2,
+        "s_8": 3
+    },
+    {
+        "id": 367,
+        "s_1": 5,
+        "s_2": 2,
+        "s_3": 3,
+        "s_4": 4,
+        "s_5": 1,
+        "s_6": 7,
+        "s_7": 6,
+        "s_8": 8
+    },
+    {
+        "id": 368,
+        "s_1": 5,
+        "s_2": 4,
+        "s_3": 1,
+        "s_4": 6,
+        "s_5": 3,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 7
+    },
+    {
+        "id": 369,
+        "s_1": 8,
+        "s_2": 3,
+        "s_3": 2,
+        "s_4": 7,
+        "s_5": 5,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 370,
+        "s_1": 4,
+        "s_2": 3,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 6,
+        "s_6": 1,
+        "s_7": 2,
+        "s_8": 7
+    },
+    {
+        "id": 371,
+        "s_1": 5,
+        "s_2": 3,
+        "s_3": 6,
+        "s_4": 7,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 1,
+        "s_8": 8
+    },
+    {
+        "id": 372,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 6
+    },
+    {
+        "id": 373,
+        "s_1": 5,
+        "s_2": 6,
+        "s_3": 2,
+        "s_4": 1,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 374,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 8,
+        "s_4": 5,
+        "s_5": 1,
+        "s_6": 2,
+        "s_7": 4,
+        "s_8": 3
+    },
+    {
+        "id": 375,
+        "s_1": 3,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 2,
+        "s_5": 6,
+        "s_6": 4,
+        "s_7": 7,
+        "s_8": 1
+    },
+    {
+        "id": 376,
+        "s_1": 1,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 4,
+        "s_5": 7,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 3
+    },
+    {
+        "id": 377,
+        "s_1": 4,
+        "s_2": 7,
+        "s_3": 6,
+        "s_4": 2,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 1,
+        "s_8": 5
+    },
+    {
+        "id": 378,
+        "s_1": 1,
+        "s_2": 6,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 8,
+        "s_8": 7
+    },
+    {
+        "id": 379,
+        "s_1": 3,
+        "s_2": 7,
+        "s_3": 4,
+        "s_4": 2,
+        "s_5": 5,
+        "s_6": 6,
+        "s_7": 8,
+        "s_8": 1
+    },
+    {
+        "id": 380,
+        "s_1": 6,
+        "s_2": 7,
+        "s_3": 3,
+        "s_4": 1,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 8,
+        "s_8": 5
+    },
+    {
+        "id": 381,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 8,
+        "s_5": 1,
+        "s_6": 6,
+        "s_7": 7,
+        "s_8": 4
+    },
+    {
+        "id": 382,
+        "s_1": 6,
+        "s_2": 3,
+        "s_3": 5,
+        "s_4": 1,
+        "s_5": 8,
+        "s_6": 2,
+        "s_7": 4,
+        "s_8": 7
+    },
+    {
+        "id": 383,
+        "s_1": 2,
+        "s_2": 4,
+        "s_3": 5,
+        "s_4": 7,
+        "s_5": 8,
+        "s_6": 3,
+        "s_7": 6,
+        "s_8": 1
+    },
+    {
+        "id": 384,
+        "s_1": 4,
+        "s_2": 1,
+        "s_3": 5,
+        "s_4": 6,
+        "s_5": 7,
+        "s_6": 2,
+        "s_7": 3,
+        "s_8": 8
+    },
+    {
+        "id": 385,
+        "s_1": 8,
+        "s_2": 2,
+        "s_3": 7,
+        "s_4": 5,
+        "s_5": 3,
+        "s_6": 4,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 386,
+        "s_1": 1,
+        "s_2": 5,
+        "s_3": 4,
+        "s_4": 7,
+        "s_5": 3,
+        "s_6": 8,
+        "s_7": 2,
+        "s_8": 6
+    },
+    {
+        "id": 387,
+        "s_1": 3,
+        "s_2": 8,
+        "s_3": 5,
+        "s_4": 2,
+        "s_5": 4,
+        "s_6": 1,
+        "s_7": 6,
+        "s_8": 7
+    },
+    {
+        "id": 388,
+        "s_1": 1,
+        "s_2": 8,
+        "s_3": 6,
+        "s_4": 3,
+        "s_5": 7,
+        "s_6": 5,
+        "s_7": 2,
+        "s_8": 4
+    },
+    {
+        "id": 389,
+        "s_1": 3,
+        "s_2": 2,
+        "s_3": 7,
+        "s_4": 4,
+        "s_5": 8,
+        "s_6": 5,
+        "s_7": 1,
+        "s_8": 6
+    },
+    {
+        "id": 390,
+        "s_1": 7,
+        "s_2": 6,
+        "s_3": 1,
+        "s_4": 4,
+        "s_5": 5,
+        "s_6": 8,
+        "s_7": 3,
+        "s_8": 2
+    },
+    {
+        "id": 391,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 8,
+        "s_4": 7,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 6
+    },
+    {
+        "id": 392,
+        "s_1": 2,
+        "s_2": 5,
+        "s_3": 1,
+        "s_4": 8,
+        "s_5": 6,
+        "s_6": 3,
+        "s_7": 4,
+        "s_8": 7
+    },
+    {
+        "id": 393,
+        "s_1": 1,
+        "s_2": 6,
+        "s_3": 3,
+        "s_4": 5,
+        "s_5": 4,
+        "s_6": 2,
+        "s_7": 7,
+        "s_8": 8
+    },
+    {
+        "id": 394,
+        "s_1": 3,
+        "s_2": 4,
+        "s_3": 8,
+        "s_4": 1,
+        "s_5": 7,
+        "s_6": 2,
+        "s_7": 5,
+        "s_8": 6
+    },
+    {
+        "id": 395,
+        "s_1": 6,
+        "s_2": 2,
+        "s_3": 5,
+        "s_4": 7,
+        "s_5": 1,
+        "s_6": 3,
+        "s_7": 8,
+        "s_8": 4
     }
 ]
