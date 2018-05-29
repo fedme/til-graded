@@ -1394,7 +1394,7 @@ export const SCENARIOS = [
             {
                 "id": 1,
                 "text": {
-                    "de": "jemand anderes etwas anschaute?",
+                    "de": "jemand anderes etwas angeschaut hat?",
                     "en": "you watched something else?"
                 },
                 "bubble": [
@@ -1440,7 +1440,7 @@ export const SCENARIOS = [
             {
                 "id": 3,
                 "text": {
-                    "de": "deine Mutter einen Film anschaute?",
+                    "de": "deine Mutter einen Film angeschaut hat?",
                     "en": "you watched a film?"
                 },
                 "bubble": [
@@ -1531,7 +1531,7 @@ export const SCENARIOS = [
             {
                 "id": 7,
                 "text": {
-                    "de": "dein Vater etwas anderes angeschaut hat?",
+                    "de": "dein Vater Sport geguckt hat?",
                     "en": "you watched sports on TV?"
                 },
                 "bubble": [

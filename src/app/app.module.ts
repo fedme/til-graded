@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
 import { File } from '@ionic-native/file';
 import { AndroidFullScreen } from '@ionic-native/android-full-screen';
+import { Device } from '@ionic-native/device';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { Pro } from '@ionic/pro';
@@ -82,6 +83,7 @@ export class MyErrorHandler implements ErrorHandler {
     SplashScreen,
     AndroidFullScreen,
     File,
+    Device,
     IonicErrorHandler,
     [{ provide: ErrorHandler, useClass: MyErrorHandler }],
     Api, 

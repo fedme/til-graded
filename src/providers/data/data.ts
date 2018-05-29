@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { File } from '@ionic-native/file';
+import { Device } from '@ionic-native/device';
+import { Platform } from 'ionic-angular';
 import { Stimuli } from '../stimuli/stimuli';
 import { Api } from '../api/api';
 import { AppInfo } from '../stimuli/app-info';
@@ -12,9 +14,16 @@ export class Data {
   data: Map<string, any>;
   allRecords;
 
-  constructor(private storage: Storage, private filesystem: File, private api: Api,
-    private stimuli: Stimuli) {
-      console.log('Hello Data Provider');
+  constructor(
+    private storage: Storage,
+    private filesystem: File,
+    private api: Api,
+    private stimuli: Stimuli,
+    private platform: Platform,
+    private device: Device
+  ) {
+    console.log('Hello Data Provider');
+
   }
 
   initialize() {
@@ -44,7 +53,7 @@ export class Data {
       this.api.post('store-data/halo', requestBody).subscribe(
         (resp) => {
           console.log("[saving data][browser][POST] resp", resp);
-        }, 
+        },
         (err) => {
           console.log("[saving data][browser][POST] ERROR!!!", err);
         }
@@ -57,36 +66,68 @@ export class Data {
   }
 
   serializeStimuliData() {
-    // calculate exp duration
-    const duration = Math.floor(Date.now() - this.stimuli.initialTimestamp);
-
-    // data map
+    // Basic data
     let data = new Map();
+    data.set("participant", this.getParticipantInfo());
+    data.set("app", this.getAppInfo());
+    data.set("session", this.getSessionInfo());
 
-    // save participant data
-    data.set("participant_code", this.stimuli.participant.code);
-    data.set("participant_age", this.stimuli.participant.age);
-    data.set("participant_age_group", this.stimuli.participant.age);
-    data.set("participant_grade", this.stimuli.participant.grade);
-    data.set("participant_gender", this.stimuli.participant.gender);
-
-    // save app data
-    data.set("app_id", AppInfo.id);
-    data.set("app_version", AppInfo.version);
-    data.set("app_nameLabel", AppInfo.nameLabel);
-
-    // save session data
-    data.set("session_datetime", Date.now());
-    data.set("session_datetime_human", Date.now().toLocaleString());
-    data.set("session_duration_seconds", duration);
-
-    // save conditions data
+    // EXPERIMENT DATA
     data.set("condition_index", this.stimuli.conditionId);
     data.set("ratings", this.stimuli.ratings);
 
+    // Add platform info to data
+    data.set('platformInfo', this.getPlatformInfo())
     this.data = data;
-
     return this.mapToObj(data);
+  }
+
+  getParticipantInfo() {
+    return {
+      "code": this.stimuli.participant.code,
+      "age": this.stimuli.participant.age,
+      "ageGroup": this.stimuli.participant.age,
+      "grade": this.stimuli.participant.grade,
+      "gender": this.stimuli.participant.gender
+    }
+  }
+
+  getSessionInfo() {
+    const now = new Date();
+    const duration = Math.floor(Date.now() - this.stimuli.initialTimestamp);
+    return {
+      "datetime": now.toJSON(),
+      "duration": duration
+    }
+  }
+
+  getAppInfo() {
+    return {
+      "id": AppInfo.id,
+      "version": AppInfo.version,
+      "nameLabel": AppInfo.nameLabel,
+      "lang": localStorage.getItem('lang')
+    }
+  }
+
+  getPlatformInfo() {
+    return {
+      'platform': {
+        'userAgent': this.platform.userAgent(),
+        'platforms': this.platform.platforms(),
+        'navigatorPlatform': this.platform.navigatorPlatform(),
+        'height': this.platform.height(),
+        'width': this.platform.width()
+      },
+      'device': {
+        'uuid': this.device.uuid,
+        'model': this.device.model,
+        'cordovaVersion': this.device.cordova,
+        'version': this.device.version,
+        'manufacturer': this.device.manufacturer,
+        'serial': this.device.serial
+      }
+    }
   }
 
   getSessionDataAsHtml() {
@@ -156,7 +197,7 @@ export class Data {
         csvKeys = Object.keys(record).map(x => JSON.stringify(x));
         first = false;
       }
-      let csvRow = Object.keys(record).map(key=>record[key]).map(x => JSON.stringify(x));
+      let csvRow = Object.keys(record).map(key => record[key]).map(x => JSON.stringify(x));
       csvRows.push(csvRow.join(","));
     }
     let csvContent = csvKeys.join(",") + "\n";
