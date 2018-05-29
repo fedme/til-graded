@@ -73,11 +73,13 @@ export class Data {
     data.set("session", this.getSessionInfo());
 
     // EXPERIMENT DATA
-    data.set("condition_index", this.stimuli.conditionId);
-    data.set("ratings", this.stimuli.ratings);
+    data.set("data", {
+      "condition_index": this.stimuli.conditionId,
+      "ratings": this.stimuli.ratings
+    });
 
     // Add platform info to data
-    data.set('platformInfo', this.getPlatformInfo())
+    data.set('platformInfo', this.getPlatformInfo());
     this.data = data;
     return this.mapToObj(data);
   }
