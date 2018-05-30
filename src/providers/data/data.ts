@@ -11,8 +11,8 @@ import { AppInfo } from '../stimuli/app-info';
 export class Data {
 
   recordsNumber: number;
-  data: Map<string, any>;
   allRecords;
+  serverURI: string = "";
 
   constructor(
     private storage: Storage,
@@ -27,61 +27,35 @@ export class Data {
   }
 
   initialize() {
-    this.data = null;
     this.allRecords = null;
     this.updateRecordsNumber();
   }
 
-  save() {
-    console.log("[DEBUG] DB driver: " + this.storage.driver);
-    const recordId = "record_" + this.stimuli.participant.code;
-    let dataObject = this.serializeStimuliData();
-    console.log("[DEBUG] Serialized data: ", dataObject);
-
-    if (this.stimuli.runInBrowser) {
-      const jsonData = JSON.stringify(dataObject);
-      console.log("[saving data][browser][participant_code]", this.stimuli.participant.code);
-      console.log("[saving data][browser][data]", dataObject);
-      //console.log("[saving data][browser][jsonData]", jsonData);
-
-      const requestBody = {
-        participant_code: this.stimuli.participant.code,
-        condition: this.stimuli.conditionId,
-        reward: dataObject["reward_mturk_total_euros"],
-        data: jsonData
-      };
-      this.api.post('store-data/halo', requestBody).subscribe(
-        (resp) => {
-          console.log("[saving data][browser][POST] resp", resp);
-        },
-        (err) => {
-          console.log("[saving data][browser][POST] ERROR!!!", err);
-        }
-      );
-    }
-    else {
-      console.log("[saving data][app][data]", dataObject);
-      this.storage.set(recordId, dataObject);
-    }
+  serializeStimuliData() {
+    let data = new Map();
+    data.set("condition_index", this.stimuli.conditionId);
+    data.set("ratings", this.stimuli.ratings);
+    return this.mapToObj(data);
   }
 
-  serializeStimuliData() {
-    // Basic data
-    let data = new Map();
-    data.set("participant", this.getParticipantInfo());
-    data.set("app", this.getAppInfo());
-    data.set("session", this.getSessionInfo());
+  save() {
+    // Generate record ID
+    console.log("[DEBUG] DB driver: " + this.storage.driver);
+    const recordId = "record_" + this.stimuli.participant.code;
 
-    // EXPERIMENT DATA
-    data.set("data", {
-      "condition_index": this.stimuli.conditionId,
-      "ratings": this.stimuli.ratings
-    });
+    // Create data object
+    let dataObject = {
+      "participant": this.getParticipantInfo(),
+      "app": this.getAppInfo(),
+      "session": this.getSessionInfo(),
+      "data": this.serializeStimuliData(),
+      "platformInfo": this.getPlatformInfo()
+    }
+    console.log("[DEBUG] Serialized data: ", dataObject);
 
-    // Add platform info to data
-    data.set('platformInfo', this.getPlatformInfo());
-    this.data = data;
-    return this.mapToObj(data);
+    // Save data
+    if (this.stimuli.runInBrowser) this.postDataToServer(dataObject);
+    else this.storage.set(recordId, dataObject);
   }
 
   getParticipantInfo() {
@@ -132,15 +106,26 @@ export class Data {
     }
   }
 
-  getSessionDataAsHtml() {
-    let out = "<table border='1'><tr><th>key</th><th>value</th></tr>";
-    if (this.data != null) {
-      this.data.forEach((value, key, map) => {
-        out = out + "<tr><td>" + key + "</td><td>" + value + "</td></tr>";
-      });
-    }
-    out = out + "</table>";
-    return out;
+  postDataToServer(dataObject: any) {
+    const jsonData = JSON.stringify(dataObject);
+    console.log("[saving data][browser][participant_code]", this.stimuli.participant.code);
+    console.log("[saving data][browser][data]", dataObject);
+
+    const requestBody = {
+      participant_code: this.stimuli.participant.code,
+      condition: this.stimuli.conditionId,
+      reward: dataObject["reward_mturk_total_euros"],
+      data: jsonData
+    };
+
+    this.api.post(this.serverURI, requestBody).subscribe(
+      (resp) => {
+        console.log("[saving data][browser][POST] resp", resp);
+      },
+      (err) => {
+        console.log("[saving data][browser][POST] ERROR!!!", err);
+      }
+    );
   }
 
   loadAllRecords() {
