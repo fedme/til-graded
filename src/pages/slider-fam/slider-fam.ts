@@ -25,9 +25,9 @@ export class SliderFamPage {
 
   sliderChanged(evt) {
     this.changed = true;
-    const width = (40 + (evt.value * 60/100)) + "%"
+    const width = (40 + ((100 -evt.value) * 60/100)) + "%";
     //console.log(width)
-    this.sweetsBag.nativeElement.style.width = width
+    this.sweetsBag.nativeElement.style.width = width;
   }
 
   confirmNext() {

@@ -26,9 +26,8 @@ export class ScenarioRatingPage {
 
   sliderChanged(evt) {
     this.changed = true;
-    const width = (40 + (evt.value * 60/100)) + "%"
-    //console.log(width)
-    this.sweetsBag.nativeElement.style.width = width
+    const width = (40 + ((100 - evt.value) * 60/100)) + "%";
+    this.sweetsBag.nativeElement.style.width = width;
   }
 
 

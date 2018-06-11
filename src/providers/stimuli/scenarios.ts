@@ -9,7 +9,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br> Denk daran, das hier sind die Gründe warum Toma die letzten 8 mal zu spät war.<br> Sie fragt Toma: Warst du zu spät in der Schule, weil",
-            "en": "Today, Toma was late again.<br> His friend Reda already knows why Toma was late the last eight times.<br>Do you remember?<br>Now, Reda wants to find out for which of these reasons Toma was late for school again.<br>She asks Toma: Were you late for school because"
+            "en": "Today, Toma was late again.<br> His friend Reda is going to play the question asking game to find out as quickly as possible why Toma was late again.<br> Remember these were the reasons that Toma was late the last eight times.<br>She asks Toma: Were you late for school because"
         },
         "questions": [
             {
@@ -206,7 +206,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Fidi kam diese Woche wieder nicht zum Schwimmunterricht.<br>Seine Freundin Kota wird das Fragen Spiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Fidi die letzten 8 mal gefehlt hat.<br>Sie fragt Fidi: Bist du nicht zum Schwimmkurs gekommen, weil",
-            "en": "Today, Fidi missed his swimming class again.<br>His friend Kota already knows these are the reasons why Fidi missed his swimming class the last eight times.<br>Do you remember? <br> Now, Kota wants to find out for which of these reasons Fidi missed his swimming class again.<br>She asks Fidi: Did you miss you swimming class because"
+            "en": "Today, Fidi missed his swimming class again.<br>His friend Kota is going to play the question asking game to find out as quickly as possible why Fidi missed the class again.<br> Remember these were the reasons that Fidi missed the class the last eight times.<br>She asks Fidi: Did you miss you swimming class because"
         },
         "questions": [
             {
@@ -403,7 +403,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Reda hat ihr Abendessen heute wiedermal nicht aufgegessen.<br>Ihr Freund Miru wird das Fragen Spiel spielen, um so schnell  wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Reda die letzten 8 mal nicht aufgegessen hat.<br>Er fragt Reda: Hast du dein Abendessen nicht aufgegessen, weil",
-            "en": "Today, Reda didn’t finish her dinner again.<br>Her friend Miru already knows why Reda didn't finish her dinner the last eight times.<br>Do you remember?<br>Now, Miru wants to find out for which of these reasons Reda didn't finish her dinner again.<br>He asks Reda: Did you not finish your dinner because"
+            "en": "Today, Reda didn’t finish her dinner again.<br>Her friend Miru is going to play the question asking game to find out as quickly as possible why Reda didn't finish her dinner again.<br>Remember these were the reasons that Reda didn’t finish her dinner the last eight times.<br>He asks Reda: Did you not finish your dinner because"
         },
         "questions": [
             {
@@ -600,7 +600,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Domus Auto funktioniert wiedermal nicht.<br>Seine Freundin Leli wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Domus Auto die letzten 8 mal nicht funktioniert hat.<br>Sie fragt Domu: Funktioniert dein Auto nicht, weil",
-            "en": "Today, Domu’s toy car is not working again.<br>His friend Leli knows these are the reasons why Domu's toy car was not working the last eight times.<br>Do you remember?<br>Now Leli wants to find out for which of these reasons his toy car isn’t working again.<br>She asks Domu: Is your toy car not working because"
+            "en": "Today, Domu’s toy car is not working again.<br>His friend Leli is going to play the question asking game to find out as quickly as possible why Domu's toy car is not working again.<br> Remember these were the reasons that Domu’s toy car was not working the last eight times.<br>She asks Domu: Is your toy car not working because"
         },
         "questions": [
             {
@@ -797,7 +797,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Mimis Schuhe sind wiedermal schmutzig.<br>Ihr Freund Toma wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Mimis Schuhe die letzten 8 mal dreckig waren.<br>Er fragt Mimi: Sind deine Schuhe schmutzig, weil",
-            "en": "Today, Mimi’s shoes are dirty again.<br>Her friend Toma already knows why Mimi's shoes were dirty the last eight times.<br>Do you remember?<br>Now, Toma wants to find out for which of these reasons Mimi's shoes are dirty again.<br>He asks Mimi: Are your shoes dirty because"
+            "en": "Today, Mimi’s shoes are dirty again.<br>Her friend Toma is going to play the question asking game to find out as quickly as possible why Mimi's shoes are dirty again.<br>Remember these were the reasons that Mimi's shoes were dirty the last eight times. <br>He asks Mimi: Are your shoes dirty because"
         },
         "questions": [
             {
@@ -994,7 +994,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Leli weint heute wieder.<br>Ihr Freund Fidi wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Leli die letzten 8 mal geweint hat.<br>Er fragt Leli: Weinst du, weil",
-            "en": "Today, Leli is crying again.<br>Her friend Fidi already knows why Leli was crying the last eight times.<br>Do you remember?<br> Now, Fidi wants to find out for which of these reasons Leli is crying again today.<br>He asks Leli: Are you crying because"
+            "en": "Today, Leli is crying again.<br>Her friend Fidi is going to play the question asking game to find out as quickly as possible why Leli is crying again.<br> Remember these were the reasons that Leli was crying the last eight times.<br>He asks Leli: Are you crying because"
         },
         "questions": [
             {
@@ -1191,7 +1191,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Kota hat heute wieder nicht draußen gespielt.<br>Ihr Freund Domu wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br> Denk daran, das hier sind die Gründe warum Kota die letzten 8 mal nicht draußen gespielt hat.<br>Er fragt Kota: Wolltest Du  nicht draußen spielen, weil",
-            "en": "Today, Kota didn’t play outside again.<br>Her friend Domu already knows why Kota didn't play outside the last eight times.<br> Do you remember?<br> Now, Domu wants to find out for which of these reasons Kota didn't play outside again.<br>He asks Kota: Did you not play outside because "
+            "en": "Today, Kota didn’t play outside again.<br>Her friend Domu is going to play the question asking game to find out as quickly as possible why Kota didn't play outside again.<br> Remember these were reasons that Kota didn't play outside the last eight times.<br>He asks Kota: Did you not play outside because "
         },
         "questions": [
             {
@@ -1388,7 +1388,7 @@ export const SCENARIOS = [
         },
         "text_2": {
             "de": "Heute hat Tuba keine Trickfilme geschaut.<br>Seine Freundin Mimi wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum er die letzten 8 mal keine Trickfilme geschaut hat.<br>Mimi fragt Tuba: Hast du heute keine Trickfilme geschaut, weil",
-            "en": "Today, Tuba didn't watch cartoons again.<br>His friend Mimi already knows why Tuba didn't watch cartoons the last eight times.<br>Do you remember?<br>Now, Mimi wants to find out for which of these reasons Tuba didn't watch cartoons today.<br>She asks Tuba: Did you not watch cartoons today because"
+            "en": "Today, Tuba didn't watch cartoons again.<br>His friend Mimi is going to play the question asking game to find out as quickly as possible why Tuba didn't watch cartoons today again.<br>Remember these were reasons that Tuba didn't watch cartoons the last eight times.<br>She asks Tuba: Did you not watch cartoons today because"
         },
         "questions": [
             {
