@@ -26,9 +26,9 @@ export class Stimuli {
   scenarios: any;
   scenarioIndex: number = -1;
   ratings: number[] = [];
-  
+
   constructor(
-    private utils: Utils, 
+    private utils: Utils,
     private platform: Platform
   ) {
     console.log('Hello Stimuli Provider');
@@ -42,7 +42,7 @@ export class Stimuli {
     this.shortVersion = false; // TODO
     this.scenarioIndex = -1;
     this.ratings = [];
-    this.initialTimestamp = Date.now(); 
+    this.initialTimestamp = Date.now();
     this.participant = new Participant("anonymous-" + this.utils.getCounterValue());
   }
 
@@ -50,7 +50,7 @@ export class Stimuli {
     if (isShortVersion) {
       this.shortVersion = true;
     }
-    this.initialTimestamp = Date.now(); 
+    this.initialTimestamp = Date.now();
     this.pickCondition();
     this.setupScenarios();
   }
@@ -81,9 +81,9 @@ export class Stimuli {
 
     for (let id of scenariosIds) {
       this.scenarios.push({
-        "raw": allScenarios[id-1],
+        "raw": allScenarios[id - 1],
         "question_id": this.condition['s_' + id],
-        "question": allScenarios[id-1]['questions'][this.condition['s_' + id] - 1]
+        "question": allScenarios[id - 1]['questions'][this.condition['s_' + id] - 1]
       });
     }
 
@@ -96,7 +96,7 @@ export class Stimuli {
     return this.scenarios[this.scenarioIndex];
   }
 
-  areThereMoreScenarios() : boolean {
+  areThereMoreScenarios(): boolean {
     return this.scenarioIndex < this.scenarios.length - 1;
   }
 
@@ -110,9 +110,9 @@ export class Stimuli {
 
 
   // TODO: age groups
-  getParticipantAgeGroup() {
-    if (this.participant.age >= 18) return 18;
-    return this.participant.age;
+  getParticipantAgeGroup(age: number): string {
+    if (this.participant.age >= 18) return "18";
+    return this.participant.age + "";
   }
 
   setLang(langCode: string) {
