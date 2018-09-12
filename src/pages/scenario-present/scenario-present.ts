@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
-import { Stimuli, Utils } from '../../providers/providers';
+import { Stimuli, Utils, Data } from '../../providers/providers';
 
 
 @IonicPage()
@@ -18,7 +18,8 @@ export class ScenarioPresentPage {
     public navParams: NavParams, 
     private stimuli: Stimuli, 
     private utils: Utils, 
-    private translate: TranslateService
+    private translate: TranslateService,
+    private data: Data
   ) {
 
     if (this.stimuli.areThereMoreScenarios()) {
@@ -26,6 +27,8 @@ export class ScenarioPresentPage {
       this.utils.shuffleArray(this.stimuli.scenario.question.hints);
     }
     else {
+      // save data and go to the end page
+      this.data.save();
       this.navCtrl.setRoot("EndPage");
     } 
   }
