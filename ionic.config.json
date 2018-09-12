@@ -1,8 +1,8 @@
 {
-  "name": "halo",
-  "app_id": "98d554bd",
-  "type": "ionic-angular",
+  "name": "til",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "pro_id": "98d554bd"
 }
