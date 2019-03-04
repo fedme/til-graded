@@ -1,0 +1,27 @@
+{
+  "REGISTRATION": {
+    "TITLE": "Enter participant data",
+    "CODE_LABEL": "Participant code",
+    "GENDER_LABEL": "Participant gender",
+    "MALE": "Male",
+    "FEMALE": "Female",
+    "AGE_LABEL": "Participant age",
+    "GRADE_LABEL": "Participant grade",
+    "SUBMIT": "Begin experiment"
+  },
+  "COVER_STORY": {
+    "TEXT": "Aquí hay algunos monstruos del Planeta Apres. <br> Escucharemos historias sobre ellos y trataremos de recopilar más información sobre ellos. <br>En las historias los monstruos jugarán un juego haciendo preguntas tratando de encontrar algo lo más rápido posible. <br>Algunas preguntas son correctas y ayudarán a encontrar la respuesta rápidamente, otras preguntas no serán tan correctas y eso significará que al monstruo le tomará más tiempo encontrar la respuesta.  <br>Debes decir cuán buenas son las preguntas, es decir cuán rápido encontraran la respuesta.",
+    "NEXT": "Próximo",
+    "NEXT_CONFIRM": "Próximo (haga clic de nuevo para confirmar)"
+  },
+  "SCENARIO": {
+    "CONFIRM": "Confirmar",
+    "NEXT": "Próximo",
+    "NEXT_CONFIRM": "Próximo (haga clic de nuevo para confirmar)"
+  },
+  "END": {
+    "WELL_DONE": "¡Bien hecho!",
+    "PLAY_AGAIN": "Juega de nuevo",
+    "PLAY_AGAIN_CONFIRM": "Juega de nuevo (haga clic de nuevo para confirmar)"
+  }
+}

@@ -89,15 +89,15 @@ export class Utils {
   getAllConditions() {
     // Parse all conditions form local storage
     let allConditions = null;
-    if (localStorage.getItem("isrc-all-conditions") != null) {
-      allConditions = JSON.parse(localStorage.getItem("isrc-all-conditions"));
+    if (localStorage.getItem("isrc-tilg-all-conditions") != null) {
+      allConditions = JSON.parse(localStorage.getItem("isrc-tilg-all-conditions"));
     }
 
     if (allConditions != null && allConditions.constructor === Array && allConditions.length > 0) {
       return allConditions;
     }
     else {
-      localStorage.setItem("isrc-all-conditions", JSON.stringify(CONDITIONS));
+      localStorage.setItem("isrc-tilg-all-conditions", JSON.stringify(CONDITIONS));
       return CONDITIONS;
     }
   }
@@ -105,7 +105,7 @@ export class Utils {
   pickOneCondition(random: boolean = true) {
     let allConditions = this.getAllConditions();
     const condition = this.pickRandFromArrayNoRep(allConditions);
-    localStorage.setItem("isrc-all-conditions", JSON.stringify(allConditions));
+    localStorage.setItem("isrc-tilg-all-conditions", JSON.stringify(allConditions));
     return condition;
   }
 
@@ -113,22 +113,22 @@ export class Utils {
     let allConditions = this.getAllConditions();
     const condition = allConditions[0];
     allConditions.splice(0, 1);
-    localStorage.setItem("isrc-all-conditions", JSON.stringify(allConditions));
+    localStorage.setItem("isrc-tilg-all-conditions", JSON.stringify(allConditions));
     return condition;
   }
 
   getAllConditionsShort() {
     // Parse all conditions form local storage
     let allConditions = null;
-    if (localStorage.getItem("isrc-all-conditions-short") != null) {
-      allConditions = JSON.parse(localStorage.getItem("isrc-all-conditions-short"));
+    if (localStorage.getItem("isrc-tilg-all-conditions-short") != null) {
+      allConditions = JSON.parse(localStorage.getItem("isrc-tilg-all-conditions-short"));
     }
 
     if (allConditions != null && allConditions.constructor === Array && allConditions.length > 0) {
       return allConditions;
     }
     else {
-      localStorage.setItem("isrc-all-conditions-short", JSON.stringify(CONDITIONS_SHORT));
+      localStorage.setItem("isrc-tilg-all-conditions-short", JSON.stringify(CONDITIONS_SHORT));
       return CONDITIONS_SHORT;
     }
   }
@@ -136,7 +136,7 @@ export class Utils {
   pickOneConditionShort(random: boolean = true) {
     let allConditions = this.getAllConditionsShort();
     const condition = this.pickRandFromArrayNoRep(allConditions);
-    localStorage.setItem("isrc-all-conditions-short", JSON.stringify(allConditions));
+    localStorage.setItem("isrc-tilg-all-conditions-short", JSON.stringify(allConditions));
     return condition;
   }
 
@@ -144,7 +144,7 @@ export class Utils {
     let allConditions = this.getAllConditionsShort();
     const condition = allConditions[0];
     allConditions.splice(0, 1);
-    localStorage.setItem("isrc-all-conditions-short", JSON.stringify(allConditions));
+    localStorage.setItem("isrc-tilg-all-conditions-short", JSON.stringify(allConditions));
     return condition;
   }
 

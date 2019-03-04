@@ -5,18 +5,21 @@ export const SCENARIOS_SHORT = [
         "actor": "toma",
         "text_1": {
             "de": "Das ist Toma. <br>Toma ist öfters zu spät für die Schule.<br>Die letzten achtmal ist er aufgrund folgender Ursachen zu spät gewesen",
-            "en": "This is Toma. <br>Toma is often late for school.<br>The last eight times he was late for the following reasons"
+            "en": "This is Toma. <br>Toma is often late for school.<br>The last eight times he was late for the following reasons",
+            "es": ""
         },
         "text_2": {
             "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda will herausfinden warum.<br>Sie fragt Toma: Warst du zu spät in der Schule, weil",
-            "en": "Today, Toma was late again.<br> His friend Reda already knows why Toma was late the last eight times.<br>Do you remember?<br>Now, Reda wants to find out for which of these reasons Toma was late for school again.<br>She asks Toma: Were you late for school because"
+            "en": "Today, Toma was late again.<br> His friend Reda already knows why Toma was late the last eight times.<br>Do you remember?<br>Now, Reda wants to find out for which of these reasons Toma was late for school again.<br>She asks Toma: Were you late for school because",
+            "es": ""
         },
         "questions": [
             {
                 "id": 1,
                 "text": {
                     "de": "du etwas nicht finden konntest?",
-                    "en": "you couldn’t find something?"
+                    "en": "you couldn’t find something?",
+                    "es": ""
                 },
                 "bubble": [
                     "bycicle",
@@ -40,7 +43,8 @@ export const SCENARIOS_SHORT = [
                 "id": 2,
                 "text": {
                     "de": "du spät schlafen gingst?",
-                    "en": "you slept late?"
+                    "en": "you slept late?",
+                    "es": ""
                 },
                 "bubble": [
                     "overslept"
@@ -62,7 +66,8 @@ export const SCENARIOS_SHORT = [
                 "id": 4,
                 "text": {
                     "de": "du deine Socken nicht finden konntes?",
-                    "en": "you couldn’t find your socks?"
+                    "en": "you couldn’t find your socks?",
+                    "es": ""
                 },
                 "bubble": [
                     "socks"
@@ -84,7 +89,8 @@ export const SCENARIOS_SHORT = [
                 "id": 6,
                 "text": {
                     "de": "du etwas nicht finden konntest?",
-                    "en": "you couldn’t find something?"
+                    "en": "you couldn’t find something?",
+                    "es": ""
                 },
                 "bubble": [
                     "bycicle",
@@ -112,18 +118,21 @@ export const SCENARIOS_SHORT = [
         "actor": "fidi",
         "text_1": {
             "de": "Das ist Fidi. <br>Fidi nimmt Schwimmunterricht, aber er verpasst diesen oft.<br>Die letzten achtmal hat er den Schwimmunterricht aufgrund folgender Ursachen verpasst",
-            "en": "This is Fidi. <br>Fidi goes to swimming classes, but he often misses them.<br>The last eight times he missed his swimming class for the following reasons"
+            "en": "This is Fidi. <br>Fidi goes to swimming classes, but he often misses them.<br>The last eight times he missed his swimming class for the following reasons",
+            "es": ""
         },
         "text_2": {
             "de": "Fidi hat seinen Schwimmunterricht diese Woche wieder verpasst.<br>Seine Freundin Kota will herausfinden warum.<br>Sie fragt Fidi: Hast du den Schwimmkurs verpasst, weil",
-            "en": "Today, Fidi missed his swimming class again.<br>His friend Kota already knows these are the reasons why Fidi missed his swimming class the last eight times.<br>Do you remember? <br> Now, Kota wants to find out for which of these reasons Fidi missed his swimming class again.<br>She asks Fidi: Did you miss you swimming class because"
+            "en": "Today, Fidi missed his swimming class again.<br>His friend Kota already knows these are the reasons why Fidi missed his swimming class the last eight times.<br>Do you remember? <br> Now, Kota wants to find out for which of these reasons Fidi missed his swimming class again.<br>She asks Fidi: Did you miss you swimming class because",
+            "es": ""
         },
         "questions": [
             {
                 "id": 1,
                 "text": {
                     "de": "du woanders hin gegangen bist?",
-                    "en": "you went somewhere else?"
+                    "en": "you went somewhere else?",
+                    "es": ""
                 },
                 "bubble": [
                     "cake",
@@ -147,7 +156,8 @@ export const SCENARIOS_SHORT = [
                 "id": 2,
                 "text": {
                     "de": "du den Bus verpasst hast?",
-                    "en": "you missed the bus?"
+                    "en": "you missed the bus?",
+                    "es": ""
                 },
                 "bubble": [
                     "bus"
@@ -169,7 +179,8 @@ export const SCENARIOS_SHORT = [
                 "id": 4,
                 "text": {
                     "de": "du deine Katze zum Tierarzt gebracht hast?",
-                    "en": "you took your cat to the animal doctor?"
+                    "en": "you took your cat to the animal doctor?",
+                    "es": ""
                 },
                 "bubble": [
                     "cat"
@@ -191,7 +202,8 @@ export const SCENARIOS_SHORT = [
                 "id": 6,
                 "text": {
                     "de": "du woanders hin gegangen bist?",
-                    "en": "you went somewhere else?"
+                    "en": "you went somewhere else?",
+                    "es": ""
                 },
                 "bubble": [
                     "cake",
