@@ -1,6 +1,6 @@
 {
   "name": "til-graded",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "author": "Federico Meini",
   "homepage": "https://isearchlab.org",
   "private": true,
@@ -52,7 +52,7 @@
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "^3.2.0",
+    "@ionic/app-scripts": "^3.2.3",
     "typescript": "2.4.2"
   },
   "description": "TIL-graded Stimuli",
