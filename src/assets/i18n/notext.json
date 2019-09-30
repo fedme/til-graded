@@ -1,6 +1,6 @@
 {
   "REGISTRATION": {
-    "TITLE": "Enter participant data",
+    "TITLE": "Index 0",
     "CODE_LABEL": "Participant code",
     "GENDER_LABEL": "Participant gender",
     "MALE": "Male",
@@ -10,7 +10,7 @@
     "SUBMIT": "Begin experiment"
   },
   "COVER_STORY": {
-    "TEXT": "Here are some monsters from the Planet Apres. <br> We're going to hear some stories about them. <br>In the stories, these monsters are going to play a game by asking questions, trying to find something out as quickly as possible. <br> Some questions are good and will help find out the answer quickly, and some question are bad and mean the monster might take a long time to find the answer. <br> You need to tell me how good their questions are, that is, how quickly they will find out the answer.",
+    "TEXT": "<strong> Index 1 </strong>",
     "NEXT": "Next",
     "NEXT_CONFIRM": "Next (press again to confirm)"
   },

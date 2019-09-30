@@ -6,12 +6,14 @@ export const SCENARIOS = [
         "text_1": {
             "de": "Das ist Toma. <br>Toma ist öfters zu spät in der Schule.<br>Die letzten achtmal ist er wegen folgender Gründe zu spät gewesen",
             "en": "This is Toma. <br>Toma is often late for school.<br>The last eight times he was late for the following reasons",
-            "es": "Toma llega tarde a la escuela frecuentemente.<br>Las últimas 8 veces llegó tarde por las siguientes razones"
+            "es": "Toma llega tarde a la escuela frecuentemente.<br>Las últimas 8 veces llegó tarde por las siguientes razones", 
+            "notext": "Index 9"
         },
         "text_2": {
             "de": "Toma war wiedermal zu spät.<br>Tomas Freundin Reda wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br> Denk daran, das hier sind die Gründe warum Toma die letzten 8 mal zu spät war.<br> Sie fragt Toma: Warst du zu spät in der Schule, weil",
             "en": "Today, Toma was late again.<br> His friend Reda is going to play the question asking game to find out as quickly as possible why Toma was late again.<br> Remember these were the reasons that Toma was late the last eight times.<br>She asks Toma: Were you late for school because",
-            "es": "Toma llegó tarde hoy de nuevo.<br>Su amiga Reda le hará algunas preguntas para saber por qué Toma llegó tarde otra vez.<br>Recuerda que estas fueron las razones por las que Toma llegó tarde últimas 8 veces.<br>Reda le preguntó a Toma: ¿Llegaste tarde a la escuela porque"
+            "es": "Toma llegó tarde hoy de nuevo.<br>Su amiga Reda le hará algunas preguntas para saber por qué Toma llegó tarde otra vez.<br>Recuerda que estas fueron las razones por las que Toma llegó tarde últimas 8 veces.<br>Reda le preguntó a Toma: ¿Llegaste tarde a la escuela porque",
+            "notext": "Index 10"
         },
         "questions": [
             {
@@ -19,7 +21,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du etwas nicht finden konntest?",
                     "en": "you couldn’t find something?",
-                    "es": "no pudiste encontrar algo?"
+                    "es": "no pudiste encontrar algo?", 
+                    "notext": "see corresponding image in Index 10"
                 },
                 "bubble": [
                     "bycicle",
@@ -44,7 +47,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du verschlafen hast?",
                     "en": "you slept late?",
-                    "es": "dormiste tarde?"
+                    "es": "dormiste tarde?", 
+                    "notext": "see corresponding image in Index 10"
                 },
                 "bubble": [
                     "overslept"
@@ -67,7 +71,9 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du dein Fahrrad nicht finden konntes?",
                     "en": "you couldn’t find your bike?",
-                    "es": "no podías encontrar tu bicicleta?"
+                    "es": "no podías encontrar tu bicicleta?",
+                    "notext": "see corresponding image in Index 10"
+
                 },
                 "bubble": [
                     "bycicle"
@@ -90,7 +96,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du deine Socken nicht finden konntes?",
                     "en": "you couldn’t find your socks?",
-                    "es": "no podías encontrar tus medias?"
+                    "es": "no podías encontrar tus medias?", 
+                    "notext": "see corresponding image in Index 10"
                 },
                 "bubble": [
                     "socks"
@@ -113,7 +120,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du ein Kleidungsstück nicht finden konntest?",
                     "en": "you couldn’t find a piece of clothing?",
-                    "es": "no podías encontrar una pieza de ropa?"
+                    "es": "no podías encontrar una pieza de ropa?",
+                    "notext": "see corresponding image in Index 10"
                 },
                 "bubble": [
                     "hat",
@@ -137,7 +145,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du etwas nicht finden konntest?",
                     "en": "you couldn’t find something?",
-                    "es": "no podías encontrar algo?"
+                    "es": "no podías encontrar algo?",
+                    "notext": "see corresponding image in Index 10"
                 },
                 "bubble": [
                     "bycicle",
@@ -162,7 +171,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du ein Kleidungsstück nicht finden konntest?",
                     "en": "you couldn’t find a piece of clothing?",
-                    "es": "no podías encontrar una pieza de ropa?"
+                    "es": "no podías encontrar una pieza de ropa?",
+                    "notext": "see corresponding image in Index 10"
                 },
                 "bubble": [
                     "hat",
@@ -186,7 +196,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du verschlafen hast?",
                     "en": "you slept late?",
-                    "es": "dormiste tarde?"
+                    "es": "dormiste tarde?",
+                    "notext": "see corresponding image in Index 10"
                 },
                 "bubble": [
                     "overslept"
@@ -213,12 +224,14 @@ export const SCENARIOS = [
         "text_1": {
             "de": "Das ist Fidi. <br>Fidi nimmt Schwimmunterricht, aber er kommt öfters nicht.<br>Die letzten achtmal hat er den Schwimmunterricht wegen folgender Gründe ausfallen lassen",
             "en": "This is Fidi. <br>Fidi goes to swimming class, but he often misses them.<br>The last eight times he missed his swimming class for the following reasons",
-            "es": "Este es Fidi. <br>Él va a clases de natación, pero a menudo falta a clases.<br>El faltó a las últimas 8 clases, por las siguientes razones"
+            "es": "Este es Fidi. <br>Él va a clases de natación, pero a menudo falta a clases.<br>El faltó a las últimas 8 clases, por las siguientes razones",
+            "notext": "Index 3"
         },
         "text_2": {
             "de": "Fidi kam diese Woche wieder nicht zum Schwimmunterricht.<br>Seine Freundin Kota wird das Fragen Spiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Fidi die letzten 8 mal gefehlt hat.<br>Sie fragt Fidi: Bist du nicht zum Schwimmkurs gekommen, weil",
             "en": "Today, Fidi missed his swimming class again.<br>His friend Kota is going to play the question asking game to find out as quickly as possible why Fidi missed the class again.<br> Remember these were the reasons that Fidi missed the class the last eight times.<br>She asks Fidi: Did you miss you swimming class because",
-            "es": "Fidi faltó a su clase de natación de nuevo esta semana.<br>Su amiga Kota le hará algunas preguntas para saber por qué Fidi faltó a su clase de natación otra vez.<br>Recuerda que estas fueron las razones por las que Fidi faltó a su clase de natación últimas 8 veces.<br>Kota le preguntó a Fidi: ¿Faltó a clase de natación porque"
+            "es": "Fidi faltó a su clase de natación de nuevo esta semana.<br>Su amiga Kota le hará algunas preguntas para saber por qué Fidi faltó a su clase de natación otra vez.<br>Recuerda que estas fueron las razones por las que Fidi faltó a su clase de natación últimas 8 veces.<br>Kota le preguntó a Fidi: ¿Faltó a clase de natación porque",
+            "notext": "Index 4"
         },
         "questions": [
             {
@@ -226,7 +239,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du woanders hin gegangen bist?",
                     "en": "you went somewhere else?",
-                    "es": "fuiste a otro lugar?"
+                    "es": "fuiste a otro lugar?",
+                    "notext": "see corresponding image in Index 4"
                 },
                 "bubble": [
                     "cake",
@@ -251,7 +265,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du den Bus verpasst hast?",
                     "en": "you missed the bus?",
-                    "es": "se le fue la guagua?"
+                    "es": "se le fue la guagua?",
+                    "notext": "see corresponding image in Index 4"
                 },
                 "bubble": [
                     "bus"
@@ -274,7 +289,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du bei einer Geburtstagsfeier warst?",
                     "en": "you went to a birthday party?",
-                    "es": "fuiste a una fiesta de cumpleaños?"
+                    "es": "fuiste a una fiesta de cumpleaños?",
+                    "notext": "see corresponding image in Index 4"
                 },
                 "bubble": [
                     "cake"
@@ -297,7 +313,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du deine Katze zum Tierarzt gebracht hast?",
                     "en": "you took your cat to the animal doctor?",
-                    "es": "llevaste a tu gato al veterinario?"
+                    "es": "llevaste a tu gato al veterinario?",
+                    "notext": "see corresponding image in Index 4"
                 },
                 "bubble": [
                     "cat"
@@ -320,7 +337,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du dein Haustier zum Tierarzt gebracht hast?",
                     "en": "you took your pet to the animal doctor?",
-                    "es": "fuiste al veterinario?"
+                    "es": "fuiste al veterinario?",
+                    "notext": "see corresponding image in Index 4"
                 },
                 "bubble": [
                     "dog",
@@ -344,7 +362,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du woanders hin gegangen bist?",
                     "en": "you went somewhere else?",
-                    "es": "fuiste a otro lugar?"
+                    "es": "fuiste a otro lugar?",
+                    "notext": "see corresponding image in Index 4"
                 },
                 "bubble": [
                     "cake",
@@ -369,7 +388,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du dein Haustier zum Tierarzt gebracht hast?",
                     "en": "you took your pet to the animal doctor?",
-                    "es": "fuiste al veterinario?"
+                    "es": "fuiste al veterinario?",
+                    "notext": "see corresponding image in Index 4"
                 },
                 "bubble": [
                     "dog",
@@ -393,7 +413,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du den Bus verpasst hast?",
                     "en": "you missed the bus?",
-                    "es": "se le fue la guagua?"
+                    "es": "se le fue la guagua?",
+                    "notext": "see corresponding image in Index 4"
                 },
                 "bubble": [
                     "bus"
@@ -420,12 +441,14 @@ export const SCENARIOS = [
         "text_1": {
             "de": "Das ist Reda. <br>Reda isst ihr Abendessen oft nicht auf.<br>Die letzten achtmal hat sie ihr Abendessen wegen folgender Gründe nicht aufgegessen",
             "en": "This is Reda. <br>Reda often doesn’t finish her dinner.<br>The last eight times she didn’t finish her dinner for the following reasons",
-            "es": "Esta es Reda. <br>Reda a menudo no se come toda la comida.<br>Las últimas 8 veces no se comió toda la comida, por las siguientes razones"
+            "es": "Esta es Reda. <br>Reda a menudo no se come toda la comida.<br>Las últimas 8 veces no se comió toda la comida, por las siguientes razones",
+            "notext": "Index 24"
         },
         "text_2": {
             "de": "Reda hat ihr Abendessen heute wiedermal nicht aufgegessen.<br>Ihr Freund Miru wird das Fragen Spiel spielen, um so schnell  wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Reda die letzten 8 mal nicht aufgegessen hat.<br>Er fragt Reda: Hast du dein Abendessen nicht aufgegessen, weil",
             "en": "Today, Reda didn’t finish her dinner again.<br>Her friend Miru is going to play the question asking game to find out as quickly as possible why Reda didn't finish her dinner again.<br>Remember these were the reasons that Reda didn’t finish her dinner the last eight times.<br>He asks Reda: Did you not finish your dinner because",
-            "es": "Hoy, Reda no se comió toda la comida.<br>Su amiga Miru le hará algunas preguntas para saber por qué Reda no se comió toda la comida otra vez.<br>Recuerda que estas fueron las razones por las que Reda no se comió toda la comida últimas 8 veces.<br>Miru le preguntó a Reda: ¿No se comió todo porque"
+            "es": "Hoy, Reda no se comió toda la comida.<br>Su amiga Miru le hará algunas preguntas para saber por qué Reda no se comió toda la comida otra vez.<br>Recuerda que estas fueron las razones por las que Reda no se comió toda la comida últimas 8 veces.<br>Miru le preguntó a Reda: ¿No se comió todo porque",
+            "notext": "Index 25"
         },
         "questions": [
             {
@@ -433,7 +456,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du etwas darin nicht magst?",
                     "en": "you didn't like something in your dinner plate?",
-                    "es": "no te gustó algo de la comida?"
+                    "es": "no te gustó algo de la comida?",
+                    "notext": "see corresponding image in Index 25"
                 },
                 "bubble": [
                     "tomato",
@@ -458,7 +482,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du einen Keks gegessen hast und  nicht mehr hungrig warst?",
                     "en": "you ate a biscuit and weren't hungry?",
-                    "es": "te comiste un biscocho y no tenías hambre?"
+                    "es": "te comiste un biscocho y no tenías hambre?",
+                    "notext": "see corresponding image in Index 25"
                 },
                 "bubble": [
                     "biscuit"
@@ -481,7 +506,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du keine Tomaten magst?",
                     "en": "you didn't like the tomatoes?",
-                    "es": "no te gustaban las zanahorias?"
+                    "es": "no te gustaban las zanahorias?",
+                    "notext": "see corresponding image in Index 25"
                 },
                 "bubble": [
                     "tomato"
@@ -504,7 +530,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du keine Erbsen magst?",
                     "en": "you didn't like the peas?",
-                    "es": "no te gustaban los vegetales verdes?"
+                    "es": "no te gustaban los vegetales verdes?",
+                    "notext": "see corresponding image in Index 25"
                 },
                 "bubble": [
                     "peas"
@@ -527,7 +554,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du kein grünes Gemüse magst?",
                     "en": "you didn't like green vegetables?",
-                    "es": "no te gustaban los vegetales verdes?"
+                    "es": "no te gustaban los vegetales verdes?",
+                    "notext": "see corresponding image in Index 25"
                 },
                 "bubble": [
                     "broccoli",
@@ -551,7 +579,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du etwas darin nicht magst?",
                     "en": "you didn't like something in your dinner plate?",
-                    "es": "no te gustó algo de la comida?"
+                    "es": "no te gustó algo de la comida?",
+                    "notext": "see corresponding image in Index 25"
                 },
                 "bubble": [
                     "tomato",
@@ -576,7 +605,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du kein grünes Gemüse magst?",
                     "en": "you didn't like green vegetables?",
-                    "es": "no te gustaban los vegetales verdes?"
+                    "es": "no te gustaban los vegetales verdes?",
+                    "notext": "see corresponding image in Index 25"
                 },
                 "bubble": [
                     "broccoli",
@@ -600,7 +630,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du einen Keks gegessen hast und nicht mehr hungrig warst?",
                     "en": "you ate a biscuit and weren't hungry?",
-                    "es": "te comiste un biscocho y no tenías hambre?"
+                    "es": "te comiste un biscocho y no tenías hambre?",
+                    "notext": "see corresponding image in Index 25"
                 },
                 "bubble": [
                     "biscuit"
@@ -627,12 +658,14 @@ export const SCENARIOS = [
         "text_1": {
             "de": "Das ist Domu. <br>Domu hat ein Spielzeugauto, aber dieses funktioniert oft nicht.<br>Die letzten achtmal hat Domus Spielzeugauto wegen der folgenden Gründe nicht funktioniert",
             "en": "This is Domu. <br>Domu has a toy car but his toy car is often not working.<br>In the last eight times, Domu’s car was not working for the following reasons", 
-            "es": "Esto es Domu. <br>Domu tiene un carro de juguete pero a menudo el carro no funciona.<br>Las últimas 8 veces el carro no funcionó por las siguientes razones"
+            "es": "Esto es Domu. <br>Domu tiene un carro de juguete pero a menudo el carro no funciona.<br>Las últimas 8 veces el carro no funcionó por las siguientes razones", 
+            "notext": "Index 6"
         },
         "text_2": {
             "de": "Domus Auto funktioniert wiedermal nicht.<br>Seine Freundin Leli wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Domus Auto die letzten 8 mal nicht funktioniert hat.<br>Sie fragt Domu: Funktioniert dein Auto nicht, weil",
             "en": "Today, Domu’s toy car is not working again.<br>His friend Leli is going to play the question asking game to find out as quickly as possible why Domu's toy car is not working again.<br> Remember these were the reasons that Domu’s toy car was not working the last eight times.<br>She asks Domu: Is your toy car not working because",
-            "es": "El carro de Domu se rompió de nuevo.<br>Su amiga Leli le hará algunas preguntas para saber por qué el carro se rompió otra vez.<br>Recuerda que estas fueron las razones por las que el carro de Domu se rompió las últimas 8 veces.<br>Leli le pregunta a Domu: ¿El carro se rompió porque"
+            "es": "El carro de Domu se rompió de nuevo.<br>Su amiga Leli le hará algunas preguntas para saber por qué el carro se rompió otra vez.<br>Recuerda que estas fueron las razones por las que el carro de Domu se rompió las últimas 8 veces.<br>Leli le pregunta a Domu: ¿El carro se rompió porque",
+            "notext": "Index 7"
         },
         "questions": [
             {
@@ -640,7 +673,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "jemand in deiner Familie es kaputt gemacht hat?",
                     "en": "someone in your family broke it?", 
-                    "es": "alguien de tu familia lo rompió?"
+                    "es": "alguien de tu familia lo rompió?",
+                    "notext": "see correspoinding image in Index 7"
                 },
                 "bubble": [
                     "foot",
@@ -665,7 +699,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "die Batterie leer ist?",
                     "en": "the batteries ran out?",
-                    "es": "se gastaron las baterías?"
+                    "es": "se gastaron las baterías?",
+                    "notext": "see correspoinding image in Index 7"
                 },
                 "bubble": [
                     "battery"
@@ -688,7 +723,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "deine Mutter darauf getreten ist?",
                     "en": "your mother stepped on it?",
-                    "es": "tu mamá lo pisó?"
+                    "es": "tu mamá lo pisó?",
+                    "notext": "see correspoinding image in Index 7"
                 },
                 "bubble": [
                     "foot"
@@ -711,7 +747,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Bruder es ins Wasser fallen liess?",
                     "en": "your brother dropped it into water?", 
-                    "es": "tu hermano se le cayó al agua?"
+                    "es": "tu hermano se le cayó al agua?",
+                    "notext": "see correspoinding image in Index 7"
                 },
                 "bubble": [
                     "water"
@@ -734,7 +771,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "eines deiner Geschwister es kaputt gemacht hat?",
                     "en": "your sibling broke it?",
-                    "es": "tu hermano lo rompió?"
+                    "es": "tu hermano lo rompió?",
+                    "notext": "see correspoinding image in Index 7"
                 },
                 "bubble": [
                     "wheel",
@@ -758,7 +796,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "jemand in deiner Familie es kaputt gemacht hat?",
                     "en": "someone in your family broke it?",
-                    "es": "alguien de tu familia lo rompió?"
+                    "es": "alguien de tu familia lo rompió?",
+                    "notext": "see correspoinding image in Index 7"
                 },
                 "bubble": [
                     "foot",
@@ -783,7 +822,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "eines deiner Geschwister es kaputt gemacht hat?",
                     "en": "your sibling broke it?", 
-                    "es": "tu hermano lo rompió?"
+                    "es": "tu hermano lo rompió?",
+                    "notext": "see correspoinding image in Index 7"
                 },
                 "bubble": [
                     "wheel",
@@ -807,7 +847,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "die Batterie leer ist?",
                     "en": "the batteries ran out?", 
-                    "es": "se gastaron las baterías?"
+                    "es": "se gastaron las baterías?",
+                    "notext": "see correspoinding image in Index 7"
                 },
                 "bubble": [
                     "battery"
@@ -834,12 +875,14 @@ export const SCENARIOS = [
         "text_1": {
             "de": "Das ist Mimi. <br>Mimi hat glänzende, weiße Schuhe.<br>Die letzten achtmal waren sie wegen folgender Gründe schmutzig",
             "en": "This is Mimi. <br>Mimi has shiny white shoes but they are often dirty.<br>The last eight times, they were dirty for the following reasons", 
-            "es": "Esta es Mimi. <br>Mimi tiene zapatos brillantes, pero frecuentemente están sucios.<br>Las últimas 8 veces estaban sucios por las siguientes razones"
+            "es": "Esta es Mimi. <br>Mimi tiene zapatos brillantes, pero frecuentemente están sucios.<br>Las últimas 8 veces estaban sucios por las siguientes razones",
+            "notext": "Index 21"
         },
         "text_2": {
             "de": "Mimis Schuhe sind wiedermal schmutzig.<br>Ihr Freund Toma wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Mimis Schuhe die letzten 8 mal dreckig waren.<br>Er fragt Mimi: Sind deine Schuhe schmutzig, weil",
             "en": "Today, Mimi’s shoes are dirty again.<br>Her friend Toma is going to play the question asking game to find out as quickly as possible why Mimi's shoes are dirty again.<br>Remember these were the reasons that Mimi's shoes were dirty the last eight times. <br>He asks Mimi: Are your shoes dirty because",
-            "es": "Los zapatos de Mimi están sucios de nuevo.<br>Su amiga Toma le hará algunas preguntas para saber por qué los zapatos de Mimi están sucios otra vez.<br>Recuerda que estas fueron las razones por las que los zapatos estaban sucios las últimas 8 veces.<br>Toma le pregunta a Mimi: ¿Los zapatos están sucios porque"
+            "es": "Los zapatos de Mimi están sucios de nuevo.<br>Su amiga Toma le hará algunas preguntas para saber por qué los zapatos de Mimi están sucios otra vez.<br>Recuerda que estas fueron las razones por las que los zapatos estaban sucios las últimas 8 veces.<br>Toma le pregunta a Mimi: ¿Los zapatos están sucios porque",
+            "notext": "Index 22"
         },
         "questions": [
             {
@@ -847,7 +890,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du etwas darauf verschüttet hast?",
                     "en": "you spilled something on them?", 
-                    "es": "derramaste algo en los zapatos?"
+                    "es": "derramaste algo en los zapatos?",
+                    "notext": "see corresponding image in Index 22"
                 },
                 "bubble": [
                     "paint",
@@ -872,7 +916,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du durch den Schlamm gelaufen bist?",
                     "en": "you stepped into the mud?", 
-                    "es": "caminaste en el fango?"
+                    "es": "caminaste en el fango?",
+                    "notext": "see corresponding image in Index 22"
                 },
                 "bubble": [
                     "mud"
@@ -895,7 +940,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du Farbe darauf verschüttet hast?",
                     "en": "you spilled paint on them?", 
-                    "es": "derramaste pintura en los zapatos?"
+                    "es": "derramaste pintura en los zapatos?",
+                    "notext": "see corresponding image in Index 22"
                 },
                 "bubble": [
                     "paint"
@@ -918,7 +964,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du Tomatensaft darauf verschüttet hast?",
                     "en": "you spilled tomato juice on them?", 
-                    "es": "derramaste jugo de tomate en los zapatos?"
+                    "es": "derramaste jugo de tomate en los zapatos?",
+                    "notext": "see corresponding image in Index 22"
                 },
                 "bubble": [
                     "juice"
@@ -941,7 +988,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du ein Getränk darauf verschüttet hast?",
                     "en": "you spilled a drink on them?", 
-                    "es": "derramaste una bebida en los zapatos?"
+                    "es": "derramaste una bebida en los zapatos?",
+                    "notext": "see corresponding image in Index 22"
                 },
                 "bubble": [
                     "chocolate",
@@ -965,7 +1013,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du etwas darauf verschüttet hast?",
                     "en": "you spilled something on them?", 
-                    "es": "derramaste algo en los zapatos?"
+                    "es": "derramaste algo en los zapatos?",
+                    "notext": "see corresponding image in Index 22"
                 },
                 "bubble": [
                     "paint",
@@ -990,7 +1039,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du ein Getränk darauf verschüttet hast?",
                     "en": "you spilled a drink on them?", 
-                    "es": "derramaste una bebida en los zapatos?"
+                    "es": "derramaste una bebida en los zapatos?",
+                    "notext": "see corresponding image in Index 22"
                 },
                 "bubble": [
                     "chocolate",
@@ -1014,7 +1064,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du durch den Schlamm gelaufen bist?",
                     "en": "you stepped into the mud?", 
-                    "es": "caminaste en el fango?"
+                    "es": "caminaste en el fango?",
+                    "notext": "see corresponding image in Index 22"
                 },
                 "bubble": [
                     "mud"
@@ -1041,12 +1092,14 @@ export const SCENARIOS = [
         "text_1": {
             "de": "Das ist Leli. <br>Leli ist ein glückliches Mädchen aber sie weint oft.<br>Die letzten achtmal hat Leli wegen folgender Gründe geweint.",
             "en": "This is Leli. <br>Leli is a happy girl but she cries often.<br>The last eight times Leli was crying for the following reasons", 
-            "es": "Esta es Leli. <br>Leli es una niña feliz, pero llora a menudo.<br>Las últimas 8 veces Leli llorró por las siguientes razones"
+            "es": "Esta es Leli. <br>Leli es una niña feliz, pero llora a menudo.<br>Las últimas 8 veces Leli llorró por las siguientes razones",
+            "notext": "Index 12"
         },
         "text_2": {
             "de": "Leli weint heute wieder.<br>Ihr Freund Fidi wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum Leli die letzten 8 mal geweint hat.<br>Er fragt Leli: Weinst du, weil",
             "en": "Today, Leli is crying again.<br>Her friend Fidi is going to play the question asking game to find out as quickly as possible why Leli is crying again.<br> Remember these were the reasons that Leli was crying the last eight times.<br>He asks Leli: Are you crying because", 
-            "es": "Leli está llorando de nuevo hoy.<br>Su amiga Fidi le hará algunas preguntas para saber por qué Leli está llorando otra vez.<br>Recuerda que estas fueron las razones por las que Leli lloró las últimas 8 veces.<br> Fidi pregunta a Leli: ¿Està llorando por/porque"
+            "es": "Leli está llorando de nuevo hoy.<br>Su amiga Fidi le hará algunas preguntas para saber por qué Leli está llorando otra vez.<br>Recuerda que estas fueron las razones por las que Leli lloró las últimas 8 veces.<br> Fidi pregunta a Leli: ¿Està llorando por/porque",
+            "notext": "Index 13"
         },
         "questions": [
             {
@@ -1054,7 +1107,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Bruder etwas  getan hat?",
                     "en": "of something your brother did?", 
-                    "es": "algo que hizo su hermano?"
+                    "es": "algo que hizo su hermano?",
+                    "notext": "see corresponding image in Index 13"
                 },
                 "bubble": [
                     "shout",
@@ -1079,7 +1133,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du hingefallen bist und dich verletzt hast?",
                     "en": "you fell down and hurt yourself?", 
-                    "es": "te caíste y te lastimaste?"
+                    "es": "te caíste y te lastimaste?",
+                    "notext": "see corresponding image in Index 13"
                 },
                 "bubble": [
                     "plaster"
@@ -1102,7 +1157,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Bruder dich angeschrien hat?",
                     "en": "your brother shouted at you?", 
-                    "es": "tu hermano te gritó?"
+                    "es": "tu hermano te gritó?",
+                    "notext": "see corresponding image in Index 13"
                 },
                 "bubble": [
                     "shout"
@@ -1125,7 +1181,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Bruder dein Spielzeugpferd kaputt gemacht hat?",
                     "en": "your brother broke your toy horse?", 
-                    "es": "tu hermano rompió tu caballo de juguete?"
+                    "es": "tu hermano rompió tu caballo de juguete?",
+                    "notext": "see corresponding image in Index 13"
 
                 },
                 "bubble": [
@@ -1149,7 +1206,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Bruder eines deiner Spielzeuge kaputt gemacht hat?",
                     "en": "your brother broke one of your toys?", 
-                    "es": "tu hermano rompió uno de tus juguetes?"
+                    "es": "tu hermano rompió uno de tus juguetes?",
+                    "notext": "see corresponding image in Index 13"
                 },
                 "bubble": [
                     "elephant",
@@ -1173,7 +1231,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Bruder etwas getan hat?",
                     "en": "of something your brother did?", 
-                    "es": "algo que hizo tu hermano?"
+                    "es": "algo que hizo tu hermano?",
+                    "notext": "see corresponding image in Index 13"
                 },
                 "bubble": [
                     "shout",
@@ -1198,7 +1257,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Bruder eines deiner Spielzeuge kaputt gemacht hat?",
                     "en": "your brother broke one of your toys?", 
-                    "es": "tu hermano rompió uno de tus juguetes?"
+                    "es": "tu hermano rompió uno de tus juguetes?",
+                    "notext": "see corresponding image in Index 13"
                 },
                 "bubble": [
                     "elephant",
@@ -1222,7 +1282,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du hingefallen bist und dich verletzt hast?",
                     "en": "you fell down and hurt yourself?", 
-                    "es": "te caíste y te lastimaste?"
+                    "es": "te caíste y te lastimaste?",
+                    "notext": "see corresponding image in Index 13"
 
                 },
                 "bubble": [
@@ -1250,12 +1311,14 @@ export const SCENARIOS = [
         "text_1": {
             "de": "Das ist Kota. <br>Kota liebt es draußen zu spielen.<br>Aber manchmal spielt sie nicht draußen.<br>Die letzten achtmal hat sie wegen folgender Gründe nicht draußen gespielt",
             "en": "This is Kota. <br>Kota loves playing outside.<br>But sometimes she doesn’t play outside.<br>The last eight times she didn’t play outside for the following reasons", 
-            "es": "Esta es Kota. <br>A Kota le encanta salir a jugar, pero algunas veces ella no sale a jugar afuera.<br> Las últimas veces Kota no salió a jugar por las siguientes razones"
+            "es": "Esta es Kota. <br>A Kota le encanta salir a jugar, pero algunas veces ella no sale a jugar afuera.<br> Las últimas veces Kota no salió a jugar por las siguientes razones",
+            "notext": "Index 15"
         },
         "text_2": {
             "de": "Kota hat heute wieder nicht draußen gespielt.<br>Ihr Freund Domu wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br> Denk daran, das hier sind die Gründe warum Kota die letzten 8 mal nicht draußen gespielt hat.<br>Er fragt Kota: Wolltest Du  nicht draußen spielen, weil",
             "en": "Today, Kota didn’t play outside again.<br>Her friend Domu is going to play the question asking game to find out as quickly as possible why Kota didn't play outside again.<br> Remember these were reasons that Kota didn't play outside the last eight times.<br>He asks Kota: Did you not play outside because ", 
-            "es": "Kota no salió a jugar hoy.<br>Su amiga Domu le hará algunas preguntas para saber por qué Kota no salió a jugar otra vez.<br>Recuerda que estas fueron las razones por las que  Kota no salió a jugar las últimas 8 veces.<br> Domu le preguntó a Kota: ¿No salió a jugar porque"
+            "es": "Kota no salió a jugar hoy.<br>Su amiga Domu le hará algunas preguntas para saber por qué Kota no salió a jugar otra vez.<br>Recuerda que estas fueron las razones por las que  Kota no salió a jugar las últimas 8 veces.<br> Domu le preguntó a Kota: ¿No salió a jugar porque",
+            "notext": "Index 16"
 
         },
         "questions": [
@@ -1264,7 +1327,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "das Wetter nicht gut war?",
                     "en": "the weather was not right?", 
-                    "es": "el clima no estaba bueno?"
+                    "es": "el clima no estaba bueno?",
+                    "notext": "see corresponding image in Index 16"
                 },
                 "bubble": [
                     "hot",
@@ -1289,7 +1353,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "der Spielplatz gesperrt war?",
                     "en": "the playground was closed?", 
-                    "es": "el parque estaba cerrado?"
+                    "es": "el parque estaba cerrado?",
+                    "notext": "see corresponding image in Index 16"
                 },
                 "bubble": [
                     "playground"
@@ -1312,7 +1377,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "es zu warm war?",
                     "en": "it was too hot?", 
-                    "es": "había demasiado calor?"
+                    "es": "había demasiado calor?",
+                    "notext": "see corresponding image in Index 16"
                 },
                 "bubble": [
                     "hot"
@@ -1335,7 +1401,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "es zu windig war?",
                     "en": "it was too windy?", 
-                    "es": "había demasiado viento?"
+                    "es": "había demasiado viento?",
+                    "notext": "see corresponding image in Index 16"
                 },
                 "bubble": [
                     "wind"
@@ -1358,7 +1425,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "es zu kalt war?",
                     "en": "it was too cold?", 
-                    "es": "había demasiado frío?"
+                    "es": "había demasiado frío?",
+                    "notext": "see corresponding image in Index 16"
                 },
                 "bubble": [
                     "snow",
@@ -1382,7 +1450,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "das Wetter nicht gut war?",
                     "en": "the weather was not right?", 
-                    "es": "el clima no estaba bueno?"
+                    "es": "el clima no estaba bueno?",
+                    "notext": "see corresponding image in Index 16"
                 },
                 "bubble": [
                     "hot",
@@ -1407,7 +1476,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "es zu kalt war?",
                     "en": "it was too cold?", 
-                    "es": "había demasiado frío?"
+                    "es": "había demasiado frío?",
+                    "notext": "see corresponding image in Index 16"
                 },
                 "bubble": [
                     "snow",
@@ -1431,7 +1501,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "der Spielplatz gesperrt war?",
                     "en": "the playground was closed?", 
-                    "es": "el parque estaba cerrado?"
+                    "es": "el parque estaba cerrado?",
+                    "notext": "see corresponding image in Index 16"
                 },
                 "bubble": [
                     "playground"
@@ -1458,12 +1529,14 @@ export const SCENARIOS = [
         "text_1": {
             "de": "Das ist Tuba. <br>Tuba sieht sich gern Trickfilme an.<br>Aber manchmal sieht er sich keine an.<br>Die letzten achtmal hat er sich wegen folgender Gründe keine Trickfilme angesehen",
             "en": "This is Tuba. <br>Tuba likes to watch cartoons but sometimes he doesn’t watch them.<br>The last eight times Tuba didn't watch cartoons because of the following reasons", 
-            "es": "Esto es Tuba. <br>A Tuba le encanta ver muñequitos, pero a veces no los ve.<br>Las últimas 8 veces, tuba no vio muñequitos por las siguientes razones"
+            "es": "Esto es Tuba. <br>A Tuba le encanta ver muñequitos, pero a veces no los ve.<br>Las últimas 8 veces, tuba no vio muñequitos por las siguientes razones",
+            "notext": "Index 18"
         },
         "text_2": {
             "de": "Heute hat Tuba keine Trickfilme geschaut.<br>Seine Freundin Mimi wird das Fragenspiel spielen, um so schnell wie möglich herauszufinden warum.<br>Denk daran, das hier sind die Gründe warum er die letzten 8 mal keine Trickfilme geschaut hat.<br>Mimi fragt Tuba: Hast du heute keine Trickfilme geschaut, weil",
             "en": "Today, Tuba didn't watch cartoons again.<br>His friend Mimi is going to play the question asking game to find out as quickly as possible why Tuba didn't watch cartoons today again.<br>Remember these were reasons that Tuba didn't watch cartoons the last eight times.<br>She asks Tuba: Did you not watch cartoons today because", 
-            "es": "Hoy Tuba tampoco vio muñequitos.<br>Su amiga Mimi le hará algunas preguntas para saber por qué tuba no vio los muñequitos otra vez.<br>Recuerda que estas fueron las razones por las que Tuba no vio los muñequitos las últimas 8 veces. <br>MiMi le preguntó a Tuba: ¿No viste muñequitos porque"
+            "es": "Hoy Tuba tampoco vio muñequitos.<br>Su amiga Mimi le hará algunas preguntas para saber por qué tuba no vio los muñequitos otra vez.<br>Recuerda que estas fueron las razones por las que Tuba no vio los muñequitos las últimas 8 veces. <br>MiMi le preguntó a Tuba: ¿No viste muñequitos porque",
+            "notext": "Index 19"
         },
         "questions": [
             {
@@ -1471,7 +1544,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "jemand anderes etwas angeschaut hat?",
                     "en": "you watched something else?", 
-                    "es": "porque viste otra cosa en la TV?"
+                    "es": "porque viste otra cosa en la TV?",
+                    "notext": "see corresponding image in Index 19"
                 },
                 "bubble": [
                     "film",
@@ -1496,7 +1570,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du stattdessen draußen gespielt hast?",
                     "en": "you played outside instead?", 
-                    "es": "porque fuiste al parque a jugar?"
+                    "es": "porque fuiste al parque a jugar?",
+                    "notext": "see corresponding image in Index 19"
                 },
                 "bubble": [
                     "outside"
@@ -1519,7 +1594,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "deine Mutter einen Film angeschaut hat?",
                     "en": "you watched a film?", 
-                    "es": "porque viste una película en la TV?"
+                    "es": "porque viste una película en la TV?",
+                    "notext": "see corresponding image in Index 19"
                 },
                 "bubble": [
                     "film"
@@ -1542,7 +1618,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Vater Tennis angeschaut hat?",
                     "en": "you watched tennis on TV?",
-                    "es": "porque viste un juego de tenis en la TV?"
+                    "es": "porque viste un juego de tenis en la TV?",
+                    "notext": "see corresponding image in Index 19"
                 },
                 "bubble": [
                     "tennis"
@@ -1565,7 +1642,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Vater etwas anderes angeschaut hat?",
                     "en": "you watched sports on TV?", 
-                    "es": "porque viste deporte en la TV?"
+                    "es": "porque viste deporte en la TV?",
+                    "notext": "see corresponding image in Index 19"
                 },
                 "bubble": [
                     "football",
@@ -1589,7 +1667,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "jemand anderes etwas angeschaut hat?",
                     "en": "you watched something else?",
-                    "es": "porque viste otra cosa en la TV?"
+                    "es": "porque viste otra cosa en la TV?",
+                    "notext": "see corresponding image in Index 19"
                 },
                 "bubble": [
                     "film",
@@ -1614,7 +1693,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "dein Vater Sport geguckt hat?",
                     "en": "you watched sports on TV?",
-                    "es": "porque viste deporte en la TV?"
+                    "es": "porque viste deporte en la TV?",
+                    "notext": "see corresponding image in Index 19"
                 },
                 "bubble": [
                     "football",
@@ -1638,7 +1718,8 @@ export const SCENARIOS = [
                 "text": {
                     "de": "du stattdessen draußen gespielt hast?",
                     "en": "you played outside instead?",
-                    "es": "porque fuiste al parque a jugar?"
+                    "es": "porque fuiste al parque a jugar?",
+                    "notext": "see corresponding image in Index 19"
                 },
                 "bubble": [
                     "outside"
