@@ -22,7 +22,7 @@ export const SCENARIOS = [
                     "de": "du etwas nicht finden konntest?",
                     "en": "you couldn’t find something?",
                     "es": "no pudiste encontrar algo?", 
-                    "notext": "see corresponding image in Index 10"
+                    "notext": ""
                 },
                 "bubble": [
                     "bycicle",
@@ -48,7 +48,7 @@ export const SCENARIOS = [
                     "de": "du verschlafen hast?",
                     "en": "you slept late?",
                     "es": "dormiste tarde?", 
-                    "notext": "see corresponding image in Index 10"
+                    "notext": ""
                 },
                 "bubble": [
                     "overslept"
@@ -72,7 +72,7 @@ export const SCENARIOS = [
                     "de": "du dein Fahrrad nicht finden konntes?",
                     "en": "you couldn’t find your bike?",
                     "es": "no podías encontrar tu bicicleta?",
-                    "notext": "see corresponding image in Index 10"
+                    "notext": ""
 
                 },
                 "bubble": [
@@ -97,7 +97,7 @@ export const SCENARIOS = [
                     "de": "du deine Socken nicht finden konntes?",
                     "en": "you couldn’t find your socks?",
                     "es": "no podías encontrar tus medias?", 
-                    "notext": "see corresponding image in Index 10"
+                    "notext": ""
                 },
                 "bubble": [
                     "socks"
@@ -121,7 +121,7 @@ export const SCENARIOS = [
                     "de": "du ein Kleidungsstück nicht finden konntest?",
                     "en": "you couldn’t find a piece of clothing?",
                     "es": "no podías encontrar una pieza de ropa?",
-                    "notext": "see corresponding image in Index 10"
+                    "notext": ""
                 },
                 "bubble": [
                     "hat",
@@ -146,7 +146,7 @@ export const SCENARIOS = [
                     "de": "du etwas nicht finden konntest?",
                     "en": "you couldn’t find something?",
                     "es": "no podías encontrar algo?",
-                    "notext": "see corresponding image in Index 10"
+                    "notext": ""
                 },
                 "bubble": [
                     "bycicle",
@@ -172,7 +172,7 @@ export const SCENARIOS = [
                     "de": "du ein Kleidungsstück nicht finden konntest?",
                     "en": "you couldn’t find a piece of clothing?",
                     "es": "no podías encontrar una pieza de ropa?",
-                    "notext": "see corresponding image in Index 10"
+                    "notext": ""
                 },
                 "bubble": [
                     "hat",
@@ -197,7 +197,7 @@ export const SCENARIOS = [
                     "de": "du verschlafen hast?",
                     "en": "you slept late?",
                     "es": "dormiste tarde?",
-                    "notext": "see corresponding image in Index 10"
+                    "notext": ""
                 },
                 "bubble": [
                     "overslept"
@@ -240,7 +240,7 @@ export const SCENARIOS = [
                     "de": "du woanders hin gegangen bist?",
                     "en": "you went somewhere else?",
                     "es": "fuiste a otro lugar?",
-                    "notext": "see corresponding image in Index 4"
+                    "notext": ""
                 },
                 "bubble": [
                     "cake",
@@ -266,7 +266,7 @@ export const SCENARIOS = [
                     "de": "du den Bus verpasst hast?",
                     "en": "you missed the bus?",
                     "es": "se le fue la guagua?",
-                    "notext": "see corresponding image in Index 4"
+                    "notext": ""
                 },
                 "bubble": [
                     "bus"
@@ -290,7 +290,7 @@ export const SCENARIOS = [
                     "de": "du bei einer Geburtstagsfeier warst?",
                     "en": "you went to a birthday party?",
                     "es": "fuiste a una fiesta de cumpleaños?",
-                    "notext": "see corresponding image in Index 4"
+                    "notext": ""
                 },
                 "bubble": [
                     "cake"
@@ -314,7 +314,7 @@ export const SCENARIOS = [
                     "de": "du deine Katze zum Tierarzt gebracht hast?",
                     "en": "you took your cat to the animal doctor?",
                     "es": "llevaste a tu gato al veterinario?",
-                    "notext": "see corresponding image in Index 4"
+                    "notext": ""
                 },
                 "bubble": [
                     "cat"
@@ -338,7 +338,7 @@ export const SCENARIOS = [
                     "de": "du dein Haustier zum Tierarzt gebracht hast?",
                     "en": "you took your pet to the animal doctor?",
                     "es": "fuiste al veterinario?",
-                    "notext": "see corresponding image in Index 4"
+                    "notext": ""
                 },
                 "bubble": [
                     "dog",
@@ -363,7 +363,7 @@ export const SCENARIOS = [
                     "de": "du woanders hin gegangen bist?",
                     "en": "you went somewhere else?",
                     "es": "fuiste a otro lugar?",
-                    "notext": "see corresponding image in Index 4"
+                    "notext": ""
                 },
                 "bubble": [
                     "cake",
@@ -389,7 +389,7 @@ export const SCENARIOS = [
                     "de": "du dein Haustier zum Tierarzt gebracht hast?",
                     "en": "you took your pet to the animal doctor?",
                     "es": "fuiste al veterinario?",
-                    "notext": "see corresponding image in Index 4"
+                    "notext": ""
                 },
                 "bubble": [
                     "dog",
@@ -414,7 +414,7 @@ export const SCENARIOS = [
                     "de": "du den Bus verpasst hast?",
                     "en": "you missed the bus?",
                     "es": "se le fue la guagua?",
-                    "notext": "see corresponding image in Index 4"
+                    "notext": ""
                 },
                 "bubble": [
                     "bus"
@@ -457,7 +457,7 @@ export const SCENARIOS = [
                     "de": "du etwas darin nicht magst?",
                     "en": "you didn't like something in your dinner plate?",
                     "es": "no te gustó algo de la comida?",
-                    "notext": "see corresponding image in Index 25"
+                    "notext": ""
                 },
                 "bubble": [
                     "tomato",
@@ -483,7 +483,7 @@ export const SCENARIOS = [
                     "de": "du einen Keks gegessen hast und  nicht mehr hungrig warst?",
                     "en": "you ate a biscuit and weren't hungry?",
                     "es": "te comiste un biscocho y no tenías hambre?",
-                    "notext": "see corresponding image in Index 25"
+                    "notext": ""
                 },
                 "bubble": [
                     "biscuit"
@@ -507,7 +507,7 @@ export const SCENARIOS = [
                     "de": "du keine Tomaten magst?",
                     "en": "you didn't like the tomatoes?",
                     "es": "no te gustaban las zanahorias?",
-                    "notext": "see corresponding image in Index 25"
+                    "notext": ""
                 },
                 "bubble": [
                     "tomato"
@@ -531,7 +531,7 @@ export const SCENARIOS = [
                     "de": "du keine Erbsen magst?",
                     "en": "you didn't like the peas?",
                     "es": "no te gustaban los vegetales verdes?",
-                    "notext": "see corresponding image in Index 25"
+                    "notext": ""
                 },
                 "bubble": [
                     "peas"
@@ -555,7 +555,7 @@ export const SCENARIOS = [
                     "de": "du kein grünes Gemüse magst?",
                     "en": "you didn't like green vegetables?",
                     "es": "no te gustaban los vegetales verdes?",
-                    "notext": "see corresponding image in Index 25"
+                    "notext": ""
                 },
                 "bubble": [
                     "broccoli",
@@ -580,7 +580,7 @@ export const SCENARIOS = [
                     "de": "du etwas darin nicht magst?",
                     "en": "you didn't like something in your dinner plate?",
                     "es": "no te gustó algo de la comida?",
-                    "notext": "see corresponding image in Index 25"
+                    "notext": ""
                 },
                 "bubble": [
                     "tomato",
@@ -606,7 +606,7 @@ export const SCENARIOS = [
                     "de": "du kein grünes Gemüse magst?",
                     "en": "you didn't like green vegetables?",
                     "es": "no te gustaban los vegetales verdes?",
-                    "notext": "see corresponding image in Index 25"
+                    "notext": ""
                 },
                 "bubble": [
                     "broccoli",
@@ -631,7 +631,7 @@ export const SCENARIOS = [
                     "de": "du einen Keks gegessen hast und nicht mehr hungrig warst?",
                     "en": "you ate a biscuit and weren't hungry?",
                     "es": "te comiste un biscocho y no tenías hambre?",
-                    "notext": "see corresponding image in Index 25"
+                    "notext": ""
                 },
                 "bubble": [
                     "biscuit"
@@ -674,7 +674,7 @@ export const SCENARIOS = [
                     "de": "jemand in deiner Familie es kaputt gemacht hat?",
                     "en": "someone in your family broke it?", 
                     "es": "alguien de tu familia lo rompió?",
-                    "notext": "see correspoinding image in Index 7"
+                    "notext": ""
                 },
                 "bubble": [
                     "foot",
@@ -700,7 +700,7 @@ export const SCENARIOS = [
                     "de": "die Batterie leer ist?",
                     "en": "the batteries ran out?",
                     "es": "se gastaron las baterías?",
-                    "notext": "see correspoinding image in Index 7"
+                    "notext": ""
                 },
                 "bubble": [
                     "battery"
@@ -724,7 +724,7 @@ export const SCENARIOS = [
                     "de": "deine Mutter darauf getreten ist?",
                     "en": "your mother stepped on it?",
                     "es": "tu mamá lo pisó?",
-                    "notext": "see correspoinding image in Index 7"
+                    "notext": ""
                 },
                 "bubble": [
                     "foot"
@@ -748,7 +748,7 @@ export const SCENARIOS = [
                     "de": "dein Bruder es ins Wasser fallen liess?",
                     "en": "your brother dropped it into water?", 
                     "es": "tu hermano se le cayó al agua?",
-                    "notext": "see correspoinding image in Index 7"
+                    "notext": ""
                 },
                 "bubble": [
                     "water"
@@ -772,7 +772,7 @@ export const SCENARIOS = [
                     "de": "eines deiner Geschwister es kaputt gemacht hat?",
                     "en": "your sibling broke it?",
                     "es": "tu hermano lo rompió?",
-                    "notext": "see correspoinding image in Index 7"
+                    "notext": ""
                 },
                 "bubble": [
                     "wheel",
@@ -797,7 +797,7 @@ export const SCENARIOS = [
                     "de": "jemand in deiner Familie es kaputt gemacht hat?",
                     "en": "someone in your family broke it?",
                     "es": "alguien de tu familia lo rompió?",
-                    "notext": "see correspoinding image in Index 7"
+                    "notext": ""
                 },
                 "bubble": [
                     "foot",
@@ -823,7 +823,7 @@ export const SCENARIOS = [
                     "de": "eines deiner Geschwister es kaputt gemacht hat?",
                     "en": "your sibling broke it?", 
                     "es": "tu hermano lo rompió?",
-                    "notext": "see correspoinding image in Index 7"
+                    "notext": ""
                 },
                 "bubble": [
                     "wheel",
@@ -848,7 +848,7 @@ export const SCENARIOS = [
                     "de": "die Batterie leer ist?",
                     "en": "the batteries ran out?", 
                     "es": "se gastaron las baterías?",
-                    "notext": "see correspoinding image in Index 7"
+                    "notext": ""
                 },
                 "bubble": [
                     "battery"
@@ -891,7 +891,7 @@ export const SCENARIOS = [
                     "de": "du etwas darauf verschüttet hast?",
                     "en": "you spilled something on them?", 
                     "es": "derramaste algo en los zapatos?",
-                    "notext": "see corresponding image in Index 22"
+                    "notext": ""
                 },
                 "bubble": [
                     "paint",
@@ -917,7 +917,7 @@ export const SCENARIOS = [
                     "de": "du durch den Schlamm gelaufen bist?",
                     "en": "you stepped into the mud?", 
                     "es": "caminaste en el fango?",
-                    "notext": "see corresponding image in Index 22"
+                    "notext": ""
                 },
                 "bubble": [
                     "mud"
@@ -941,7 +941,7 @@ export const SCENARIOS = [
                     "de": "du Farbe darauf verschüttet hast?",
                     "en": "you spilled paint on them?", 
                     "es": "derramaste pintura en los zapatos?",
-                    "notext": "see corresponding image in Index 22"
+                    "notext": ""
                 },
                 "bubble": [
                     "paint"
@@ -965,7 +965,7 @@ export const SCENARIOS = [
                     "de": "du Tomatensaft darauf verschüttet hast?",
                     "en": "you spilled tomato juice on them?", 
                     "es": "derramaste jugo de tomate en los zapatos?",
-                    "notext": "see corresponding image in Index 22"
+                    "notext": ""
                 },
                 "bubble": [
                     "juice"
@@ -989,7 +989,7 @@ export const SCENARIOS = [
                     "de": "du ein Getränk darauf verschüttet hast?",
                     "en": "you spilled a drink on them?", 
                     "es": "derramaste una bebida en los zapatos?",
-                    "notext": "see corresponding image in Index 22"
+                    "notext": ""
                 },
                 "bubble": [
                     "chocolate",
@@ -1014,7 +1014,7 @@ export const SCENARIOS = [
                     "de": "du etwas darauf verschüttet hast?",
                     "en": "you spilled something on them?", 
                     "es": "derramaste algo en los zapatos?",
-                    "notext": "see corresponding image in Index 22"
+                    "notext": ""
                 },
                 "bubble": [
                     "paint",
@@ -1040,7 +1040,7 @@ export const SCENARIOS = [
                     "de": "du ein Getränk darauf verschüttet hast?",
                     "en": "you spilled a drink on them?", 
                     "es": "derramaste una bebida en los zapatos?",
-                    "notext": "see corresponding image in Index 22"
+                    "notext": ""
                 },
                 "bubble": [
                     "chocolate",
@@ -1065,7 +1065,7 @@ export const SCENARIOS = [
                     "de": "du durch den Schlamm gelaufen bist?",
                     "en": "you stepped into the mud?", 
                     "es": "caminaste en el fango?",
-                    "notext": "see corresponding image in Index 22"
+                    "notext": ""
                 },
                 "bubble": [
                     "mud"
@@ -1108,7 +1108,7 @@ export const SCENARIOS = [
                     "de": "dein Bruder etwas  getan hat?",
                     "en": "of something your brother did?", 
                     "es": "algo que hizo su hermano?",
-                    "notext": "see corresponding image in Index 13"
+                    "notext": ""
                 },
                 "bubble": [
                     "shout",
@@ -1134,7 +1134,7 @@ export const SCENARIOS = [
                     "de": "du hingefallen bist und dich verletzt hast?",
                     "en": "you fell down and hurt yourself?", 
                     "es": "te caíste y te lastimaste?",
-                    "notext": "see corresponding image in Index 13"
+                    "notext": ""
                 },
                 "bubble": [
                     "plaster"
@@ -1158,7 +1158,7 @@ export const SCENARIOS = [
                     "de": "dein Bruder dich angeschrien hat?",
                     "en": "your brother shouted at you?", 
                     "es": "tu hermano te gritó?",
-                    "notext": "see corresponding image in Index 13"
+                    "notext": ""
                 },
                 "bubble": [
                     "shout"
@@ -1182,7 +1182,7 @@ export const SCENARIOS = [
                     "de": "dein Bruder dein Spielzeugpferd kaputt gemacht hat?",
                     "en": "your brother broke your toy horse?", 
                     "es": "tu hermano rompió tu caballo de juguete?",
-                    "notext": "see corresponding image in Index 13"
+                    "notext": ""
 
                 },
                 "bubble": [
@@ -1207,7 +1207,7 @@ export const SCENARIOS = [
                     "de": "dein Bruder eines deiner Spielzeuge kaputt gemacht hat?",
                     "en": "your brother broke one of your toys?", 
                     "es": "tu hermano rompió uno de tus juguetes?",
-                    "notext": "see corresponding image in Index 13"
+                    "notext": ""
                 },
                 "bubble": [
                     "elephant",
@@ -1232,7 +1232,7 @@ export const SCENARIOS = [
                     "de": "dein Bruder etwas getan hat?",
                     "en": "of something your brother did?", 
                     "es": "algo que hizo tu hermano?",
-                    "notext": "see corresponding image in Index 13"
+                    "notext": ""
                 },
                 "bubble": [
                     "shout",
@@ -1258,7 +1258,7 @@ export const SCENARIOS = [
                     "de": "dein Bruder eines deiner Spielzeuge kaputt gemacht hat?",
                     "en": "your brother broke one of your toys?", 
                     "es": "tu hermano rompió uno de tus juguetes?",
-                    "notext": "see corresponding image in Index 13"
+                    "notext": ""
                 },
                 "bubble": [
                     "elephant",
@@ -1283,7 +1283,7 @@ export const SCENARIOS = [
                     "de": "du hingefallen bist und dich verletzt hast?",
                     "en": "you fell down and hurt yourself?", 
                     "es": "te caíste y te lastimaste?",
-                    "notext": "see corresponding image in Index 13"
+                    "notext": ""
 
                 },
                 "bubble": [
@@ -1328,7 +1328,7 @@ export const SCENARIOS = [
                     "de": "das Wetter nicht gut war?",
                     "en": "the weather was not right?", 
                     "es": "el clima no estaba bueno?",
-                    "notext": "see corresponding image in Index 16"
+                    "notext": ""
                 },
                 "bubble": [
                     "hot",
@@ -1354,7 +1354,7 @@ export const SCENARIOS = [
                     "de": "der Spielplatz gesperrt war?",
                     "en": "the playground was closed?", 
                     "es": "el parque estaba cerrado?",
-                    "notext": "see corresponding image in Index 16"
+                    "notext": ""
                 },
                 "bubble": [
                     "playground"
@@ -1378,7 +1378,7 @@ export const SCENARIOS = [
                     "de": "es zu warm war?",
                     "en": "it was too hot?", 
                     "es": "había demasiado calor?",
-                    "notext": "see corresponding image in Index 16"
+                    "notext": ""
                 },
                 "bubble": [
                     "hot"
@@ -1402,7 +1402,7 @@ export const SCENARIOS = [
                     "de": "es zu windig war?",
                     "en": "it was too windy?", 
                     "es": "había demasiado viento?",
-                    "notext": "see corresponding image in Index 16"
+                    "notext": ""
                 },
                 "bubble": [
                     "wind"
@@ -1426,7 +1426,7 @@ export const SCENARIOS = [
                     "de": "es zu kalt war?",
                     "en": "it was too cold?", 
                     "es": "había demasiado frío?",
-                    "notext": "see corresponding image in Index 16"
+                    "notext": ""
                 },
                 "bubble": [
                     "snow",
@@ -1451,7 +1451,7 @@ export const SCENARIOS = [
                     "de": "das Wetter nicht gut war?",
                     "en": "the weather was not right?", 
                     "es": "el clima no estaba bueno?",
-                    "notext": "see corresponding image in Index 16"
+                    "notext": ""
                 },
                 "bubble": [
                     "hot",
@@ -1477,7 +1477,7 @@ export const SCENARIOS = [
                     "de": "es zu kalt war?",
                     "en": "it was too cold?", 
                     "es": "había demasiado frío?",
-                    "notext": "see corresponding image in Index 16"
+                    "notext": ""
                 },
                 "bubble": [
                     "snow",
@@ -1502,7 +1502,7 @@ export const SCENARIOS = [
                     "de": "der Spielplatz gesperrt war?",
                     "en": "the playground was closed?", 
                     "es": "el parque estaba cerrado?",
-                    "notext": "see corresponding image in Index 16"
+                    "notext": ""
                 },
                 "bubble": [
                     "playground"
@@ -1545,7 +1545,7 @@ export const SCENARIOS = [
                     "de": "jemand anderes etwas angeschaut hat?",
                     "en": "you watched something else?", 
                     "es": "porque viste otra cosa en la TV?",
-                    "notext": "see corresponding image in Index 19"
+                    "notext": ""
                 },
                 "bubble": [
                     "film",
@@ -1571,7 +1571,7 @@ export const SCENARIOS = [
                     "de": "du stattdessen draußen gespielt hast?",
                     "en": "you played outside instead?", 
                     "es": "porque fuiste al parque a jugar?",
-                    "notext": "see corresponding image in Index 19"
+                    "notext": ""
                 },
                 "bubble": [
                     "outside"
@@ -1595,7 +1595,7 @@ export const SCENARIOS = [
                     "de": "deine Mutter einen Film angeschaut hat?",
                     "en": "you watched a film?", 
                     "es": "porque viste una película en la TV?",
-                    "notext": "see corresponding image in Index 19"
+                    "notext": ""
                 },
                 "bubble": [
                     "film"
@@ -1619,7 +1619,7 @@ export const SCENARIOS = [
                     "de": "dein Vater Tennis angeschaut hat?",
                     "en": "you watched tennis on TV?",
                     "es": "porque viste un juego de tenis en la TV?",
-                    "notext": "see corresponding image in Index 19"
+                    "notext": ""
                 },
                 "bubble": [
                     "tennis"
@@ -1643,7 +1643,7 @@ export const SCENARIOS = [
                     "de": "dein Vater etwas anderes angeschaut hat?",
                     "en": "you watched sports on TV?", 
                     "es": "porque viste deporte en la TV?",
-                    "notext": "see corresponding image in Index 19"
+                    "notext": ""
                 },
                 "bubble": [
                     "football",
@@ -1668,7 +1668,7 @@ export const SCENARIOS = [
                     "de": "jemand anderes etwas angeschaut hat?",
                     "en": "you watched something else?",
                     "es": "porque viste otra cosa en la TV?",
-                    "notext": "see corresponding image in Index 19"
+                    "notext": ""
                 },
                 "bubble": [
                     "film",
@@ -1694,7 +1694,7 @@ export const SCENARIOS = [
                     "de": "dein Vater Sport geguckt hat?",
                     "en": "you watched sports on TV?",
                     "es": "porque viste deporte en la TV?",
-                    "notext": "see corresponding image in Index 19"
+                    "notext": ""
                 },
                 "bubble": [
                     "football",
@@ -1719,7 +1719,7 @@ export const SCENARIOS = [
                     "de": "du stattdessen draußen gespielt hast?",
                     "en": "you played outside instead?",
                     "es": "porque fuiste al parque a jugar?",
-                    "notext": "see corresponding image in Index 19"
+                    "notext": ""
                 },
                 "bubble": [
                     "outside"
